@@ -1,66 +1,69 @@
 import argparse
 import subprocess
-import os
+import os, itertools
 
 import torch
-from torch_geometric.data import InMemoryDataset, Data
+from torch_geometric.data import InMemoryDataset, Data, DataLoader
 import pandas as pd
 import re
 
 class AndInvGraphDataset(InMemoryDataset):
-    def __init__(self, root, edge_list_file, transform=None, pre_transform=None):
-        self.edge_list_file = edge_list_file
+    def __init__(self, root, input_file_path, processed_dir_path=None, transform=None, pre_transform=None):
+        self.input_file_path = input_file_path
+        self.processed_dir_path = processed_dir_path
         super(AndInvGraphDataset, self).__init__(root, transform, pre_transform)
-        self.data, self.slices = torch.load(self.processed_paths[0])
+
+    @property
+    def raw_dir(self):
+        return self.root
 
     @property
     def raw_file_names(self):
-        return [self.edge_list_file]
+        return self.input_file_path
+
+    @property
+    def processed_dir(self):
+        return self.processed_dir_path if self.processed_dir_path is not None else self.root
+
 
     @property
     def processed_file_names(self):
-        return ['data.pt']
-
-    def download(self):
-        pass
+        return ['processed_data.pt']
 
     def process(self):
-        edge_list = []
-        edge_attributes = []
+        data_list = []
+        for input_file_path in self.raw_paths:
+            edge_list = pd.read_csv(input_file_path, comment="#", sep=" ", header=None, names=["src", "dst", "node_type", "feature"])
 
-        with open(self.edge_list_file, 'r') as f:
-            for line in f:
-                line = line.strip()
-                source, target, attr_str = re.split(r'\s+', line, maxsplit=2)
-                source, target = int(source) - 1, int(target) - 1  # Assuming 1-indexed node IDs, converting to 0-indexed
-                edge_list.append((source, target))
+            unique_src_nodes = set(edge_list["src"].unique())
+            unique_dst_nodes = set(edge_list["dst"].unique())
+            unique_nodes = unique_src_nodes.union(unique_dst_nodes)
+            num_nodes = len(unique_nodes)
+            node_id_mapping = {node_id: idx for idx, node_id in enumerate(unique_nodes)}
+            edge_list["src"] = edge_list["src"].apply(lambda x: node_id_mapping[x])
+            edge_list["dst"] = edge_list["dst"].apply(lambda x: node_id_mapping[x])
 
-                attr_str = attr_str[1:-1]  # Remove the outer curly braces
-                attr_dict = {}
-                for pair in re.findall(r'(\w+):"(\w+)"', attr_str):
-                    key, value = pair
-                    attr_dict[key] = value
+            edge_index = torch.tensor(edge_list[["src", "dst"]].values, dtype=torch.long).t().contiguous()
 
-                edge_attributes.append(attr_dict)
+            node_types = torch.empty(num_nodes, dtype=torch.long)
+            node_types[edge_list["src"].values] = torch.tensor(edge_list["node_type"].astype('category').cat.codes.values, dtype=torch.long)
 
-        edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
-        edge_attr = pd.DataFrame(edge_attributes).apply(pd.to_numeric, errors='ignore')
+            node_features = torch.zeros(num_nodes, 1, dtype=torch.float)
+            node_features[edge_list["src"].values] = torch.tensor(edge_list["feature"].values, dtype=torch.float).view(-1, 1)
 
-        num_nodes = edge_index.max().item() + 1
-        x = torch.ones(num_nodes, 1)  # Creating a simple node feature matrix (all ones)
+            data = Data(x=node_features, edge_index=edge_index, y=node_types)
+            data_list.append(data)
+        torch.save(data, self.processed_paths[0])
 
-        data = Data(x=x, edge_index=edge_index, edge_attr=edge_attr)
-        data_list = [data]
+    def __len__(self):
+        return 1
 
-        if self.pre_filter is not None:
-            data_list = [data for data in data_list if self.pre_filter(data)]
+    def get(self, idx):
+        data = torch.load(self.processed_paths[0])
+        return data
 
-        if self.pre_transform is not None:
-            data_list = [self.pre_transform(data) for data in data_list]
 
-        data, slices = self.collate(data_list)
-        torch.save((data, slices), self.processed_paths[0])
-
+    
 #edge_list_file = 'test.el'
 #dataset = DirectedAcyclicGraphDataset(root='processed/', edge_list_file=edge_list_file)
 #print(dataset)
@@ -108,4 +111,13 @@ def process_edgelist():
 
 if __name__ == '__main__':
     edgelist_files = process_edgelist()
+    edgelist_files = (list(itertools.chain(*edgelist_files)))
+    print(edgelist_files)
+    for e in edgelist_files:
+        dataset = AndInvGraphDataset(root="./", input_file_path=e+'.el' ,  processed_dir_path = "./dataset/"+ e)
+        #loader = DataLoader(dataset, batch_size=1, shuffle=True)
+        #for data in loader:
+        #    print(data)
+
+
 

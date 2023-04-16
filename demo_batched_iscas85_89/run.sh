@@ -6,7 +6,9 @@ files=($(find blif/ -name "*.blif" -printf "%f\n"))
 # Print each file name in the list
 for file in "${files[@]}"
 do
-  echo "abc -c \"read blif/$file; write Verilog/$file.v\""
-  echo -e "abc -c \"read blif/$file; write Verilog/$file.v\"" | bash
+  #echo "abc -c \"read blif/$file; write Verilog/$file.v\""
+  #echo -e "abc -c \"read blif/$file; write Verilog/$file.v\"" | bash
+  echo -n "blif/$file "
 done
+echo ""
 
