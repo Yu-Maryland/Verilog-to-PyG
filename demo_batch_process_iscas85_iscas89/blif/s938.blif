@@ -1,0 +1,1067 @@
+.model s938.blif
+.inputs P.0 C.32 C.31 C.30 C.29 C.28 C.27 C.26 C.25 C.24 C.23 C.22 C.21 C.20 \
+C.19 C.18 C.17 C.16 C.15 C.14 C.13 C.12 C.11 C.10 C.9 C.8 C.7 C.6 C.5 C.4 C.3 \
+C.2 C.1 C.0
+.outputs Z
+.latch    I12 X.4   3
+.latch    I13 X.3   3
+.latch    I14 X.2   3
+.latch    I15 X.1   3
+.latch    I87 X.8   3
+.latch    I88 X.7   3
+.latch    I89 X.6   3
+.latch    I90 X.5   3
+.latch    I162 X.12   3
+.latch    I163 X.11   3
+.latch    I164 X.10   3
+.latch    I165 X.9   3
+.latch    I237 X.16   3
+.latch    I238 X.15   3
+.latch    I239 X.14   3
+.latch    I240 X.13   3
+.latch    I312 X.20   3
+.latch    I313 X.19   3
+.latch    I314 X.18   3
+.latch    I315 X.17   3
+.latch    I387 X.24   3
+.latch    I388 X.23   3
+.latch    I389 X.22   3
+.latch    I390 X.21   3
+.latch    I462 X.28   3
+.latch    I463 X.27   3
+.latch    I464 X.26   3
+.latch    I465 X.25   3
+.latch    I537 X.32   3
+.latch    I538 X.31   3
+.latch    I539 X.30   3
+.latch    I540 X.29   3
+.names I878.8 I878.9 Z
+1- 1
+-1 1
+.names I50.1 I42 I12
+0- 1
+-0 1
+.names I53.3 I53.4 I13
+1- 1
+-1 1
+.names I59.3 I59.4 I14
+00 1
+.names I65.3 I65.4 I15
+1- 1
+-1 1
+.names I125.1 I117 I87
+0- 1
+-0 1
+.names I128.3 I128.4 I88
+1- 1
+-1 1
+.names I134.3 I134.4 I89
+00 1
+.names I140.3 I140.4 I90
+1- 1
+-1 1
+.names I200.1 I192 I162
+0- 1
+-0 1
+.names I203.3 I203.4 I163
+1- 1
+-1 1
+.names I209.3 I209.4 I164
+00 1
+.names I215.3 I215.4 I165
+1- 1
+-1 1
+.names I275.1 I267 I237
+0- 1
+-0 1
+.names I278.3 I278.4 I238
+1- 1
+-1 1
+.names I284.3 I284.4 I239
+00 1
+.names I290.3 I290.4 I240
+1- 1
+-1 1
+.names I350.1 I342 I312
+0- 1
+-0 1
+.names I353.3 I353.4 I313
+1- 1
+-1 1
+.names I359.3 I359.4 I314
+00 1
+.names I365.3 I365.4 I315
+1- 1
+-1 1
+.names I425.1 I417 I387
+0- 1
+-0 1
+.names I428.3 I428.4 I388
+1- 1
+-1 1
+.names I434.3 I434.4 I389
+00 1
+.names I440.3 I440.4 I390
+1- 1
+-1 1
+.names I500.1 I492 I462
+0- 1
+-0 1
+.names I503.3 I503.4 I463
+1- 1
+-1 1
+.names I509.3 I509.4 I464
+00 1
+.names I515.3 I515.4 I465
+1- 1
+-1 1
+.names I574.1 I566 I537
+0- 1
+-0 1
+.names I577.1 I568 I538
+0- 1
+-0 1
+.names I580.3 I580.4 I539
+00 1
+.names I586.3 I586.4 I540
+1- 1
+-1 1
+.names X.21 I440.1
+0 1
+.names X.21 I763
+0 1
+.names X.26 I509.2
+0 1
+.names X.26 I792
+0 1
+.names C.22 I1014
+0 1
+.names X.31 I555
+0 1
+.names X.31 I821
+0 1
+.names X.23 I428.2
+0 1
+.names X.23 I405
+0 1
+.names X.23 I765
+0 1
+.names C.3 I895
+0 1
+.names X.16 I254
+0 1
+.names X.16 I710
+0 1
+.names X.15 I278.2
+0 1
+.names X.15 I255
+0 1
+.names X.15 I709
+0 1
+.names X.14 I284.2
+0 1
+.names X.14 I708
+0 1
+.names C.23 I1015
+0 1
+.names X.25 I515.1
+0 1
+.names X.25 I791
+0 1
+.names X.4 I29
+0 1
+.names X.4 I626
+0 1
+.names X.28 I479
+0 1
+.names X.28 I794
+0 1
+.names X.32 I822
+0 1
+.names C.18 I990
+0 1
+.names X.11 I203.2
+0 1
+.names X.11 I180
+0 1
+.names X.11 I681
+0 1
+.names C.11 I943
+0 1
+.names X.5 I140.1
+0 1
+.names X.5 I651
+0 1
+.names C.2 I894
+0 1
+.names X.6 I134.2
+0 1
+.names X.6 I652
+0 1
+.names X.27 I503.2
+0 1
+.names X.27 I480
+0 1
+.names X.27 I793
+0 1
+.names C.26 I1038
+0 1
+.names X.29 I586.1
+0 1
+.names X.29 I819
+0 1
+.names X.7 I128.2
+0 1
+.names X.7 I105
+0 1
+.names X.7 I653
+0 1
+.names X.24 I404
+0 1
+.names X.24 I766
+0 1
+.names C.27 I1039
+0 1
+.names C.10 I942
+0 1
+.names X.20 I329
+0 1
+.names X.20 I738
+0 1
+.names X.30 I580.2
+0 1
+.names X.30 I556
+0 1
+.names X.30 I820
+0 1
+.names X.13 I290.1
+0 1
+.names X.13 I707
+0 1
+.names X.8 I104
+0 1
+.names X.8 I654
+0 1
+.names P.0 I65.2
+0 1
+.names P.0 I28
+0 1
+.names P.0 I622
+0 1
+.names P.0 I650
+0 1
+.names P.0 I678
+0 1
+.names P.0 I706
+0 1
+.names P.0 I734
+0 1
+.names P.0 I762
+0 1
+.names P.0 I790
+0 1
+.names P.0 I818
+0 1
+.names X.12 I179
+0 1
+.names X.12 I682
+0 1
+.names X.22 I434.2
+0 1
+.names X.22 I764
+0 1
+.names X.9 I215.1
+0 1
+.names X.9 I679
+0 1
+.names X.19 I353.2
+0 1
+.names X.19 I330
+0 1
+.names X.19 I737
+0 1
+.names X.18 I359.2
+0 1
+.names X.18 I736
+0 1
+.names X.17 I365.1
+0 1
+.names X.17 I735
+0 1
+.names C.30 I1062
+0 1
+.names C.19 I991
+0 1
+.names C.7 I919
+0 1
+.names X.1 I65.1
+0 1
+.names X.1 I623
+0 1
+.names C.31 I1063
+0 1
+.names C.15 I967
+0 1
+.names C.14 I966
+0 1
+.names X.2 I59.2
+0 1
+.names X.2 I624
+0 1
+.names X.3 I53.2
+0 1
+.names X.3 I30
+0 1
+.names X.3 I625
+0 1
+.names C.6 I918
+0 1
+.names X.10 I209.2
+0 1
+.names X.10 I680
+0 1
+.names X.1 P.0 I46
+0- 1
+-0 1
+.names I46 I59.1
+0 1
+.names I763 P.0 I774
+0- 1
+-0 1
+.names I774 I775
+0 1
+.names I791 P.0 I802
+0- 1
+-0 1
+.names I802 I803
+0 1
+.names I651 P.0 I662
+0- 1
+-0 1
+.names I662 I663
+0 1
+.names I819 P.0 I829
+0- 1
+-0 1
+.names I829 I830
+0 1
+.names I707 P.0 I718
+0- 1
+-0 1
+.names I718 I719
+0 1
+.names I679 P.0 I690
+0- 1
+-0 1
+.names I690 I691
+0 1
+.names I735 P.0 I746
+0- 1
+-0 1
+.names I746 I747
+0 1
+.names I623 P.0 I634
+0- 1
+-0 1
+.names I634 I635
+0 1
+.names I44 I28 I49
+00 1
+.names I49 I53.1
+0 1
+.names I49 I48
+0 1
+.names I624 I634 P.2
+00 1
+.names P.2 I890
+0 1
+.names I2.1 P.0 I1.2
+11 1
+.names I1.2 I140.2
+0 1
+.names I1.2 I103
+0 1
+.names I619.1 I616.2 P.6
+11 1
+.names P.6 I914
+0 1
+.names I620.2 I616.3 P.10
+11 1
+.names P.10 I938
+0 1
+.names X.5 I1.2 I121
+0- 1
+-0 1
+.names I121 I134.1
+0 1
+.names I2.2 I1.2 I1.3
+11 1
+.names I1.3 I215.2
+0 1
+.names I1.3 I178
+0 1
+.names I620.3 I616.4 P.14
+11 1
+.names P.14 I962
+0 1
+.names I625 I632 P.3
+00 1
+.names P.3 I891
+0 1
+.names I119 I103 I124
+00 1
+.names I124 I128.1
+0 1
+.names I124 I123
+0 1
+.names X.9 I1.3 I196
+0- 1
+-0 1
+.names I196 I209.1
+0 1
+.names I2.3 I1.3 I1.4
+11 1
+.names I1.4 I290.2
+0 1
+.names I1.4 I253
+0 1
+.names I620.4 I616.5 P.18
+11 1
+.names P.18 I986
+0 1
+.names I619.1 I617.2 P.7
+11 1
+.names P.7 I915
+0 1
+.names I620.3 I617.4 P.15
+11 1
+.names P.15 I963
+0 1
+.names I620.2 I617.3 P.11
+11 1
+.names P.11 I939
+0 1
+.names I620.4 I617.5 P.19
+11 1
+.names P.19 I987
+0 1
+.names I194 I178 I199
+00 1
+.names I199 I203.1
+0 1
+.names I199 I198
+0 1
+.names X.13 I1.4 I271
+0- 1
+-0 1
+.names I271 I284.1
+0 1
+.names I2.4 I1.4 I1.5
+11 1
+.names I1.5 I365.2
+0 1
+.names I1.5 I328
+0 1
+.names I620.5 I616.6 P.22
+11 1
+.names P.22 I1010
+0 1
+.names I620.5 I617.6 P.23
+11 1
+.names P.23 I1011
+0 1
+.names I269 I253 I274
+00 1
+.names I274 I278.1
+0 1
+.names I274 I273
+0 1
+.names X.17 I1.5 I346
+0- 1
+-0 1
+.names I346 I359.1
+0 1
+.names I2.5 I1.5 I1.6
+11 1
+.names I1.6 I440.2
+0 1
+.names I1.6 I403
+0 1
+.names I620.6 I616.7 P.26
+11 1
+.names P.26 I1034
+0 1
+.names I620.6 I617.7 P.27
+11 1
+.names P.27 I1035
+0 1
+.names I344 I328 I349
+00 1
+.names I349 I353.1
+0 1
+.names I349 I348
+0 1
+.names X.21 I1.6 I421
+0- 1
+-0 1
+.names I421 I434.1
+0 1
+.names I2.6 I1.6 I1.7
+11 1
+.names I1.7 I515.2
+0 1
+.names I1.7 I478
+0 1
+.names I620.7 I616.8 P.30
+11 1
+.names P.30 I1058
+0 1
+.names I620.7 I617.8 P.31
+11 1
+.names P.31 I1059
+0 1
+.names I419 I403 I424
+00 1
+.names I424 I428.1
+0 1
+.names I424 I423
+0 1
+.names X.25 I1.7 I496
+0- 1
+-0 1
+.names I496 I509.1
+0 1
+.names I2.7 I1.7 I1.8
+11 1
+.names I1.8 I586.2
+0 1
+.names I494 I478 I499
+00 1
+.names I499 I503.1
+0 1
+.names I499 I498
+0 1
+.names X.29 I1.8 I570
+0- 1
+-0 1
+.names I570 I580.1
+0 1
+.names I570 I571
+0 1
+.names I555 I595.1 I569
+00 1
+.names I569 I568
+0 1
+.names P.0 C.0 I903.2
+11 1
+.names X.1 I65.2 I65.3
+11 1
+.names I65.1 P.0 I65.4
+11 1
+.names I46 I59.2 I59.3
+11 1
+.names X.4 X.2 X.3 X.1 I619.1
+0000 1
+.names X.8 X.6 X.7 X.5 I619.2
+0000 1
+.names I619.1 I619.2 I620.2
+11 1
+.names I650 I651 I615.2
+00 1
+.names I619.1 I615.2 P.5
+11 1
+.names I59.1 X.2 I59.4
+11 1
+.names I622 I623 P.1
+00 1
+.names P.1 C.1 I903.1
+11 1
+.names I49 I53.2 I53.3
+11 1
+.names I44 I29 I30 I2.1
+000 1
+.names X.12 X.10 X.11 X.9 I619.3
+0000 1
+.names I620.2 I619.3 I620.3
+11 1
+.names I678 I679 I615.3
+00 1
+.names I620.2 I615.3 P.9
+11 1
+.names I652 I662 I616.2
+00 1
+.names P.5 C.5 I927.1
+11 1
+.names I680 I690 I616.3
+00 1
+.names I53.1 X.3 I53.4
+11 1
+.names I140.1 I1.2 I140.4
+11 1
+.names I119 I104 I105 I2.2
+000 1
+.names X.16 X.14 X.15 X.13 I619.4
+0000 1
+.names I620.3 I619.4 I620.4
+11 1
+.names I706 I707 I615.4
+00 1
+.names I620.3 I615.4 P.13
+11 1
+.names I708 I718 I616.4
+00 1
+.names P.9 C.9 I951.1
+11 1
+.names X.5 I140.2 I140.3
+11 1
+.names I121 I134.2 I134.3
+11 1
+.names I215.1 I1.3 I215.4
+11 1
+.names I194 I179 I180 I2.3
+000 1
+.names X.20 X.18 X.19 X.17 I619.5
+0000 1
+.names I620.4 I619.5 I620.5
+11 1
+.names I734 I735 I615.5
+00 1
+.names I620.4 I615.5 P.17
+11 1
+.names I736 I746 I616.5
+00 1
+.names P.13 C.13 I975.1
+11 1
+.names I653 I660 I617.2
+00 1
+.names X.7 I660 I654 I618.2
+000 1
+.names I619.1 I618.2 P.8
+11 1
+.names I709 I716 I617.4
+00 1
+.names X.15 I716 I710 I618.4
+000 1
+.names I620.3 I618.4 P.16
+11 1
+.names I681 I688 I617.3
+00 1
+.names X.11 I688 I682 I618.3
+000 1
+.names I620.2 I618.3 P.12
+11 1
+.names I737 I744 I617.5
+00 1
+.names X.19 I744 I738 I618.5
+000 1
+.names I620.4 I618.5 P.20
+11 1
+.names X.3 I632 I626 P.4
+000 1
+.names P.4 C.4 I927.2
+11 1
+.names I134.1 X.6 I134.4
+11 1
+.names I124 I128.2 I128.3
+11 1
+.names X.9 I215.2 I215.3
+11 1
+.names I196 I209.2 I209.3
+11 1
+.names I290.1 I1.4 I290.4
+11 1
+.names I269 I254 I255 I2.4
+000 1
+.names X.24 X.22 X.23 X.21 I619.6
+0000 1
+.names I620.5 I619.6 I620.6
+11 1
+.names I762 I763 I615.6
+00 1
+.names I620.5 I615.6 P.21
+11 1
+.names I764 I774 I616.6
+00 1
+.names I765 I772 I617.6
+00 1
+.names X.23 I772 I766 I618.6
+000 1
+.names I620.5 I618.6 P.24
+11 1
+.names P.17 C.17 I999.1
+11 1
+.names P.8 C.8 I951.2
+11 1
+.names P.16 C.16 I999.2
+11 1
+.names P.12 C.12 I975.2
+11 1
+.names P.20 C.20 I1023.2
+11 1
+.names I128.1 X.7 I128.4
+11 1
+.names I209.1 X.10 I209.4
+11 1
+.names I199 I203.2 I203.3
+11 1
+.names X.13 I290.2 I290.3
+11 1
+.names I271 I284.2 I284.3
+11 1
+.names I365.1 I1.5 I365.4
+11 1
+.names I344 I329 I330 I2.5
+000 1
+.names X.28 X.26 X.27 X.25 I619.7
+0000 1
+.names I620.6 I619.7 I620.7
+11 1
+.names I790 I791 I615.7
+00 1
+.names I620.6 I615.7 P.25
+11 1
+.names I792 I802 I616.7
+00 1
+.names I793 I800 I617.7
+00 1
+.names X.27 I800 I794 I618.7
+000 1
+.names I620.6 I618.7 P.28
+11 1
+.names P.21 C.21 I1023.1
+11 1
+.names P.24 C.24 I1047.2
+11 1
+.names I203.1 X.11 I203.4
+11 1
+.names I284.1 X.14 I284.4
+11 1
+.names I274 I278.2 I278.3
+11 1
+.names X.17 I365.2 I365.3
+11 1
+.names I346 I359.2 I359.3
+11 1
+.names I440.1 I1.6 I440.4
+11 1
+.names I419 I404 I405 I2.6
+000 1
+.names I818 I819 I615.8
+00 1
+.names I620.7 I615.8 P.29
+11 1
+.names I820 I829 I616.8
+00 1
+.names I821 I827 I617.8
+00 1
+.names X.31 I827 I822 I618.8
+000 1
+.names I620.7 I618.8 P.32
+11 1
+.names P.25 C.25 I1047.1
+11 1
+.names P.28 C.28 I1071.2
+11 1
+.names I278.1 X.15 I278.4
+11 1
+.names I359.1 X.18 I359.4
+11 1
+.names I349 I353.2 I353.3
+11 1
+.names X.21 I440.2 I440.3
+11 1
+.names I421 I434.2 I434.3
+11 1
+.names I515.1 I1.7 I515.4
+11 1
+.names I494 I479 I480 I2.7
+000 1
+.names P.29 C.29 I1071.1
+11 1
+.names P.32 C.32 I878.9
+11 1
+.names I353.1 X.19 I353.4
+11 1
+.names I434.1 X.22 I434.4
+11 1
+.names I424 I428.2 I428.3
+11 1
+.names X.25 I515.2 I515.3
+11 1
+.names I496 I509.2 I509.3
+11 1
+.names I586.1 I1.8 I586.4
+11 1
+.names I428.1 X.23 I428.4
+11 1
+.names I509.1 X.26 I509.4
+11 1
+.names I499 I503.2 I503.3
+11 1
+.names X.29 I586.2 I586.3
+11 1
+.names I570 I580.2 I580.3
+11 1
+.names I503.1 X.27 I503.4
+11 1
+.names I580.1 X.30 I580.4
+11 1
+.names I571 X.30 I595.1
+11 1
+.names X.1 X.2 I44
+0- 1
+-0 1
+.names I44 I30 I28 I72.1
+1-- 1
+-1- 1
+--1 1
+.names I48 X.4 I30 I50.1
+1-- 1
+-1- 1
+--1 1
+.names I890 I894 I899.2
+1- 1
+-1 1
+.names X.5 X.6 I119
+0- 1
+-0 1
+.names I119 I105 I103 I147.1
+1-- 1
+-1- 1
+--1 1
+.names I914 I918 I923.2
+1- 1
+-1 1
+.names I938 I942 I947.2
+1- 1
+-1 1
+.names X.9 X.10 I194
+0- 1
+-0 1
+.names I194 I180 I178 I222.1
+1-- 1
+-1- 1
+--1 1
+.names I962 I966 I971.2
+1- 1
+-1 1
+.names I891 I895 I899.1
+1- 1
+-1 1
+.names I123 X.8 I105 I125.1
+1-- 1
+-1- 1
+--1 1
+.names X.13 X.14 I269
+0- 1
+-0 1
+.names I269 I255 I253 I297.1
+1-- 1
+-1- 1
+--1 1
+.names I986 I990 I995.2
+1- 1
+-1 1
+.names I915 I919 I923.1
+1- 1
+-1 1
+.names I963 I967 I971.1
+1- 1
+-1 1
+.names I939 I943 I947.1
+1- 1
+-1 1
+.names I987 I991 I995.1
+1- 1
+-1 1
+.names I198 X.12 I180 I200.1
+1-- 1
+-1- 1
+--1 1
+.names X.17 X.18 I344
+0- 1
+-0 1
+.names I344 I330 I328 I372.1
+1-- 1
+-1- 1
+--1 1
+.names I1010 I1014 I1019.2
+1- 1
+-1 1
+.names I1011 I1015 I1019.1
+1- 1
+-1 1
+.names I273 X.16 I255 I275.1
+1-- 1
+-1- 1
+--1 1
+.names X.21 X.22 I419
+0- 1
+-0 1
+.names I419 I405 I403 I447.1
+1-- 1
+-1- 1
+--1 1
+.names I1034 I1038 I1043.2
+1- 1
+-1 1
+.names I1035 I1039 I1043.1
+1- 1
+-1 1
+.names I899.1 I899.2 I898 I877.1
+0-- 1
+-0- 1
+--0 1
+.names I923.1 I923.2 I922 I877.2
+0-- 1
+-0- 1
+--0 1
+.names I877.1 I877.2 I878.2
+1- 1
+-1 1
+.names I348 X.20 I330 I350.1
+1-- 1
+-1- 1
+--1 1
+.names X.25 X.26 I494
+0- 1
+-0 1
+.names I494 I480 I478 I522.1
+1-- 1
+-1- 1
+--1 1
+.names I1058 I1062 I1067.2
+1- 1
+-1 1
+.names I1059 I1063 I1067.1
+1- 1
+-1 1
+.names I947.1 I947.2 I946 I877.3
+0-- 1
+-0- 1
+--0 1
+.names I878.2 I877.3 I878.3
+1- 1
+-1 1
+.names I423 X.24 I405 I425.1
+1-- 1
+-1- 1
+--1 1
+.names I570 I556 I555 I592.1
+1-- 1
+-1- 1
+--1 1
+.names I971.1 I971.2 I970 I877.4
+0-- 1
+-0- 1
+--0 1
+.names I878.3 I877.4 I878.4
+1- 1
+-1 1
+.names I498 X.28 I480 I500.1
+1-- 1
+-1- 1
+--1 1
+.names I995.1 I995.2 I994 I877.5
+0-- 1
+-0- 1
+--0 1
+.names I878.4 I877.5 I878.5
+1- 1
+-1 1
+.names I571 X.30 I572
+0- 1
+-0 1
+.names I572 X.32 I555 I574.1
+1-- 1
+-1- 1
+--1 1
+.names I572 X.31 I577.1
+1- 1
+-1 1
+.names I1019.1 I1019.2 I1018 I877.6
+0-- 1
+-0- 1
+--0 1
+.names I878.5 I877.6 I878.6
+1- 1
+-1 1
+.names I1043.1 I1043.2 I1042 I877.7
+0-- 1
+-0- 1
+--0 1
+.names I878.6 I877.7 I878.7
+1- 1
+-1 1
+.names I1067.1 I1067.2 I1066 I877.8
+0-- 1
+-0- 1
+--0 1
+.names I878.7 I877.8 I878.8
+1- 1
+-1 1
+.names I72.1 X.4 I42
+0- 1
+-0 1
+.names I775 I764 I772
+0- 1
+-0 1
+.names I803 I792 I800
+0- 1
+-0 1
+.names I663 I652 I660
+0- 1
+-0 1
+.names I830 I820 I827
+0- 1
+-0 1
+.names I719 I708 I716
+0- 1
+-0 1
+.names I691 I680 I688
+0- 1
+-0 1
+.names I747 I736 I744
+0- 1
+-0 1
+.names I635 I624 I632
+0- 1
+-0 1
+.names I147.1 X.8 I117
+0- 1
+-0 1
+.names I222.1 X.12 I192
+0- 1
+-0 1
+.names I903.1 I903.2 I898
+00 1
+.names I297.1 X.16 I267
+0- 1
+-0 1
+.names I927.1 I927.2 I922
+00 1
+.names I951.1 I951.2 I946
+00 1
+.names I975.1 I975.2 I970
+00 1
+.names I999.1 I999.2 I994
+00 1
+.names I372.1 X.20 I342
+0- 1
+-0 1
+.names I1023.1 I1023.2 I1018
+00 1
+.names I447.1 X.24 I417
+0- 1
+-0 1
+.names I1047.1 I1047.2 I1042
+00 1
+.names I522.1 X.28 I492
+0- 1
+-0 1
+.names I1071.1 I1071.2 I1066
+00 1
+.names I592.1 X.32 I566
+0- 1
+-0 1
+.end

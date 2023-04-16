@@ -1,0 +1,1315 @@
+.model s1269.blif
+.inputs INS_2 INS_1 INS_0 LDAcc LDMQ LDDR STAcc STMQ STDR TESTMODE inBUS_7 \
+inBUS_6 inBUS_5 inBUS_4 inBUS_3 inBUS_2 inBUS_1 inBUS_0
+.outputs outBUS_0 outBUS_1 outBUS_2 outBUS_3 outBUS_4 outBUS_5 outBUS_6 \
+outBUS_7 RDY oLDALUout
+.latch    I1_0 Acc_q_0   3
+.latch    I1_1 Acc_q_1   3
+.latch    I1_2 Acc_q_2   3
+.latch    I1_3 Acc_q_3   3
+.latch    I1_4 Acc_q_4   3
+.latch    I1_5 Acc_q_5   3
+.latch    I1_6 Acc_q_6   3
+.latch    I1_7 Acc_q_7   3
+.latch    I96_0 MQ_q_0   3
+.latch    I96_1 MQ_q_1   3
+.latch    I96_2 MQ_q_2   3
+.latch    I96_3 MQ_q_3   3
+.latch    I96_4 MQ_q_4   3
+.latch    I96_5 MQ_q_5   3
+.latch    I96_6 MQ_q_6   3
+.latch    I96_7 MQ_q_7   3
+.latch    I168_0 DR_q_0   3
+.latch    I168_1 DR_q_1   3
+.latch    I168_2 DR_q_2   3
+.latch    I168_3 DR_q_3   3
+.latch    I168_4 DR_q_4   3
+.latch    I168_5 DR_q_5   3
+.latch    I168_6 DR_q_6   3
+.latch    I168_7 DR_q_7   3
+.latch    I684 I679   3
+.latch    I685 I680   3
+.latch    I686 I681   3
+.latch    I687 I682   3
+.latch    I688 I683   3
+.latch    LDALUout qLDALUout   3
+.latch    mLDALUout oLDALUout   3
+.latch    Pass1 qPass1   3
+.latch    Pass2 qPass2   3
+.latch    ShiftRight qShiftRight   3
+.latch    INSo_0 qINSo_0   3
+.latch    INSo_1 qINSo_1   3
+.latch    INSo_2 qINSo_2   3
+.names outBUSb_0 outBUS_0
+0 1
+.names outBUSb_1 outBUS_1
+0 1
+.names outBUSb_2 outBUS_2
+0 1
+.names outBUSb_3 outBUS_3
+0 1
+.names outBUSb_4 outBUS_4
+0 1
+.names outBUSb_5 outBUS_5
+0 1
+.names outBUSb_6 outBUS_6
+0 1
+.names outBUSb_7 outBUS_7
+0 1
+.names I753 I747 I739 RDY
+0-- 1
+-0- 1
+--0 1
+.names I2_0 I3_0 I1_0
+0- 1
+-0 1
+.names I2_1 I3_1 I1_1
+0- 1
+-0 1
+.names I2_2 I3_2 I1_2
+0- 1
+-0 1
+.names I2_3 I3_3 I1_3
+0- 1
+-0 1
+.names I2_4 I3_4 I1_4
+0- 1
+-0 1
+.names I2_5 I3_5 I1_5
+0- 1
+-0 1
+.names I2_6 I3_6 I1_6
+0- 1
+-0 1
+.names I2_7 I3_7 I1_7
+0- 1
+-0 1
+.names I97_0 I96_0
+0 1
+.names I97_1 I96_1
+0 1
+.names I97_2 I96_2
+0 1
+.names I97_3 I96_3
+0 1
+.names I97_4 I96_4
+0 1
+.names I97_5 I96_5
+0 1
+.names I97_6 I96_6
+0 1
+.names I97_7 I96_7
+0 1
+.names I169_0 I168_0
+0 1
+.names I169_1 I168_1
+0 1
+.names I169_2 I168_2
+0 1
+.names I169_3 I168_3
+0 1
+.names I169_4 I168_4
+0 1
+.names I169_5 I168_5
+0 1
+.names I169_6 I168_6
+0 1
+.names I169_7 I168_7
+0 1
+.names I769_1 I729 I684
+0- 1
+-0 1
+.names I772_1 I751 I685
+0- 1
+-0 1
+.names I731 I686
+0 1
+.names I755 I759 I757 I765 I687
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I753 I739 I747 I688
+0-- 1
+-0- 1
+--0 1
+.names LDAcc I794_1 LDALUout
+00 1
+.names imLDALUout mLDALUout
+0 1
+.names I711 I768 I705 Pass1
+0-- 1
+-0- 1
+--0 1
+.names I747 I708 I739 Pass2
+0-- 1
+-0- 1
+--0 1
+.names I743 I711 I710 I712 ShiftRight
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I728 INSo_0
+0 1
+.names I783_1 I783_2 INSo_1
+0- 1
+-0 1
+.names I704 I683 INSo_2
+0- 1
+-0 1
+.names TESTMODE iTESTMODE
+0 1
+.names MQ_q_0 I708
+0 1
+.names I682 I713
+0 1
+.names I679 I710
+0 1
+.names LDDR I172
+0 1
+.names INS_1 I705
+0 1
+.names I680 I711
+0 1
+.names I681 I712
+0 1
+.names INS_2 I704
+0 1
+.names I683 I714
+0 1
+.names DR_q_7 MQ_q_0 I761
+0- 1
+-0 1
+.names I761 I762
+0 1
+.names I679 I682 I741
+0- 1
+-0 1
+.names I741 I742
+0 1
+.names I927_1 I927_2 I927_3 outBUSb_6
+000 1
+.names I909_1 I909_2 I909_3 outBUSb_3
+000 1
+.names I903_1 I903_2 I903_3 outBUSb_2
+000 1
+.names I891_1 I891_2 I891_3 outBUSb_0
+000 1
+.names I710 I788_1 I730
+00 1
+.names I730 I729
+0 1
+.names I711 I737 I754
+00 1
+.names I754 I753
+0 1
+.names I921_1 I921_2 I921_3 outBUSb_5
+000 1
+.names I915_1 I915_2 I915_3 outBUSb_4
+000 1
+.names INS_0 I714 I728
+00 1
+.names I933_1 I933_2 I933_3 outBUSb_7
+000 1
+.names I897_1 I897_2 I897_3 outBUSb_1
+000 1
+.names I174_1 I174_2 I169_0
+00 1
+.names I181_1 I181_2 I169_1
+00 1
+.names I188_1 I188_2 I169_2
+00 1
+.names I195_1 I195_2 I169_3
+00 1
+.names I202_1 I202_2 I169_4
+00 1
+.names I209_1 I209_2 I169_5
+00 1
+.names I216_1 I216_2 I169_6
+00 1
+.names I223_1 I223_2 I169_7
+00 1
+.names INS_0 I735 I744
+00 1
+.names I744 I743
+0 1
+.names I713 I811_1 I760
+00 1
+.names I760 I759
+0 1
+.names I887_1 I887_2 imINSo_2
+00 1
+.names imINSo_2 I231_2
+0 1
+.names I791_1 I712 I731
+0- 1
+-0 1
+.names I231_2 I230_2
+0 1
+.names I231_2 I234_2
+0 1
+.names I851_1 I851_2 imPass1
+00 1
+.names imPass1 I251
+0 1
+.names I873_1 I873_2 imINSo_0
+00 1
+.names imINSo_0 I231_0
+0 1
+.names I234_2 I233_2
+0 1
+.names I231_0 I230_0
+0 1
+.names I231_0 I234_0
+0 1
+.names I865_1 I865_2 imShiftRight
+00 1
+.names imShiftRight mShiftRight
+0 1
+.names I858_1 I858_2 imPass2
+00 1
+.names imPass2 I252
+0 1
+.names I880_1 I880_2 imINSo_1
+00 1
+.names imINSo_1 I235_0
+0 1
+.names imINSo_1 I231_1
+0 1
+.names Acc_q_0 I251 I247_0
+11 1
+.names I247_0 I382_2
+0 1
+.names I247_0 I249_0
+0 1
+.names Acc_q_1 I251 I247_1
+11 1
+.names I247_1 I420_2
+0 1
+.names I247_1 I249_1
+0 1
+.names Acc_q_2 I251 I247_2
+11 1
+.names I247_2 I458_2
+0 1
+.names I247_2 I249_2
+0 1
+.names Acc_q_3 I251 I247_3
+11 1
+.names I247_3 I496_2
+0 1
+.names I247_3 I249_3
+0 1
+.names Acc_q_4 I251 I247_4
+11 1
+.names I247_4 I534_2
+0 1
+.names I247_4 I249_4
+0 1
+.names Acc_q_5 I251 I247_5
+11 1
+.names I247_5 I572_2
+0 1
+.names I247_5 I249_5
+0 1
+.names Acc_q_6 I251 I247_6
+11 1
+.names I247_6 I610_2
+0 1
+.names I247_6 I249_6
+0 1
+.names Acc_q_7 I251 I247_7
+11 1
+.names I247_7 I648_2
+0 1
+.names I247_7 I249_7
+0 1
+.names I234_0 I233_0
+0 1
+.names I840_1 I840_2 imLDALUout
+00 1
+.names I235_0 I389_2
+0 1
+.names I231_1 I230_1
+0 1
+.names I231_1 I234_1
+0 1
+.names DR_q_0 I252 I248_0
+11 1
+.names I248_0 I376_1
+0 1
+.names DR_q_1 I252 I248_1
+11 1
+.names I248_1 I414_1
+0 1
+.names DR_q_2 I252 I248_2
+11 1
+.names I248_2 I452_1
+0 1
+.names DR_q_3 I252 I248_3
+11 1
+.names I248_3 I490_1
+0 1
+.names DR_q_4 I252 I248_4
+11 1
+.names I248_4 I528_1
+0 1
+.names DR_q_5 I252 I248_5
+11 1
+.names I248_5 I566_1
+0 1
+.names DR_q_6 I252 I248_6
+11 1
+.names I248_6 I604_1
+0 1
+.names DR_q_7 I252 I248_7
+11 1
+.names I248_7 I642_1
+0 1
+.names I234_1 I233_1
+0 1
+.names I233_1 I376_2
+0 1
+.names I233_1 I414_2
+0 1
+.names I233_1 I452_2
+0 1
+.names I233_1 I490_2
+0 1
+.names I233_1 I528_2
+0 1
+.names I233_1 I566_2
+0 1
+.names I233_1 I604_2
+0 1
+.names I233_1 I642_2
+0 1
+.names I104_1 I104_2 I104_3 I97_0
+000 1
+.names I112_1 I112_2 I112_3 I97_1
+000 1
+.names I120_1 I120_2 I120_3 I97_2
+000 1
+.names I128_1 I128_2 I128_3 I97_3
+000 1
+.names I136_1 I136_2 I136_3 I97_4
+000 1
+.names I144_1 I144_2 I144_3 I97_5
+000 1
+.names I152_1 I152_2 I152_3 I97_6
+000 1
+.names I376_3 I376_4 I246_0
+1- 1
+-1 1
+.names I246_0 I382_1
+0 1
+.names I414_3 I414_4 I246_1
+1- 1
+-1 1
+.names I246_1 I420_1
+0 1
+.names I452_3 I452_4 I246_2
+1- 1
+-1 1
+.names I246_2 I458_1
+0 1
+.names I490_3 I490_4 I246_3
+1- 1
+-1 1
+.names I246_3 I496_1
+0 1
+.names I528_3 I528_4 I246_4
+1- 1
+-1 1
+.names I246_4 I534_1
+0 1
+.names I566_3 I566_4 I246_5
+1- 1
+-1 1
+.names I246_5 I572_1
+0 1
+.names I604_3 I604_4 I246_6
+1- 1
+-1 1
+.names I246_6 I610_1
+0 1
+.names I642_3 I642_4 I246_7
+1- 1
+-1 1
+.names I246_7 I648_1
+0 1
+.names I246_0 I247_0 I243_0
+11 1
+.names I243_0 I261
+0 1
+.names I246_2 I247_2 I243_2
+11 1
+.names I243_2 I259
+0 1
+.names I246_5 I247_5 I243_5
+11 1
+.names I243_5 I256
+0 1
+.names I246_6 I247_6 I243_6
+11 1
+.names I243_6 I255
+0 1
+.names I382_3 I382_4 I242_0
+1- 1
+-1 1
+.names I242_0 I389_1
+0 1
+.names I420_3 I420_4 I242_1
+1- 1
+-1 1
+.names I242_1 I267
+0 1
+.names I242_1 I427_1
+0 1
+.names I458_3 I458_4 I242_2
+1- 1
+-1 1
+.names I242_2 I465_1
+0 1
+.names I496_3 I496_4 I242_3
+1- 1
+-1 1
+.names I242_3 I265
+0 1
+.names I242_3 I503_1
+0 1
+.names I534_3 I534_4 I242_4
+1- 1
+-1 1
+.names I242_4 I541_1
+0 1
+.names I572_3 I572_4 I242_5
+1- 1
+-1 1
+.names I242_5 I579_1
+0 1
+.names I610_3 I610_4 I242_6
+1- 1
+-1 1
+.names I242_6 I262
+0 1
+.names I242_6 I617_1
+0 1
+.names I648_3 I648_4 I242_7
+1- 1
+-1 1
+.names I242_7 I655_1
+0 1
+.names I243_3 I242_4 I291
+0- 1
+-0 1
+.names I291 I292
+0 1
+.names I242_5 I242_3 I242_4 I242_2 I305
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I305 I306
+0 1
+.names I287 I261 I235_1
+0- 1
+-0 1
+.names I235_1 I427_2
+0 1
+.names I242_4 I300 I289
+0- 1
+-0 1
+.names I289 I290
+0 1
+.names I243_1 I294 I275
+00 1
+.names I275 I235_2
+0 1
+.names I283 I277 I309
+0- 1
+-0 1
+.names I309 I310
+0 1
+.names I235_2 I465_2
+0 1
+.names I281 I285 I307
+0- 1
+-0 1
+.names I307 I308
+0 1
+.names I259 I303 I235_3
+0- 1
+-0 1
+.names I235_3 I503_2
+0 1
+.names I256 I279 I277 I281 I295
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I295 I296
+0 1
+.names I256 I279 I310 I308 I235_6
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I235_6 I617_2
+0 1
+.names I243_3 I298 I300 I273
+000 1
+.names I273 I235_4
+0 1
+.names I315_1 I290 I243_4 I292 I272
+0000 1
+.names I272 I235_5
+0 1
+.names I235_4 I541_2
+0 1
+.names I160_1 I160_2 I160_3 I97_7
+000 1
+.names I283 I296 I285 I301
+0-- 1
+-0- 1
+--0 1
+.names I301 I302
+0 1
+.names I235_5 I579_2
+0 1
+.names I311_1 I255 I235_7
+0- 1
+-0 1
+.names I235_7 I655_2
+0 1
+.names TESTMODE qLDALUout I840_1
+11 1
+.names STMQ MQ_q_7 I933_1
+11 1
+.names inBUS_1 LDAcc I19_2
+11 1
+.names STMQ MQ_q_0 I891_1
+11 1
+.names TESTMODE qINSo_1 I880_1
+11 1
+.names STMQ MQ_q_4 I915_1
+11 1
+.names TESTMODE qPass1 I851_1
+11 1
+.names STDR DR_q_6 I927_2
+11 1
+.names STDR DR_q_7 I933_2
+11 1
+.names STMQ MQ_q_3 I909_1
+11 1
+.names inBUS_5 LDAcc I63_2
+11 1
+.names STDR DR_q_5 I921_2
+11 1
+.names TESTMODE qINSo_2 I887_1
+11 1
+.names STAcc Acc_q_6 I927_3
+11 1
+.names STAcc Acc_q_4 I915_3
+11 1
+.names TESTMODE qINSo_0 I873_1
+11 1
+.names STMQ MQ_q_6 I927_1
+11 1
+.names inBUS_4 LDAcc I52_2
+11 1
+.names STDR DR_q_1 I897_2
+11 1
+.names STAcc Acc_q_3 I909_3
+11 1
+.names inBUS_2 LDAcc I30_2
+11 1
+.names STDR DR_q_3 I909_2
+11 1
+.names STAcc Acc_q_5 I921_3
+11 1
+.names STAcc Acc_q_2 I903_3
+11 1
+.names TESTMODE qPass2 I858_1
+11 1
+.names inBUS_6 LDAcc I74_2
+11 1
+.names STAcc Acc_q_0 I891_3
+11 1
+.names STDR DR_q_2 I903_2
+11 1
+.names inBUS_1 LDDR I181_2
+11 1
+.names inBUS_2 LDDR I188_2
+11 1
+.names inBUS_4 LDDR I202_2
+11 1
+.names inBUS_5 LDDR I209_2
+11 1
+.names inBUS_6 LDDR I216_2
+11 1
+.names STMQ MQ_q_2 I903_1
+11 1
+.names STDR DR_q_0 I891_2
+11 1
+.names I680 I681 I788_1
+11 1
+.names inBUS_7 LDAcc I85_2
+11 1
+.names inBUS_7 LDDR I223_2
+11 1
+.names STMQ MQ_q_5 I921_1
+11 1
+.names STDR DR_q_4 I915_2
+11 1
+.names STMQ MQ_q_1 I897_1
+11 1
+.names inBUS_0 LDAcc I8_2
+11 1
+.names inBUS_0 LDDR I174_2
+11 1
+.names STAcc Acc_q_7 I933_3
+11 1
+.names STAcc Acc_q_1 I897_3
+11 1
+.names inBUS_3 LDAcc I41_2
+11 1
+.names inBUS_3 LDDR I195_2
+11 1
+.names inBUS_0 LDMQ I104_2
+11 1
+.names inBUS_1 LDMQ I112_2
+11 1
+.names inBUS_2 LDMQ I120_2
+11 1
+.names inBUS_3 LDMQ I128_2
+11 1
+.names inBUS_4 LDMQ I136_2
+11 1
+.names inBUS_5 LDMQ I144_2
+11 1
+.names inBUS_6 LDMQ I152_2
+11 1
+.names inBUS_7 LDMQ I160_2
+11 1
+.names TESTMODE qShiftRight I865_1
+11 1
+.names DR_q_0 I172 I174_1
+11 1
+.names DR_q_1 I172 I181_1
+11 1
+.names DR_q_2 I172 I188_1
+11 1
+.names DR_q_3 I172 I195_1
+11 1
+.names DR_q_4 I172 I202_1
+11 1
+.names DR_q_5 I172 I209_1
+11 1
+.names DR_q_6 I172 I216_1
+11 1
+.names DR_q_7 I172 I223_1
+11 1
+.names I710 I681 I749
+0- 1
+-0 1
+.names I680 I712 I751
+0- 1
+-0 1
+.names I749 I751 I811_1
+11 1
+.names iTESTMODE INSo_2 I887_2
+11 1
+.names iTESTMODE Pass1 I851_2
+11 1
+.names iTESTMODE INSo_0 I873_2
+11 1
+.names INS_0 I764 I739
+0- 1
+-0 1
+.names I735 I764 I747
+0- 1
+-0 1
+.names I739 I747 I794_1
+11 1
+.names iTESTMODE ShiftRight I865_2
+11 1
+.names iTESTMODE Pass2 I858_2
+11 1
+.names iTESTMODE INSo_1 I880_2
+11 1
+.names iTESTMODE LDALUout I840_2
+11 1
+.names I755 I757 I759 I765 F
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names F mShiftRight I85_1
+11 1
+.names MQ_q_1 mShiftRight I104_1
+11 1
+.names MQ_q_2 mShiftRight I112_1
+11 1
+.names MQ_q_3 mShiftRight I120_1
+11 1
+.names MQ_q_4 mShiftRight I128_1
+11 1
+.names MQ_q_5 mShiftRight I136_1
+11 1
+.names MQ_q_6 mShiftRight I144_1
+11 1
+.names MQ_q_7 mShiftRight I152_1
+11 1
+.names I249_0 I233_0 I402_2
+11 1
+.names I249_1 I233_0 I440_2
+11 1
+.names I249_2 I233_0 I478_2
+11 1
+.names I249_3 I233_0 I516_2
+11 1
+.names I249_4 I233_0 I554_2
+11 1
+.names I249_5 I233_0 I592_2
+11 1
+.names I249_6 I233_0 I630_2
+11 1
+.names I249_7 I233_0 I668_2
+11 1
+.names LDMQ mShiftRight I102
+00 1
+.names MQ_q_0 I102 I104_3
+11 1
+.names MQ_q_1 I102 I112_3
+11 1
+.names MQ_q_2 I102 I120_3
+11 1
+.names MQ_q_3 I102 I128_3
+11 1
+.names MQ_q_4 I102 I136_3
+11 1
+.names MQ_q_5 I102 I144_3
+11 1
+.names MQ_q_6 I102 I152_3
+11 1
+.names MQ_q_7 I102 I160_3
+11 1
+.names I247_0 I248_0 I250_0
+1- 1
+-1 1
+.names I250_0 I230_0 I402_1
+11 1
+.names I247_1 I248_1 I250_1
+1- 1
+-1 1
+.names I250_1 I230_0 I440_1
+11 1
+.names I247_2 I248_2 I250_2
+1- 1
+-1 1
+.names I250_2 I230_0 I478_1
+11 1
+.names I247_3 I248_3 I250_3
+1- 1
+-1 1
+.names I250_3 I230_0 I516_1
+11 1
+.names I247_4 I248_4 I250_4
+1- 1
+-1 1
+.names I250_4 I230_0 I554_1
+11 1
+.names I247_5 I248_5 I250_5
+1- 1
+-1 1
+.names I250_5 I230_0 I592_1
+11 1
+.names I247_6 I248_6 I250_6
+1- 1
+-1 1
+.names I250_6 I230_0 I630_1
+11 1
+.names I247_7 I248_7 I250_7
+1- 1
+-1 1
+.names I250_7 I230_0 I668_1
+11 1
+.names mShiftRight LDAcc mLDALUout I6
+000 1
+.names Acc_q_0 I6 I12_1
+11 1
+.names Acc_q_1 I6 I23_1
+11 1
+.names Acc_q_2 I6 I34_1
+11 1
+.names Acc_q_3 I6 I45_1
+11 1
+.names Acc_q_4 I6 I56_1
+11 1
+.names Acc_q_5 I6 I67_1
+11 1
+.names Acc_q_6 I6 I78_1
+11 1
+.names Acc_q_7 I6 I89_1
+11 1
+.names I376_1 I233_1 I376_4
+11 1
+.names I414_1 I233_1 I414_4
+11 1
+.names I452_1 I233_1 I452_4
+11 1
+.names I490_1 I233_1 I490_4
+11 1
+.names I528_1 I233_1 I528_4
+11 1
+.names I566_1 I233_1 I566_4
+11 1
+.names I604_1 I233_1 I604_4
+11 1
+.names I642_1 I233_1 I642_4
+11 1
+.names I248_0 I376_2 I376_3
+11 1
+.names I248_1 I414_2 I414_3
+11 1
+.names I248_2 I452_2 I452_3
+11 1
+.names I248_3 I490_2 I490_3
+11 1
+.names I248_4 I528_2 I528_3
+11 1
+.names I248_5 I566_2 I566_3
+11 1
+.names I248_6 I604_2 I604_3
+11 1
+.names I248_7 I642_2 I642_3
+11 1
+.names I402_1 I402_2 I241_0
+00 1
+.names I241_0 I233_1 I406_2
+11 1
+.names I440_1 I440_2 I241_1
+00 1
+.names I241_1 I233_1 I444_2
+11 1
+.names I478_1 I478_2 I241_2
+00 1
+.names I241_2 I233_1 I482_2
+11 1
+.names I516_1 I516_2 I241_3
+00 1
+.names I241_3 I233_1 I520_2
+11 1
+.names I554_1 I554_2 I241_4
+00 1
+.names I241_4 I233_1 I558_2
+11 1
+.names I592_1 I592_2 I241_5
+00 1
+.names I241_5 I233_1 I596_2
+11 1
+.names I630_1 I630_2 I241_6
+00 1
+.names I241_6 I233_1 I634_2
+11 1
+.names I668_1 I668_2 I241_7
+00 1
+.names I241_7 I233_1 I672_2
+11 1
+.names I246_0 I382_2 I382_3
+11 1
+.names I246_1 I420_2 I420_3
+11 1
+.names I246_1 I247_1 I243_1
+11 1
+.names I246_2 I458_2 I458_3
+11 1
+.names I246_3 I496_2 I496_3
+11 1
+.names I246_3 I247_3 I243_3
+11 1
+.names I246_4 I534_2 I534_3
+11 1
+.names I246_4 I247_4 I243_4
+11 1
+.names I246_5 I572_2 I572_3
+11 1
+.names I246_6 I610_2 I610_3
+11 1
+.names I246_7 I648_2 I648_3
+11 1
+.names I246_7 I247_7 I243_7
+11 1
+.names I382_1 I247_0 I382_4
+11 1
+.names I243_0 I230_0 I398_1
+11 1
+.names I420_1 I247_1 I420_4
+11 1
+.names I243_1 I230_0 I436_1
+11 1
+.names I458_1 I247_2 I458_4
+11 1
+.names I243_2 I230_0 I474_1
+11 1
+.names I496_1 I247_3 I496_4
+11 1
+.names I243_3 I230_0 I512_1
+11 1
+.names I534_1 I247_4 I534_4
+11 1
+.names I243_4 I230_0 I550_1
+11 1
+.names I572_1 I247_5 I572_4
+11 1
+.names I243_5 I230_0 I588_1
+11 1
+.names I610_1 I247_6 I610_4
+11 1
+.names I243_6 I230_0 I626_1
+11 1
+.names I648_1 I247_7 I648_4
+11 1
+.names I243_7 I230_0 I664_1
+11 1
+.names I242_0 I389_2 I389_3
+11 1
+.names I242_0 I233_0 I398_2
+11 1
+.names I242_1 I233_0 I436_2
+11 1
+.names I242_2 I233_0 I474_2
+11 1
+.names I242_3 I233_0 I512_2
+11 1
+.names I242_4 I233_0 I550_2
+11 1
+.names I242_5 I233_0 I588_2
+11 1
+.names I242_6 I233_0 I626_2
+11 1
+.names I242_7 I233_0 I664_2
+11 1
+.names I242_0 I235_0 I287
+0- 1
+-0 1
+.names I261 I287 I330_1
+11 1
+.names I389_1 I235_0 I389_4
+11 1
+.names I427_1 I235_1 I427_4
+11 1
+.names I398_1 I398_2 I240_0
+00 1
+.names I240_0 I230_1 I406_1
+11 1
+.names I436_1 I436_2 I240_1
+00 1
+.names I240_1 I230_1 I444_1
+11 1
+.names I474_1 I474_2 I240_2
+00 1
+.names I240_2 I230_1 I482_1
+11 1
+.names I512_1 I512_2 I240_3
+00 1
+.names I240_3 I230_1 I520_1
+11 1
+.names I550_1 I550_2 I240_4
+00 1
+.names I240_4 I230_1 I558_1
+11 1
+.names I588_1 I588_2 I240_5
+00 1
+.names I240_5 I230_1 I596_1
+11 1
+.names I626_1 I626_2 I240_6
+00 1
+.names I240_6 I230_1 I634_1
+11 1
+.names I664_1 I664_2 I240_7
+00 1
+.names I240_7 I230_1 I672_1
+11 1
+.names I242_1 I427_2 I427_3
+11 1
+.names I465_1 I235_2 I465_4
+11 1
+.names I242_2 I465_2 I465_3
+11 1
+.names I503_1 I235_3 I503_4
+11 1
+.names I265 I303 I298
+00 1
+.names I242_4 I298 I315_1
+11 1
+.names I237_0 I239_0 ALUout_0
+0- 1
+-0 1
+.names ALUout_0 mLDALUout I12_2
+11 1
+.names ALUout_0 mShiftRight I160_1
+11 1
+.names I237_1 I239_1 ALUout_1
+0- 1
+-0 1
+.names ALUout_1 mShiftRight I8_1
+11 1
+.names ALUout_1 mLDALUout I23_2
+11 1
+.names I617_1 I235_6 I617_4
+11 1
+.names I242_3 I503_2 I503_3
+11 1
+.names I242_6 I617_2 I617_3
+11 1
+.names I541_1 I235_4 I541_4
+11 1
+.names I579_1 I235_5 I579_4
+11 1
+.names I242_4 I541_2 I541_3
+11 1
+.names I237_2 I239_2 ALUout_2
+0- 1
+-0 1
+.names ALUout_2 mShiftRight I19_1
+11 1
+.names ALUout_2 mLDALUout I34_2
+11 1
+.names I242_5 I579_2 I579_3
+11 1
+.names I237_3 I239_3 ALUout_3
+0- 1
+-0 1
+.names ALUout_3 mShiftRight I30_1
+11 1
+.names ALUout_3 mLDALUout I45_2
+11 1
+.names I655_1 I235_7 I655_4
+11 1
+.names I237_6 I239_6 ALUout_6
+0- 1
+-0 1
+.names ALUout_6 mShiftRight I63_1
+11 1
+.names ALUout_6 mLDALUout I78_2
+11 1
+.names I242_7 I655_2 I655_3
+11 1
+.names I237_4 I239_4 ALUout_4
+0- 1
+-0 1
+.names ALUout_4 mShiftRight I41_1
+11 1
+.names ALUout_4 mLDALUout I56_2
+11 1
+.names I237_5 I239_5 ALUout_5
+0- 1
+-0 1
+.names ALUout_5 mShiftRight I52_1
+11 1
+.names ALUout_5 mLDALUout I67_2
+11 1
+.names I237_7 I239_7 ALUout_7
+0- 1
+-0 1
+.names ALUout_7 mShiftRight I74_1
+11 1
+.names ALUout_7 mLDALUout I89_2
+11 1
+.names DR_q_7 MQ_q_0 I816_1
+1- 1
+-1 1
+.names I680 I712 I772_1
+1- 1
+-1 1
+.names I705 I714 I783_2
+1- 1
+-1 1
+.names I762 I742 I808_1
+1- 1
+-1 1
+.names I711 I749 I769_1
+1- 1
+-1 1
+.names I710 I711 I745
+0- 1
+-0 1
+.names I744 I745 I791_1
+1- 1
+-1 1
+.names I753 I708 I683 I783_1
+1-- 1
+-1- 1
+--1 1
+.names I389_3 I389_4 I236_0
+1- 1
+-1 1
+.names I267 I330_1 I294
+00 1
+.names I243_1 I294 I337_1
+1- 1
+-1 1
+.names I427_3 I427_4 I236_1
+1- 1
+-1 1
+.names I465_3 I465_4 I236_2
+1- 1
+-1 1
+.names I503_3 I503_4 I236_3
+1- 1
+-1 1
+.names I617_3 I617_4 I236_6
+1- 1
+-1 1
+.names I262 I302 I311_1
+1- 1
+-1 1
+.names I541_3 I541_4 I236_4
+1- 1
+-1 1
+.names I579_3 I579_4 I236_5
+1- 1
+-1 1
+.names I655_3 I655_4 I236_7
+1- 1
+-1 1
+.names I679 I681 I737
+0- 1
+-0 1
+.names INS_2 I705 I735
+0- 1
+-0 1
+.names I737 I762 I755
+0- 1
+-0 1
+.names I816_1 I754 I761 I765
+0-- 1
+-0- 1
+--0 1
+.names I704 I679 INS_0 I681 I768
+0000 1
+.names I808_1 I711 I757
+0- 1
+-0 1
+.names I681 I745 I764
+00 1
+.names I243_4 I242_5 I283
+0- 1
+-0 1
+.names I259 I265 I300
+00 1
+.names I242_5 I292 I281
+0- 1
+-0 1
+.names I243_1 I306 I277
+0- 1
+-0 1
+.names I294 I306 I285
+0- 1
+-0 1
+.names I236_0 I233_2 I237_0
+0- 1
+-0 1
+.names I337_1 I242_2 I303
+0- 1
+-0 1
+.names I406_1 I406_2 I238_0
+00 1
+.names I238_0 I230_2 I239_0
+0- 1
+-0 1
+.names I444_1 I444_2 I238_1
+00 1
+.names I238_1 I230_2 I239_1
+0- 1
+-0 1
+.names I482_1 I482_2 I238_2
+00 1
+.names I238_2 I230_2 I239_2
+0- 1
+-0 1
+.names I242_5 I290 I279
+0- 1
+-0 1
+.names I520_1 I520_2 I238_3
+00 1
+.names I238_3 I230_2 I239_3
+0- 1
+-0 1
+.names I558_1 I558_2 I238_4
+00 1
+.names I238_4 I230_2 I239_4
+0- 1
+-0 1
+.names I596_1 I596_2 I238_5
+00 1
+.names I238_5 I230_2 I239_5
+0- 1
+-0 1
+.names I634_1 I634_2 I238_6
+00 1
+.names I238_6 I230_2 I239_6
+0- 1
+-0 1
+.names I672_1 I672_2 I238_7
+00 1
+.names I238_7 I230_2 I239_7
+0- 1
+-0 1
+.names I236_1 I233_2 I237_1
+0- 1
+-0 1
+.names I236_2 I233_2 I237_2
+0- 1
+-0 1
+.names I8_1 I8_2 I2_0
+00 1
+.names I12_1 I12_2 I3_0
+00 1
+.names I236_3 I233_2 I237_3
+0- 1
+-0 1
+.names I236_6 I233_2 I237_6
+0- 1
+-0 1
+.names I236_4 I233_2 I237_4
+0- 1
+-0 1
+.names I19_1 I19_2 I2_1
+00 1
+.names I23_1 I23_2 I3_1
+00 1
+.names I236_5 I233_2 I237_5
+0- 1
+-0 1
+.names I30_1 I30_2 I2_2
+00 1
+.names I34_1 I34_2 I3_2
+00 1
+.names I236_7 I233_2 I237_7
+0- 1
+-0 1
+.names I41_1 I41_2 I2_3
+00 1
+.names I45_1 I45_2 I3_3
+00 1
+.names I52_1 I52_2 I2_4
+00 1
+.names I56_1 I56_2 I3_4
+00 1
+.names I63_1 I63_2 I2_5
+00 1
+.names I67_1 I67_2 I3_5
+00 1
+.names I74_1 I74_2 I2_6
+00 1
+.names I78_1 I78_2 I3_6
+00 1
+.names I85_1 I85_2 I2_7
+00 1
+.names I89_1 I89_2 I3_7
+00 1
+.end

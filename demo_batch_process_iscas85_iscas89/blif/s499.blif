@@ -1,0 +1,481 @@
+.model s499.blif
+.inputs Enable
+.outputs number_0 number_1 number_2 number_3 number_4 number_5 number_6 \
+number_7 number_8 number_9 number_10 number_11 number_12 number_13 number_14 \
+number_15 number_16 number_17 number_18 number_19 number_20 number_21
+.latch    I24 number_21   3
+.latch    I25 number_20   3
+.latch    I26 number_19   3
+.latch    I27 number_18   3
+.latch    I28 number_17   3
+.latch    I29 number_16   3
+.latch    I30 number_15   3
+.latch    I31 number_14   3
+.latch    I32 number_13   3
+.latch    I33 number_12   3
+.latch    I34 number_11   3
+.latch    I35 number_10   3
+.latch    I36 number_9   3
+.latch    I37 number_8   3
+.latch    I38 number_7   3
+.latch    I39 number_6   3
+.latch    I40 number_5   3
+.latch    I41 number_4   3
+.latch    I42 number_3   3
+.latch    I43 number_2   3
+.latch    I44 number_1   3
+.latch    I45 number_0   3
+.names I295_1 I245 I24
+0- 1
+-0 1
+.names I298_1 I243 I245 I25
+0-- 1
+-0- 1
+--0 1
+.names I301_1 I288 I26
+0- 1
+-0 1
+.names I304_1 I304_2 I239 I27
+0-- 1
+-0- 1
+--0 1
+.names I308_1 I308_2 I237 I28
+0-- 1
+-0- 1
+--0 1
+.names I312_1 I312_2 I235 I29
+0-- 1
+-0- 1
+--0 1
+.names I316_1 I316_2 I233 I30
+0-- 1
+-0- 1
+--0 1
+.names I320_1 I320_2 I231 I31
+0-- 1
+-0- 1
+--0 1
+.names I324_1 I290 I32
+0- 1
+-0 1
+.names I327_1 I292 I33
+0- 1
+-0 1
+.names I330_1 I330_2 I225 I34
+0-- 1
+-0- 1
+--0 1
+.names I334_1 I334_2 I223 I35
+0-- 1
+-0- 1
+--0 1
+.names I338_1 I338_2 I221 I36
+0-- 1
+-0- 1
+--0 1
+.names I342_1 I342_2 I219 I37
+0-- 1
+-0- 1
+--0 1
+.names I346_1 I346_2 I217 I38
+0-- 1
+-0- 1
+--0 1
+.names I350_1 I294 I39
+0- 1
+-0 1
+.names I353_1 I353_2 I213 I40
+0-- 1
+-0- 1
+--0 1
+.names I357_1 I357_2 I211 I41
+0-- 1
+-0- 1
+--0 1
+.names I361_1 I361_2 I209 I42
+0-- 1
+-0- 1
+--0 1
+.names I365_1 I365_2 I207 I43
+0-- 1
+-0- 1
+--0 1
+.names I369_1 I267 I205 I44
+0-- 1
+-0- 1
+--0 1
+.names I372_1 I267 I45
+0- 1
+-0 1
+.names number_18 I116
+0 1
+.names number_7 I127
+0 1
+.names number_17 I117
+0 1
+.names Enable I112
+0 1
+.names number_6 I128
+0 1
+.names number_9 I125
+0 1
+.names number_12 I122
+0 1
+.names number_10 I124
+0 1
+.names number_13 I121
+0 1
+.names number_2 I132
+0 1
+.names number_19 I115
+0 1
+.names number_16 I118
+0 1
+.names number_3 I131
+0 1
+.names number_15 I119
+0 1
+.names number_1 I133
+0 1
+.names number_14 I120
+0 1
+.names number_8 I126
+0 1
+.names number_11 I123
+0 1
+.names number_21 I113
+0 1
+.names number_5 I129
+0 1
+.names number_20 I114
+0 1
+.names number_4 I130
+0 1
+.names number_17 number_16 I204
+00 1
+.names I204 I203
+0 1
+.names number_0 number_1 I182
+00 1
+.names I182 I181
+0 1
+.names number_13 number_14 I194
+00 1
+.names I194 I193
+0 1
+.names I285 I275 I186
+00 1
+.names I186 I185
+0 1
+.names I264 I282 I183
+0- 1
+-0 1
+.names I183 I184
+0 1
+.names I184 number_8 I190 I249
+0-- 1
+-0- 1
+--0 1
+.names I249 I250
+0 1
+.names I429_1 I241 I287
+0- 1
+-0 1
+.names I287 I288
+0 1
+.names I435_1 I227 I291
+0- 1
+-0 1
+.names I291 I292
+0 1
+.names I432_1 I229 I289
+0- 1
+-0 1
+.names I289 I290
+0 1
+.names I438_1 I215 I293
+0- 1
+-0 1
+.names I293 I294
+0 1
+.names I119 I256 number_13 I229
+0-- 1
+-0- 1
+--0 1
+.names Enable I229 I320_2
+1- 1
+-1 1
+.names I112 I229 I327_1
+1- 1
+-1 1
+.names I256 number_15 I121 I231
+0-- 1
+-0- 1
+--0 1
+.names Enable I231 I316_2
+1- 1
+-1 1
+.names I112 I231 I324_1
+1- 1
+-1 1
+.names number_15 I117 I258 I233
+0-- 1
+-0- 1
+--0 1
+.names Enable I233 I312_1
+1- 1
+-1 1
+.names I112 I233 I320_1
+1- 1
+-1 1
+.names number_17 I258 I119 I235
+0-- 1
+-0- 1
+--0 1
+.names Enable I235 I308_1
+1- 1
+-1 1
+.names I112 I235 I316_1
+1- 1
+-1 1
+.names number_17 I115 I260 I237
+0-- 1
+-0- 1
+--0 1
+.names Enable I237 I304_1
+1- 1
+-1 1
+.names I112 I237 I312_2
+1- 1
+-1 1
+.names I117 number_19 I260 I239
+0-- 1
+-0- 1
+--0 1
+.names I112 I239 I308_2
+1- 1
+-1 1
+.names Enable I239 I429_1
+1- 1
+-1 1
+.names I113 number_19 I274 I241
+0-- 1
+-0- 1
+--0 1
+.names Enable I241 I298_1
+1- 1
+-1 1
+.names I112 I241 I304_2
+1- 1
+-1 1
+.names number_21 I115 I274 I243
+0-- 1
+-0- 1
+--0 1
+.names Enable I243 I295_1
+1- 1
+-1 1
+.names I112 I243 I301_1
+1- 1
+-1 1
+.names I123 I252 number_9 I221
+0-- 1
+-0- 1
+--0 1
+.names Enable I221 I334_1
+1- 1
+-1 1
+.names I112 I221 I342_1
+1- 1
+-1 1
+.names I252 I125 number_11 I223
+0-- 1
+-0- 1
+--0 1
+.names Enable I223 I330_2
+1- 1
+-1 1
+.names I112 I223 I338_1
+1- 1
+-1 1
+.names I121 I254 number_11 I225
+0-- 1
+-0- 1
+--0 1
+.names I112 I225 I334_2
+1- 1
+-1 1
+.names Enable I225 I435_1
+1- 1
+-1 1
+.names I254 I123 number_13 I227
+0-- 1
+-0- 1
+--0 1
+.names I112 I227 I330_1
+1- 1
+-1 1
+.names Enable I227 I432_1
+1- 1
+-1 1
+.names I129 I270 number_3 I209
+0-- 1
+-0- 1
+--0 1
+.names Enable I209 I357_1
+1- 1
+-1 1
+.names I112 I209 I365_2
+1- 1
+-1 1
+.names I131 number_5 I270 I211
+0-- 1
+-0- 1
+--0 1
+.names Enable I211 I353_1
+1- 1
+-1 1
+.names I112 I211 I361_1
+1- 1
+-1 1
+.names number_5 I272 I127 I213
+0-- 1
+-0- 1
+--0 1
+.names I112 I213 I357_2
+1- 1
+-1 1
+.names Enable I213 I438_1
+1- 1
+-1 1
+.names number_7 I129 I272 I215
+0-- 1
+-0- 1
+--0 1
+.names Enable I215 I346_2
+1- 1
+-1 1
+.names I112 I215 I353_2
+1- 1
+-1 1
+.names I125 I250 number_7 I217
+0-- 1
+-0- 1
+--0 1
+.names Enable I217 I342_2
+1- 1
+-1 1
+.names I112 I217 I350_1
+1- 1
+-1 1
+.names I127 I250 number_9 I219
+0-- 1
+-0- 1
+--0 1
+.names Enable I219 I338_2
+1- 1
+-1 1
+.names I112 I219 I346_1
+1- 1
+-1 1
+.names I248 I131 number_1 I205
+0-- 1
+-0- 1
+--0 1
+.names Enable I205 I365_1
+1- 1
+-1 1
+.names I112 I205 I372_1
+1- 1
+-1 1
+.names number_3 I248 I133 I207
+0-- 1
+-0- 1
+--0 1
+.names Enable I207 I361_2
+1- 1
+-1 1
+.names I112 I207 I369_1
+1- 1
+-1 1
+.names I125 I124 I191
+0- 1
+-0 1
+.names I121 I122 I199
+0- 1
+-0 1
+.names I132 I131 I197
+0- 1
+-0 1
+.names I113 I114 I201
+0- 1
+-0 1
+.names I197 I181 I190
+00 1
+.names number_5 number_6 number_4 I264
+000 1
+.names I127 I190 I264 I126 I275
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names number_19 I201 number_18 I266
+000 1
+.names I266 I120 I204 I119 I285
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names number_11 I191 number_12 I275 I280
+0000 1
+.names I266 I280 I187
+0- 1
+-0 1
+.names I119 I194 I118 I280 I283
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names number_11 I199 number_10 I285 I282
+0000 1
+.names number_8 number_9 I196
+00 1
+.names I182 I282 I196 I132 I277
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I120 I203 I187 I256
+000 1
+.names I193 I187 I118 I258
+000 1
+.names I116 I283 I201 I260
+000 1
+.names I283 I114 number_18 number_17 I274
+0000 1
+.names I199 I124 I185 I252
+000 1
+.names I122 I191 I185 I254
+000 1
+.names I184 I127 I196 I261
+0-- 1
+-0- 1
+--0 1
+.names I277 number_6 I130 number_7 I270
+0000 1
+.names I128 I277 number_4 number_3 I272
+0000 1
+.names I261 I197 I180
+00 1
+.names Enable I182 I180 I245
+0-- 1
+-0- 1
+--0 1
+.names number_1 I112 number_0 I180 I267
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names number_0 I132 I261 I248
+000 1
+.end

@@ -1,0 +1,737 @@
+.model s635.blif
+.inputs Enable LocalReset
+.outputs Out
+.latch    I4 number.0   3
+.latch    I27 number.1   3
+.latch    I55 number.2   3
+.latch    I83 number.3   3
+.latch    I111 number.4   3
+.latch    I139 number.5   3
+.latch    I167 number.6   3
+.latch    I195 number.7   3
+.latch    I223 number.8   3
+.latch    I251 number.9   3
+.latch    I279 number.10   3
+.latch    I307 number.11   3
+.latch    I335 number.12   3
+.latch    I363 number.13   3
+.latch    I391 number.14   3
+.latch    I419 number.15   3
+.latch    I447 number.16   3
+.latch    I475 number.17   3
+.latch    I503 number.18   3
+.latch    I531 number.19   3
+.latch    I559 number.20   3
+.latch    I587 number.21   3
+.latch    I615 number.22   3
+.latch    I643 number.23   3
+.latch    I671 number.24   3
+.latch    I699 number.25   3
+.latch    I727 number.26   3
+.latch    I755 number.27   3
+.latch    I783 number.28   3
+.latch    I811 number.29   3
+.latch    I839 number.30   3
+.latch    I867 number.31   3
+.names I890.3.0 I890.3.1 Out
+11 1
+.names I14 I4
+0 1
+.names I42.1 I42.2 I27
+0- 1
+-0 1
+.names I70.1 I70.2 I55
+0- 1
+-0 1
+.names I98.1 I98.2 I83
+0- 1
+-0 1
+.names I126.1 I126.2 I111
+0- 1
+-0 1
+.names I154.1 I154.2 I139
+0- 1
+-0 1
+.names I182.1 I182.2 I167
+0- 1
+-0 1
+.names I210.1 I210.2 I195
+0- 1
+-0 1
+.names I238.1 I238.2 I223
+0- 1
+-0 1
+.names I266.1 I266.2 I251
+0- 1
+-0 1
+.names I294.1 I294.2 I279
+0- 1
+-0 1
+.names I322.1 I322.2 I307
+0- 1
+-0 1
+.names I350.1 I350.2 I335
+0- 1
+-0 1
+.names I378.1 I378.2 I363
+0- 1
+-0 1
+.names I406.1 I406.2 I391
+0- 1
+-0 1
+.names I434.1 I434.2 I419
+0- 1
+-0 1
+.names I462.1 I462.2 I447
+0- 1
+-0 1
+.names I490.1 I490.2 I475
+0- 1
+-0 1
+.names I518.1 I518.2 I503
+0- 1
+-0 1
+.names I546.1 I546.2 I531
+0- 1
+-0 1
+.names I574.1 I574.2 I559
+0- 1
+-0 1
+.names I602.1 I602.2 I587
+0- 1
+-0 1
+.names I630.1 I630.2 I615
+0- 1
+-0 1
+.names I658.1 I658.2 I643
+0- 1
+-0 1
+.names I686.1 I686.2 I671
+0- 1
+-0 1
+.names I714.1 I714.2 I699
+0- 1
+-0 1
+.names I742.1 I742.2 I727
+0- 1
+-0 1
+.names I770.1 I770.2 I755
+0- 1
+-0 1
+.names I798.1 I798.2 I783
+0- 1
+-0 1
+.names I826.1 I826.2 I811
+0- 1
+-0 1
+.names I854.1 I854.2 I839
+0- 1
+-0 1
+.names I877 I867
+0 1
+.names number.9 I258
+0 1
+.names number.10 I286
+0 1
+.names number.6 I174
+0 1
+.names number.25 I706
+0 1
+.names number.3 I90
+0 1
+.names number.14 I398
+0 1
+.names number.1 I34
+0 1
+.names number.17 I482
+0 1
+.names number.21 I594
+0 1
+.names number.15 I426
+0 1
+.names number.2 I62
+0 1
+.names number.19 I538
+0 1
+.names number.26 I734
+0 1
+.names number.13 I370
+0 1
+.names LocalReset I9
+0 1
+.names LocalReset I32
+0 1
+.names LocalReset I872
+0 1
+.names number.22 I622
+0 1
+.names number.30 I846
+0 1
+.names number.23 I650
+0 1
+.names number.11 I314
+0 1
+.names number.7 I202
+0 1
+.names number.20 I566
+0 1
+.names number.24 I678
+0 1
+.names number.31 I874
+0 1
+.names number.8 I230
+0 1
+.names number.16 I454
+0 1
+.names number.29 I818
+0 1
+.names number.18 I510
+0 1
+.names number.5 I146
+0 1
+.names number.28 I790
+0 1
+.names number.4 I118
+0 1
+.names number.27 I762
+0 1
+.names number.12 I342
+0 1
+.names Enable number.0 I16
+0- 1
+-0 1
+.names I16 I1.0
+0 1
+.names I1.0 I33
+0 1
+.names I19.1 I9 I16 I14
+0-- 1
+-0- 1
+--0 1
+.names I33 I39
+0 1
+.names I34 I40 I1.1
+00 1
+.names I1.1 I61
+0 1
+.names I61 I67
+0 1
+.names I67 I68
+0 1
+.names I62 I68 I1.2
+00 1
+.names I1.2 I89
+0 1
+.names I89 I95
+0 1
+.names I95 I96
+0 1
+.names I90 I96 I1.3
+00 1
+.names I1.3 I117
+0 1
+.names I117 I123
+0 1
+.names I123 I124
+0 1
+.names I118 I124 I1.4
+00 1
+.names I1.4 I145
+0 1
+.names I145 I151
+0 1
+.names I151 I152
+0 1
+.names I146 I152 I1.5
+00 1
+.names I1.5 I173
+0 1
+.names I173 I179
+0 1
+.names I179 I180
+0 1
+.names I174 I180 I1.6
+00 1
+.names I1.6 I201
+0 1
+.names I201 I207
+0 1
+.names I207 I208
+0 1
+.names I202 I208 I1.7
+00 1
+.names I1.7 I229
+0 1
+.names I229 I235
+0 1
+.names I235 I236
+0 1
+.names I230 I236 I1.8
+00 1
+.names I1.8 I257
+0 1
+.names I257 I263
+0 1
+.names I263 I264
+0 1
+.names I258 I264 I1.9
+00 1
+.names I1.9 I285
+0 1
+.names I285 I291
+0 1
+.names I291 I292
+0 1
+.names I286 I292 I1.10
+00 1
+.names I1.10 I313
+0 1
+.names I313 I319
+0 1
+.names I319 I320
+0 1
+.names I314 I320 I1.11
+00 1
+.names I1.11 I341
+0 1
+.names I341 I347
+0 1
+.names I347 I348
+0 1
+.names I342 I348 I1.12
+00 1
+.names I1.12 I369
+0 1
+.names I369 I375
+0 1
+.names I375 I376
+0 1
+.names I370 I376 I1.13
+00 1
+.names I1.13 I397
+0 1
+.names I397 I403
+0 1
+.names I403 I404
+0 1
+.names I398 I404 I1.14
+00 1
+.names I1.14 I425
+0 1
+.names I425 I431
+0 1
+.names I431 I432
+0 1
+.names I426 I432 I1.15
+00 1
+.names I1.15 I453
+0 1
+.names I453 I459
+0 1
+.names I459 I460
+0 1
+.names I454 I460 I1.16
+00 1
+.names I1.16 I481
+0 1
+.names I481 I487
+0 1
+.names I487 I488
+0 1
+.names I482 I488 I1.17
+00 1
+.names I1.17 I509
+0 1
+.names I509 I515
+0 1
+.names I515 I516
+0 1
+.names I510 I516 I1.18
+00 1
+.names I1.18 I537
+0 1
+.names I537 I543
+0 1
+.names I543 I544
+0 1
+.names I538 I544 I1.19
+00 1
+.names I1.19 I565
+0 1
+.names I565 I571
+0 1
+.names I571 I572
+0 1
+.names I566 I572 I1.20
+00 1
+.names I1.20 I593
+0 1
+.names I593 I599
+0 1
+.names I599 I600
+0 1
+.names I594 I600 I1.21
+00 1
+.names I1.21 I621
+0 1
+.names I621 I627
+0 1
+.names I627 I628
+0 1
+.names I622 I628 I1.22
+00 1
+.names I1.22 I649
+0 1
+.names I649 I655
+0 1
+.names I655 I656
+0 1
+.names I650 I656 I1.23
+00 1
+.names I1.23 I677
+0 1
+.names I677 I683
+0 1
+.names I683 I684
+0 1
+.names I678 I684 I1.24
+00 1
+.names I1.24 I705
+0 1
+.names I705 I711
+0 1
+.names I711 I712
+0 1
+.names I706 I712 I1.25
+00 1
+.names I1.25 I733
+0 1
+.names I733 I739
+0 1
+.names I739 I740
+0 1
+.names I734 I740 I1.26
+00 1
+.names I1.26 I761
+0 1
+.names I761 I767
+0 1
+.names I767 I768
+0 1
+.names I762 I768 I1.27
+00 1
+.names I1.27 I789
+0 1
+.names I789 I795
+0 1
+.names I795 I796
+0 1
+.names I790 I796 I1.28
+00 1
+.names I1.28 I817
+0 1
+.names I817 I823
+0 1
+.names I823 I824
+0 1
+.names I818 I824 I1.29
+00 1
+.names I1.29 I845
+0 1
+.names I845 I851
+0 1
+.names I851 I852
+0 1
+.names I846 I852 I1.30
+00 1
+.names I1.30 I879
+0 1
+.names I879 I880
+0 1
+.names I881.1 I881.2 I872 I877
+0-- 1
+-0- 1
+--0 1
+.names number.14 number.15 I890.0.7
+11 1
+.names number.2 number.3 I890.0.1
+11 1
+.names number.22 number.23 I890.0.11
+11 1
+.names number.10 number.11 I890.0.5
+11 1
+.names number.6 number.7 I890.0.3
+11 1
+.names number.20 number.21 I890.0.10
+11 1
+.names number.24 number.25 I890.0.12
+11 1
+.names number.30 number.31 I890.0.15
+11 1
+.names number.8 number.9 I890.0.4
+11 1
+.names number.16 number.17 I890.0.8
+11 1
+.names number.18 number.19 I890.0.9
+11 1
+.names number.28 number.29 I890.0.14
+11 1
+.names number.0 number.1 I890.0.0
+11 1
+.names number.4 number.5 I890.0.2
+11 1
+.names number.26 number.27 I890.0.13
+11 1
+.names number.12 number.13 I890.0.6
+11 1
+.names I890.0.10 I890.0.11 I890.1.5
+11 1
+.names I890.0.4 I890.0.5 I890.1.2
+11 1
+.names I890.0.8 I890.0.9 I890.1.4
+11 1
+.names I890.0.14 I890.0.15 I890.1.7
+11 1
+.names I890.0.0 I890.0.1 I890.1.0
+11 1
+.names I890.0.2 I890.0.3 I890.1.1
+11 1
+.names I890.0.12 I890.0.13 I890.1.6
+11 1
+.names I890.0.6 I890.0.7 I890.1.3
+11 1
+.names I890.1.4 I890.1.5 I890.2.2
+11 1
+.names I890.1.0 I890.1.1 I890.2.0
+11 1
+.names I890.1.6 I890.1.7 I890.2.3
+11 1
+.names I890.1.2 I890.1.3 I890.2.1
+11 1
+.names I890.2.2 I890.2.3 I890.3.1
+11 1
+.names I890.2.0 I890.2.1 I890.3.0
+11 1
+.names Enable number.0 I19.1
+1- 1
+-1 1
+.names LocalReset I34 I39 I42.1
+1-- 1
+-1- 1
+--1 1
+.names I32 I39 I40
+0- 1
+-0 1
+.names number.1 I40 I42.2
+1- 1
+-1 1
+.names LocalReset I62 I67 I70.1
+1-- 1
+-1- 1
+--1 1
+.names number.2 I68 I70.2
+1- 1
+-1 1
+.names LocalReset I90 I95 I98.1
+1-- 1
+-1- 1
+--1 1
+.names number.3 I96 I98.2
+1- 1
+-1 1
+.names LocalReset I118 I123 I126.1
+1-- 1
+-1- 1
+--1 1
+.names number.4 I124 I126.2
+1- 1
+-1 1
+.names LocalReset I146 I151 I154.1
+1-- 1
+-1- 1
+--1 1
+.names number.5 I152 I154.2
+1- 1
+-1 1
+.names LocalReset I174 I179 I182.1
+1-- 1
+-1- 1
+--1 1
+.names number.6 I180 I182.2
+1- 1
+-1 1
+.names LocalReset I202 I207 I210.1
+1-- 1
+-1- 1
+--1 1
+.names number.7 I208 I210.2
+1- 1
+-1 1
+.names LocalReset I230 I235 I238.1
+1-- 1
+-1- 1
+--1 1
+.names number.8 I236 I238.2
+1- 1
+-1 1
+.names LocalReset I258 I263 I266.1
+1-- 1
+-1- 1
+--1 1
+.names number.9 I264 I266.2
+1- 1
+-1 1
+.names LocalReset I286 I291 I294.1
+1-- 1
+-1- 1
+--1 1
+.names number.10 I292 I294.2
+1- 1
+-1 1
+.names LocalReset I314 I319 I322.1
+1-- 1
+-1- 1
+--1 1
+.names number.11 I320 I322.2
+1- 1
+-1 1
+.names LocalReset I342 I347 I350.1
+1-- 1
+-1- 1
+--1 1
+.names number.12 I348 I350.2
+1- 1
+-1 1
+.names LocalReset I370 I375 I378.1
+1-- 1
+-1- 1
+--1 1
+.names number.13 I376 I378.2
+1- 1
+-1 1
+.names LocalReset I398 I403 I406.1
+1-- 1
+-1- 1
+--1 1
+.names number.14 I404 I406.2
+1- 1
+-1 1
+.names LocalReset I426 I431 I434.1
+1-- 1
+-1- 1
+--1 1
+.names number.15 I432 I434.2
+1- 1
+-1 1
+.names LocalReset I454 I459 I462.1
+1-- 1
+-1- 1
+--1 1
+.names number.16 I460 I462.2
+1- 1
+-1 1
+.names LocalReset I482 I487 I490.1
+1-- 1
+-1- 1
+--1 1
+.names number.17 I488 I490.2
+1- 1
+-1 1
+.names LocalReset I510 I515 I518.1
+1-- 1
+-1- 1
+--1 1
+.names number.18 I516 I518.2
+1- 1
+-1 1
+.names LocalReset I538 I543 I546.1
+1-- 1
+-1- 1
+--1 1
+.names number.19 I544 I546.2
+1- 1
+-1 1
+.names LocalReset I566 I571 I574.1
+1-- 1
+-1- 1
+--1 1
+.names number.20 I572 I574.2
+1- 1
+-1 1
+.names LocalReset I594 I599 I602.1
+1-- 1
+-1- 1
+--1 1
+.names number.21 I600 I602.2
+1- 1
+-1 1
+.names LocalReset I622 I627 I630.1
+1-- 1
+-1- 1
+--1 1
+.names number.22 I628 I630.2
+1- 1
+-1 1
+.names LocalReset I650 I655 I658.1
+1-- 1
+-1- 1
+--1 1
+.names number.23 I656 I658.2
+1- 1
+-1 1
+.names LocalReset I678 I683 I686.1
+1-- 1
+-1- 1
+--1 1
+.names number.24 I684 I686.2
+1- 1
+-1 1
+.names LocalReset I706 I711 I714.1
+1-- 1
+-1- 1
+--1 1
+.names number.25 I712 I714.2
+1- 1
+-1 1
+.names LocalReset I734 I739 I742.1
+1-- 1
+-1- 1
+--1 1
+.names number.26 I740 I742.2
+1- 1
+-1 1
+.names LocalReset I762 I767 I770.1
+1-- 1
+-1- 1
+--1 1
+.names number.27 I768 I770.2
+1- 1
+-1 1
+.names LocalReset I790 I795 I798.1
+1-- 1
+-1- 1
+--1 1
+.names number.28 I796 I798.2
+1- 1
+-1 1
+.names LocalReset I818 I823 I826.1
+1-- 1
+-1- 1
+--1 1
+.names number.29 I824 I826.2
+1- 1
+-1 1
+.names LocalReset I846 I851 I854.1
+1-- 1
+-1- 1
+--1 1
+.names number.30 I852 I854.2
+1- 1
+-1 1
+.names I874 I879 I881.2
+1- 1
+-1 1
+.names number.31 I880 I881.1
+1- 1
+-1 1
+.end

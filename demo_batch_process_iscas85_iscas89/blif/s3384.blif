@@ -1,0 +1,3877 @@
+.model s3384.blif
+.inputs I2 I3 I4 I5 I6 I7 I8 I9 I10 I11 I12 I13 I14 I15 I16 I17 I18 I19 I20 \
+I21 I22 I23 I24 I25 I26 I27 I28 I29 I30 I31 I32 I33 I34 I35 I36 I37 I38 I39 \
+I40 I41 I42 I43 I44
+.outputs I45 I46 I47 I48 I49 I50 I51 I52 I228 I512 I796 I797 I798 I799 I800 \
+I801 I802 I803 I804 I805 I806 I807 I808 I809 I810 I1088
+.latch    I917 node1   3
+.latch    I1105 node3   3
+.latch    I569 node5   3
+.latch    I949 node7   3
+.latch    I1069 node9   3
+.latch    I657 node11   3
+.latch    I898 node13   3
+.latch    I125 node15   3
+.latch    I1042 node17   3
+.latch    I716 node19   3
+.latch    I671 node21   3
+.latch    I16 node23   3
+.latch    I1005 node25   3
+.latch    I965 node27   3
+.latch    I673 node29   3
+.latch    I1021 node31   3
+.latch    I868 node33   3
+.latch    I670 node35   3
+.latch    I938 node37   3
+.latch    I859 node39   3
+.latch    I997 node41   3
+.latch    I655 node43   3
+.latch    I574 node45   3
+.latch    I718 node47   3
+.latch    I946 node49   3
+.latch    I912 node51   3
+.latch    I668 node53   3
+.latch    I875 node55   3
+.latch    I924 node57   3
+.latch    I910 node59   3
+.latch    I674 node61   3
+.latch    I1029 node63   3
+.latch    I555 node65   3
+.latch    I120 node67   3
+.latch    I19 node69   3
+.latch    I823 node71   3
+.latch    I922 node73   3
+.latch    I886 node75   3
+.latch    I1102 node77   3
+.latch    I11 node79   3
+.latch    I1066 node81   3
+.latch    I572 node83   3
+.latch    I277 node85   3
+.latch    I704 node87   3
+.latch    I121 node89   3
+.latch    I661 node91   3
+.latch    I1058 node93   3
+.latch    I973 node95   3
+.latch    I663 node97   3
+.latch    I920 node99   3
+.latch    I660 node101   3
+.latch    I962 node103   3
+.latch    I957 node105   3
+.latch    I678 node107   3
+.latch    I832 node109   3
+.latch    I291 node111   3
+.latch    I14 node113   3
+.latch    I834 node115   3
+.latch    I664 node117   3
+.latch    I13 node119   3
+.latch    I4 node121   3
+.latch    I953 node123   3
+.latch    I676 node125   3
+.latch    I845 node127   3
+.latch    I914 node129   3
+.latch    I10 node131   3
+.latch    I145 node133   3
+.latch    I1045 node135   3
+.latch    I1034 node137   3
+.latch    I894 node139   3
+.latch    I944 node141   3
+.latch    I672 node143   3
+.latch    I864 node145   3
+.latch    I1013 node147   3
+.latch    I836 node149   3
+.latch    I123 node151   3
+.latch    I978 node153   3
+.latch    I3 node155   3
+.latch    I5 node157   3
+.latch    I742 node159   3
+.latch    I994 node161   3
+.latch    I1074 node163   3
+.latch    I945 node165   3
+.latch    I926 node167   3
+.latch    I970 node169   3
+.latch    I692 node171   3
+.latch    I666 node173   3
+.latch    I1053 node175   3
+.latch    I884 node177   3
+.latch    I669 node179   3
+.latch    I541 node181   3
+.latch    I989 node183   3
+.latch    I1002 node185   3
+.latch    I15 node187   3
+.latch    I8 node189   3
+.latch    I941 node191   3
+.latch    I662 node193   3
+.latch    I847 node195   3
+.latch    I879 node197   3
+.latch    I870 node199   3
+.latch    I124 node201   3
+.latch    I658 node203   3
+.latch    I7 node205   3
+.latch    I321 node207   3
+.latch    I896 node209   3
+.latch    I854 node211   3
+.latch    I1037 node213   3
+.latch    I86 node215   3
+.latch    I1097 node217   3
+.latch    I12 node219   3
+.latch    I263 node221   3
+.latch    I85 node223   3
+.latch    I814 node225   3
+.latch    I1085 node227   3
+.latch    I746 node229   3
+.latch    I122 node231   3
+.latch    I667 node233   3
+.latch    I651 node235   3
+.latch    I1099 node237   3
+.latch    I575 node239   3
+.latch    I821 node241   3
+.latch    I659 node243   3
+.latch    I527 node245   3
+.latch    I410 node247   3
+.latch    I1077 node249   3
+.latch    I653 node251   3
+.latch    I69 node253   3
+.latch    I1050 node255   3
+.latch    I1103 node257   3
+.latch    I665 node259   3
+.latch    I654 node261   3
+.latch    I1018 node263   3
+.latch    I947 node265   3
+.latch    I950 node267   3
+.latch    I570 node269   3
+.latch    I104 node271   3
+.latch    I981 node273   3
+.latch    I744 node275   3
+.latch    I948 node277   3
+.latch    I936 node279   3
+.latch    I812 node281   3
+.latch    I963 node283   3
+.latch    I986 node285   3
+.latch    I571 node287   3
+.latch    I105 node289   3
+.latch    I740 node291   3
+.latch    I9 node293   3
+.latch    I866 node295   3
+.latch    I943 node297   3
+.latch    I841 node299   3
+.latch    I1091 node301   3
+.latch    I720 node303   3
+.latch    I903 node305   3
+.latch    I819 node307   3
+.latch    I144 node309   3
+.latch    I1026 node311   3
+.latch    I856 node313   3
+.latch    I18 node315   3
+.latch    I6 node317   3
+.latch    I960 node319   3
+.latch    I414 node321   3
+.latch    I891 node323   3
+.latch    I929 node325   3
+.latch    I738 node327   3
+.latch    I17 node329   3
+.latch    I828 node331   3
+.latch    I87 node333   3
+.latch    I680 node335   3
+.latch    I656 node337   3
+.latch    I888 node339   3
+.latch    I1010 node341   3
+.latch    I1093 node343   3
+.latch    I652 node345   3
+.latch    I830 node347   3
+.latch    I247 node349   3
+.latch    I573 node351   3
+.latch    I412 node353   3
+.latch    I852 node355   3
+.latch    I878 node357   3
+.latch    I1061 node359   3
+.latch    I1082 node361   3
+.latch    I84 node363   3
+.latch    I862 node365   3
+.names node93 I45
+0 1
+.names node81 I46
+0 1
+.names node163 I47
+0 1
+.names node361 I48
+0 1
+.names node301 I49
+0 1
+.names node217 I50
+0 1
+.names node77 I51
+0 1
+.names node3 I52
+0 1
+.names I226 I228
+0 1
+.names I438 I439 I512
+1- 1
+-1 1
+.names I780 I423 I796
+1- 1
+-1 1
+.names I781 I424 I797
+1- 1
+-1 1
+.names I782 I425 I798
+1- 1
+-1 1
+.names I783 I426 I799
+1- 1
+-1 1
+.names I784 I427 I800
+1- 1
+-1 1
+.names I785 I428 I801
+1- 1
+-1 1
+.names I786 I429 I802
+1- 1
+-1 1
+.names I787 I430 I803
+1- 1
+-1 1
+.names I788 I431 I804
+1- 1
+-1 1
+.names I789 I432 I805
+1- 1
+-1 1
+.names I790 I433 I806
+1- 1
+-1 1
+.names I791 I434 I807
+1- 1
+-1 1
+.names I792 I435 I808
+1- 1
+-1 1
+.names I793 I436 I809
+1- 1
+-1 1
+.names I794 I437 I810
+1- 1
+-1 1
+.names I1087 I463 I1088
+1- 1
+-1 1
+.names I628 I904 I917
+1- 1
+-1 1
+.names I649 I1104 I1105
+1- 1
+-1 1
+.names I255 I408 I569
+00 1
+.names I103 I935 I949
+11 1
+.names I1065 I420 I1069
+11 1
+.names I476 I477 I657
+1- 1
+-1 1
+.names zI712_291 zI882_291 I898
+1- 1
+-1 1
+.names node247 I125
+0 1
+.names I640 I1038 I1042
+1- 1
+-1 1
+.names zI267_185 zI576_185 I716
+1- 1
+-1 1
+.names I504 I505 I671
+1- 1
+-1 1
+.names I1001 I420 I1005
+11 1
+.names I959 I420 I965
+11 1
+.names I508 I509 I673
+1- 1
+-1 1
+.names I1017 I420 I1021
+11 1
+.names zI698_271 zI849_271 I868
+1- 1
+-1 1
+.names I502 I503 I670
+1- 1
+-1 1
+.names zI305_309 zI927_309 I938
+1- 1
+-1 1
+.names I626 I842 I859
+1- 1
+-1 1
+.names I993 I420 I997
+11 1
+.names I472 I473 I655
+1- 1
+-1 1
+.names I260 I408 I574
+00 1
+.names zI281_187 zI577_187 I718
+1- 1
+-1 1
+.names zI554_315 zI933_315 I946
+1- 1
+-1 1
+.names zI289_295 zI900_295 I912
+1- 1
+-1 1
+.names I498 I499 I668
+1- 1
+-1 1
+.names I858 I420 I875
+11 1
+.names zI714_305 zI908_305 I924
+1- 1
+-1 1
+.names zI275_293 zI899_293 I910
+1- 1
+-1 1
+.names I510 I511 I674
+1- 1
+-1 1
+.names I1025 I420 I1029
+11 1
+.names I255 I406 I555
+00 1
+.names node363 I120
+0 1
+.names zI297_239 zI749_239 I823
+1- 1
+-1 1
+.names zI702_303 zI907_303 I922
+1- 1
+-1 1
+.names zI287_281 zI872_281 I886
+1- 1
+-1 1
+.names I648 I1100 I1102
+1- 1
+-1 1
+.names I643 I1062 I1066
+1- 1
+-1 1
+.names I258 I408 I572
+00 1
+.names zI106_33 zI113_33 I277
+1- 1
+-1 1
+.names zI562_173 zI556_173 I704
+1- 1
+-1 1
+.names node223 I121
+0 1
+.names I484 I485 I661
+1- 1
+-1 1
+.names I642 I1054 I1058
+1- 1
+-1 1
+.names I969 I420 I973
+11 1
+.names I488 I489 I663
+1- 1
+-1 1
+.names zI690_301 zI906_301 I920
+1- 1
+-1 1
+.names I482 I483 I660
+1- 1
+-1 1
+.names I143 I956 I962
+11 1
+.names zI142_321 zI951_321 I957
+1- 1
+-1 1
+.names zI520_147 zI68_147 I678
+1- 1
+-1 1
+.names zI684_247 zI815_247 I832
+1- 1
+-1 1
+.names zI134_47 zI126_47 I291
+1- 1
+-1 1
+.names zI696_249 zI816_249 I834
+1- 1
+-1 1
+.names I490 I491 I664
+1- 1
+-1 1
+.names I940 I420 I953
+11 1
+.names zI513_145 zI60_145 I676
+1- 1
+-1 1
+.names zI517_253 zI827_253 I845
+1- 1
+-1 1
+.names zI303_297 zI901_297 I914
+1- 1
+-1 1
+.names node89 I145
+0 1
+.names I1041 I420 I1045
+11 1
+.names I639 I1030 I1034
+1- 1
+-1 1
+.names zI688_287 zI880_287 I894
+1- 1
+-1 1
+.names zI540_313 zI932_313 I944
+1- 1
+-1 1
+.names I506 I507 I672
+1- 1
+-1 1
+.names zI525_267 zI846_267 I864
+1- 1
+-1 1
+.names I1009 I420 I1013
+11 1
+.names zI708_251 zI817_251 I836
+1- 1
+-1 1
+.names node333 I123
+0 1
+.names I632 I974 I978
+1- 1
+-1 1
+.names zI682_195 zI679_195 I742
+1- 1
+-1 1
+.names I634 I990 I994
+1- 1
+-1 1
+.names I644 I1070 I1074
+1- 1
+-1 1
+.names I554 I933 I945
+11 1
+.names I288 I911 I926
+1- 1
+-1 1
+.names I631 I966 I970
+1- 1
+-1 1
+.names zI548_161 zI542_161 I692
+1- 1
+-1 1
+.names I494 I495 I666
+1- 1
+-1 1
+.names I1049 I420 I1053
+11 1
+.names zI273_279 zI871_279 I884
+1- 1
+-1 1
+.names I500 I501 I669
+1- 1
+-1 1
+.names I255 I404 I541
+00 1
+.names I985 I420 I989
+11 1
+.names I635 I998 I1002
+1- 1
+-1 1
+.names I629 I930 I941
+1- 1
+-1 1
+.names I486 I487 I662
+1- 1
+-1 1
+.names zI524_255 zI829_255 I847
+1- 1
+-1 1
+.names zI526_277 zI863_277 I879
+1- 1
+-1 1
+.names zI710_273 zI850_273 I870
+1- 1
+-1 1
+.names node221 I124
+0 1
+.names I478 I479 I658
+1- 1
+-1 1
+.names I227 I321
+0 1
+.names zI700_289 zI881_289 I896
+1- 1
+-1 1
+.names zI285_259 zI838_259 I854
+1- 1
+-1 1
+.names I1033 I420 I1037
+11 1
+.names node245 I86
+0 1
+.names I647 I1094 I1097
+1- 1
+-1 1
+.names zI95_19 zI88_19 I263
+1- 1
+-1 1
+.names node253 I85
+0 1
+.names zI522_233 zI739_233 I814
+1- 1
+-1 1
+.names I1081 I420 I1085
+11 1
+.names zI706_199 zI703_199 I746
+1- 1
+-1 1
+.names node215 I122
+0 1
+.names I496 I497 I667
+1- 1
+-1 1
+.names I464 I465 I651
+1- 1
+-1 1
+.names I1096 I420 I1099
+11 1
+.names I261 I408 I575
+00 1
+.names zI283_237 zI748_237 I821
+1- 1
+-1 1
+.names I480 I481 I659
+1- 1
+-1 1
+.names I255 I402 I527
+00 1
+.names zI265_118 zI262_118 I410
+1- 1
+-1 1
+.names I1073 I420 I1077
+11 1
+.names I468 I469 I653
+1- 1
+-1 1
+.names node69 I69
+0 1
+.names I641 I1046 I1050
+1- 1
+-1 1
+.names I1101 I420 I1103
+11 1
+.names I492 I493 I665
+1- 1
+-1 1
+.names I470 I471 I654
+1- 1
+-1 1
+.names I637 I1014 I1018
+1- 1
+-1 1
+.names I568 I934 I947
+11 1
+.names zI103_319 zI935_319 I950
+1- 1
+-1 1
+.names I256 I408 I570
+00 1
+.names node65 I104
+0 1
+.names I977 I420 I981
+11 1
+.names zI694_197 zI691_197 I744
+1- 1
+-1 1
+.names zI568_317 zI934_317 I948
+1- 1
+-1 1
+.names zI102_307 zI925_307 I936
+1- 1
+-1 1
+.names zI515_231 zI737_231 I812
+1- 1
+-1 1
+.names zI143_325 zI956_325 I963
+1- 1
+-1 1
+.names I633 I982 I986
+1- 1
+-1 1
+.names I257 I408 I571
+00 1
+.names node87 I105
+0 1
+.names zI521_193 zI677_193 I740
+1- 1
+-1 1
+.names zI686_269 zI848_269 I866
+1- 1
+-1 1
+.names I540 I932 I943
+11 1
+.names I825 I420 I841
+11 1
+.names I646 I1086 I1091
+1- 1
+-1 1
+.names zI295_189 zI578_189 I720
+1- 1
+-1 1
+.names I890 I420 I903
+11 1
+.names zI269_235 zI747_235 I819
+1- 1
+-1 1
+.names node67 I144
+0 1
+.names I638 I1022 I1026
+1- 1
+-1 1
+.names zI299_261 zI839_261 I856
+1- 1
+-1 1
+.names I630 I954 I960
+1- 1
+-1 1
+.names zI293_122 zI290_122 I414
+1- 1
+-1 1
+.names I627 I876 I891
+1- 1
+-1 1
+.names I916 I420 I929
+11 1
+.names zI514_191 zI675_191 I738
+1- 1
+-1 1
+.names zI516_243 zI811_243 I828
+1- 1
+-1 1
+.names node335 I87
+0 1
+.names zI534_149 zI528_149 I680
+1- 1
+-1 1
+.names I474 I475 I656
+1- 1
+-1 1
+.names zI301_283 zI873_283 I888
+1- 1
+-1 1
+.names I636 I1006 I1010
+1- 1
+-1 1
+.names I1090 I420 I1093
+11 1
+.names I466 I467 I652
+1- 1
+-1 1
+.names zI523_245 zI813_245 I830
+1- 1
+-1 1
+.names zI60_3 zI68_3 I247
+1- 1
+-1 1
+.names I259 I408 I573
+00 1
+.names zI279_120 zI276_120 I412
+1- 1
+-1 1
+.names zI271_257 zI837_257 I852
+1- 1
+-1 1
+.names zI519_275 zI861_275 I878
+1- 1
+-1 1
+.names I1057 I420 I1061
+11 1
+.names I645 I1078 I1082
+1- 1
+-1 1
+.names node349 I84
+0 1
+.names zI518_265 zI844_265 I862
+1- 1
+-1 1
+.names node313 I154
+0 1
+.names node353 I137
+0 1
+.names node99 I92
+0 1
+.names node95 I168
+0 1
+.names node133 I227
+0 1
+.names node181 I95
+0 1
+.names node41 I171
+0 1
+.names node289 I135
+0 1
+.names node13 I109
+0 1
+.names node275 I97
+0 1
+.names node117 I215
+0 1
+.names node317 I64
+0 1
+.names node319 I190
+0 1
+.names node63 I175
+0 1
+.names node155 I61
+0 1
+.names node185 I195
+0 1
+.names node267 I132
+0 1
+.names node329 I59
+0 1
+.names node115 I98
+0 1
+.names node25 I172
+0 1
+.names node211 I140
+0 1
+.names node261 I205
+0 1
+.names node17 I200
+0 1
+.names node209 I100
+0 1
+.names node153 I192
+0 1
+.names node343 I183
+0 1
+.names node59 I130
+0 1
+.names I2 I323
+0 1
+.names I2 zI2_62
+0 1
+.names node15 I149
+0 1
+.names node55 I163
+0 1
+.names node109 I89
+0 1
+.names node357 I76
+0 1
+.names node169 I191
+0 1
+.names node187 I57
+0 1
+.names node151 I147
+0 1
+.names node157 I63
+0 1
+.names node71 I153
+0 1
+.names node149 I107
+0 1
+.names node269 I114
+0 1
+.names node265 I112
+0 1
+.names node141 I93
+0 1
+.names node119 I55
+0 1
+.names node27 I167
+0 1
+.names node1 I188
+0 1
+.names node107 I77
+0 1
+.names node293 I67
+0 1
+.names node287 I115
+0 1
+.names node101 I211
+0 1
+.names node47 I138
+0 1
+.names node229 I106
+0 1
+.names node61 I225
+0 1
+.names node205 I65
+0 1
+.names node57 I110
+0 1
+.names node299 I162
+0 1
+.names node129 I156
+0 1
+.names node279 I131
+0 1
+.names node281 I72
+0 1
+.names node21 I222
+0 1
+.names node345 I203
+0 1
+.names node23 I58
+0 1
+.names node83 I116
+0 1
+.names node173 I217
+0 1
+.names node291 I78
+0 1
+.names node325 I165
+0 1
+.names node167 I143
+0 1
+.names node193 I213
+0 1
+.names node207 I226
+0 1
+.names node305 I164
+0 1
+.names node125 I70
+0 1
+.names node135 I177
+0 1
+.names node35 I221
+0 1
+.names node159 I88
+0 1
+.names node347 I80
+0 1
+.names node213 I176
+0 1
+.names node131 I68
+0 1
+.names node323 I187
+0 1
+.names node111 I150
+0 1
+.names node103 I160
+0 1
+.names node259 I216
+0 1
+.names node7 I133
+0 1
+.names node29 I224
+0 1
+.names node183 I170
+0 1
+.names node257 I185
+0 1
+.names node201 I148
+0 1
+.names node139 I91
+0 1
+.names node73 I101
+0 1
+.names node307 I127
+0 1
+.names node113 I56
+0 1
+.names node123 I166
+0 1
+.names node33 I99
+0 1
+.names node283 I159
+0 1
+.names node251 I204
+0 1
+.names node195 I81
+0 1
+.names node225 I79
+0 1
+.names node339 I155
+0 1
+.names node145 I82
+0 1
+.names node75 I141
+0 1
+.names node189 I66
+0 1
+.names node49 I102
+0 1
+.names node165 I103
+0 1
+.names node191 I189
+0 1
+.names node321 I151
+0 1
+.names node277 I111
+0 1
+.names node137 I199
+0 1
+.names node271 I134
+0 1
+.names node121 I62
+0 1
+.names node5 I113
+0 1
+.names node179 I220
+0 1
+.names node273 I169
+0 1
+.names node147 I173
+0 1
+.names node365 I75
+0 1
+.names node19 I126
+0 1
+.names node79 I53
+0 1
+.names node239 I119
+0 1
+.names node97 I214
+0 1
+.names node309 I161
+0 1
+.names node359 I179
+0 1
+.names node11 I208
+0 1
+.names node197 I83
+0 1
+.names node241 I139
+0 1
+.names node9 I180
+0 1
+.names node51 I142
+0 1
+.names node255 I201
+0 1
+.names node39 I186
+0 1
+.names node37 I157
+0 1
+.names node227 I182
+0 1
+.names node311 I198
+0 1
+.names node105 I158
+0 1
+.names node45 I118
+0 1
+.names node161 I194
+0 1
+.names node337 I207
+0 1
+.names node355 I128
+0 1
+.names node175 I178
+0 1
+.names node263 I197
+0 1
+.names node351 I117
+0 1
+.names node235 I202
+0 1
+.names node233 I218
+0 1
+.names node219 I54
+0 1
+.names node231 I146
+0 1
+.names node243 I210
+0 1
+.names node85 I136
+0 1
+.names node285 I193
+0 1
+.names node297 I94
+0 1
+.names node341 I196
+0 1
+.names node91 I212
+0 1
+.names node127 I74
+0 1
+.names node237 I184
+0 1
+.names node171 I96
+0 1
+.names node31 I174
+0 1
+.names node199 I108
+0 1
+.names node53 I219
+0 1
+.names node249 I181
+0 1
+.names node303 I152
+0 1
+.names node143 I223
+0 1
+.names node177 I129
+0 1
+.names I44 zI44_109
+0 1
+.names I44 I372
+0 1
+.names node203 I209
+0 1
+.names node295 I90
+0 1
+.names node43 I206
+0 1
+.names node331 I73
+0 1
+.names node315 I60
+0 1
+.names node327 I71
+0 1
+.names I154 I314
+0 1
+.names I137 zI137_52
+0 1
+.names I92 zI92_26
+0 1
+.names I168 zI168_212
+0 1
+.names I95 zI95_18
+0 1
+.names I171 zI171_218
+0 1
+.names I135 zI135_48
+0 1
+.names I109 zI109_38
+0 1
+.names I97 zI97_22
+0 1
+.names I215 zI215_87
+0 1
+.names I64 I239
+0 1
+.names I190 I332
+0 1
+.names I175 zI175_226
+0 1
+.names I61 I236
+0 1
+.names I195 I342
+0 1
+.names I132 zI132_58
+0 1
+.names I49 I364
+0 1
+.names I59 I235
+0 1
+.names I48 I362
+0 1
+.names I98 zI98_24
+0 1
+.names I172 zI172_220
+0 1
+.names I140 zI140_58
+0 1
+.names I205 zI205_67
+0 1
+.names I200 I352
+0 1
+.names I100 zI100_28
+0 1
+.names I192 I336
+0 1
+.names I183 zI183_138
+0 1
+.names I130 zI130_54
+0 1
+.names zI2_62 I324
+0 1
+.names I149 I309
+0 1
+.names I163 zI163_202
+0 1
+.names I89 zI89_20
+0 1
+.names I76 zI76_10
+0 1
+.names I191 I334
+0 1
+.names I50 I366
+0 1
+.names I57 I233
+0 1
+.names I147 I307
+0 1
+.names I63 I238
+0 1
+.names I153 I313
+0 1
+.names I107 zI107_34
+0 1
+.names I114 zI114_34
+0 1
+.names I112 zI112_44
+0 1
+.names I93 zI93_28
+0 1
+.names I55 I231
+0 1
+.names I167 zI167_210
+0 1
+.names I188 I328
+0 1
+.names I77 zI77_11
+0 1
+.names I67 I242
+0 1
+.names I115 zI115_36
+0 1
+.names I211 zI211_79
+0 1
+.names I138 zI138_54
+0 1
+.names I106 zI106_32
+0 1
+.names I225 zI225_107
+0 1
+.names I65 I240
+0 1
+.names I110 zI110_40
+0 1
+.names I162 zI162_200
+0 1
+.names I156 I316
+0 1
+.names I131 zI131_56
+0 1
+.names I72 zI72_6
+0 1
+.names I222 zI222_101
+0 1
+.names I203 zI203_63
+0 1
+.names I58 I234
+0 1
+.names I116 zI116_38
+0 1
+.names I217 zI217_91
+0 1
+.names I78 zI78_12
+0 1
+.names I165 zI165_206
+0 1
+.names I143 zI143_324
+0 1
+.names I213 zI213_83
+0 1
+.names I164 zI164_204
+0 1
+.names I70 zI70_4
+0 1
+.names I177 zI177_126
+0 1
+.names I221 zI221_99
+0 1
+.names I88 zI88_18
+0 1
+.names I80 zI80_14
+0 1
+.names I176 zI176_228
+0 1
+.names I68 zI68_1
+0 1
+.names I68 zI68_146
+0 1
+.names I68 zI68_2
+0 1
+.names I68 I245
+0 1
+.names I187 I326
+0 1
+.names I150 I310
+0 1
+.names I160 I320
+0 1
+.names I216 zI216_89
+0 1
+.names I133 zI133_60
+0 1
+.names I224 zI224_105
+0 1
+.names I170 zI170_216
+0 1
+.names I185 zI185_142
+0 1
+.names I148 I308
+0 1
+.names I91 zI91_24
+0 1
+.names I101 zI101_30
+0 1
+.names I127 zI127_48
+0 1
+.names I56 I232
+0 1
+.names I166 zI166_208
+0 1
+.names I99 zI99_26
+0 1
+.names I159 I319
+0 1
+.names I204 zI204_65
+0 1
+.names I81 zI81_15
+0 1
+.names I79 zI79_13
+0 1
+.names I155 I315
+0 1
+.names I82 zI82_16
+0 1
+.names I141 zI141_60
+0 1
+.names I66 I241
+0 1
+.names I102 zI102_306
+0 1
+.names I103 zI103_318
+0 1
+.names I189 I330
+0 1
+.names I151 I311
+0 1
+.names I47 I360
+0 1
+.names I111 zI111_42
+0 1
+.names I199 I350
+0 1
+.names I134 zI134_46
+0 1
+.names I62 I237
+0 1
+.names I113 zI113_32
+0 1
+.names I46 I358
+0 1
+.names I220 zI220_97
+0 1
+.names I169 zI169_214
+0 1
+.names I173 zI173_222
+0 1
+.names I45 I356
+0 1
+.names I75 zI75_9
+0 1
+.names I126 zI126_46
+0 1
+.names I53 I229
+0 1
+.names I119 zI119_44
+0 1
+.names I214 zI214_85
+0 1
+.names I161 I322
+0 1
+.names I179 zI179_130
+0 1
+.names I208 zI208_73
+0 1
+.names I83 zI83_17
+0 1
+.names I139 zI139_56
+0 1
+.names I180 zI180_132
+0 1
+.names I142 zI142_320
+0 1
+.names I201 I354
+0 1
+.names I186 I325
+0 1
+.names I157 I317
+0 1
+.names I182 zI182_136
+0 1
+.names I198 I348
+0 1
+.names I158 I318
+0 1
+.names I118 zI118_42
+0 1
+.names I194 I340
+0 1
+.names I207 zI207_71
+0 1
+.names I128 zI128_50
+0 1
+.names I178 zI178_128
+0 1
+.names I197 I346
+0 1
+.names I117 zI117_40
+0 1
+.names I218 zI218_93
+0 1
+.names I54 I230
+0 1
+.names I146 I306
+0 1
+.names I210 zI210_77
+0 1
+.names I136 zI136_50
+0 1
+.names I193 I338
+0 1
+.names I94 zI94_30
+0 1
+.names I196 I344
+0 1
+.names I212 zI212_81
+0 1
+.names I74 zI74_8
+0 1
+.names I184 zI184_140
+0 1
+.names I96 zI96_20
+0 1
+.names I174 zI174_224
+0 1
+.names I108 zI108_36
+0 1
+.names I51 I368
+0 1
+.names I219 zI219_95
+0 1
+.names I181 zI181_134
+0 1
+.names I152 I312
+0 1
+.names I223 zI223_103
+0 1
+.names I129 zI129_52
+0 1
+.names I52 I370
+0 1
+.names zI44_109 I373
+0 1
+.names I209 zI209_75
+0 1
+.names I90 zI90_22
+0 1
+.names I206 zI206_69
+0 1
+.names I73 zI73_7
+0 1
+.names I60 zI60_
+0 1
+.names I60 zI60_144
+0 1
+.names I60 zI60_2
+0 1
+.names I60 I243
+0 1
+.names I71 zI71_5
+0 1
+.names I321 I420
+0 1
+.names I321 zI321_125
+0 1
+.names I321 I421
+0 1
+.names zI76_10 I254
+0 1
+.names zI77_11 I255
+0 1
+.names zI72_6 I250
+0 1
+.names zI78_12 I256
+0 1
+.names zI70_4 I248
+0 1
+.names I95 I88 I262
+11 1
+.names I262 zI262_117
+0 1
+.names zI80_14 I258
+0 1
+.names zI68_1 I246
+0 1
+.names zI81_15 I259
+0 1
+.names zI79_13 I257
+0 1
+.names zI82_16 I260
+0 1
+.names I106 I113 I276
+11 1
+.names I276 zI276_119
+0 1
+.names zI75_9 I253
+0 1
+.names I134 I126 I290
+11 1
+.names I290 zI290_121
+0 1
+.names I322 zI322_240
+0 1
+.names I322 I417
+0 1
+.names I322 zI322_123
+0 1
+.names I322 zI322_124
+0 1
+.names I322 I419
+0 1
+.names I322 I415
+0 1
+.names zI83_17 I261
+0 1
+.names zI74_8 I252
+0 1
+.names zI73_7 I251
+0 1
+.names zI60_ I244
+0 1
+.names zI71_5 I249
+0 1
+.names zI321_125 I422
+0 1
+.names I254 zI254_116
+0 1
+.names I250 zI250_112
+0 1
+.names I248 zI248_110
+0 1
+.names I253 zI253_115
+0 1
+.names zI322_123 I416
+0 1
+.names zI322_124 I418
+0 1
+.names I419 zI419_132
+0 1
+.names I419 zI419_128
+0 1
+.names I419 zI419_126
+0 1
+.names I419 zI419_142
+0 1
+.names I419 zI419_134
+0 1
+.names I419 zI419_130
+0 1
+.names I419 zI419_138
+0 1
+.names I419 zI419_140
+0 1
+.names I419 zI419_136
+0 1
+.names I252 zI252_114
+0 1
+.names I251 zI251_113
+0 1
+.names I249 zI249_111
+0 1
+.names zI140_59 zI132_59 I303
+1- 1
+-1 1
+.names I303 zI303_296
+0 1
+.names zI254_116 I408
+0 1
+.names zI107_35 zI114_35 I279
+1- 1
+-1 1
+.names I279 zI279_119
+0 1
+.names zI100_29 zI93_29 I273
+1- 1
+-1 1
+.names I273 zI273_278
+0 1
+.names zI138_55 zI130_55 I299
+1- 1
+-1 1
+.names I299 zI299_260
+0 1
+.names zI250_112 I404
+0 1
+.names zI109_39 zI116_39 I283
+1- 1
+-1 1
+.names I283 zI283_236
+0 1
+.names zI248_110 I402
+0 1
+.names zI98_25 zI91_25 I269
+1- 1
+-1 1
+.names I269 zI269_234
+0 1
+.names zI135_49 zI127_49 I293
+1- 1
+-1 1
+.names I293 zI293_121
+0 1
+.names zI99_27 zI92_27 I271
+1- 1
+-1 1
+.names I271 zI271_256
+0 1
+.names zI141_61 zI133_61 I305
+1- 1
+-1 1
+.names I305 zI305_308
+0 1
+.names zI253_115 I407
+0 1
+.names zI112_45 zI119_45 I289
+1- 1
+-1 1
+.names I289 zI289_294
+0 1
+.names zI139_57 zI131_57 I301
+1- 1
+-1 1
+.names I301 zI301_282
+0 1
+.names zI111_43 zI118_43 I287
+1- 1
+-1 1
+.names I287 zI287_280
+0 1
+.names zI110_41 zI117_41 I285
+1- 1
+-1 1
+.names I285 zI285_258
+0 1
+.names zI136_51 zI128_51 I295
+1- 1
+-1 1
+.names I295 zI295_188
+0 1
+.names zI101_31 zI94_31 I275
+1- 1
+-1 1
+.names I275 zI275_292
+0 1
+.names zI252_114 I406
+0 1
+.names zI96_21 zI89_21 I265
+1- 1
+-1 1
+.names I265 zI265_117
+0 1
+.names zI108_37 zI115_37 I281
+1- 1
+-1 1
+.names I281 zI281_186
+0 1
+.names zI137_53 zI129_53 I297
+1- 1
+-1 1
+.names I297 zI297_238
+0 1
+.names zI97_23 zI90_23 I267
+1- 1
+-1 1
+.names I267 zI267_184
+0 1
+.names zI251_113 I405
+0 1
+.names zI249_111 I403
+0 1
+.names I400 I401 I526
+1- 1
+-1 1
+.names I526 zI526_276
+0 1
+.names I398 I399 I525
+1- 1
+-1 1
+.names I525 zI525_266
+0 1
+.names I390 I391 I521
+1- 1
+-1 1
+.names I521 zI521_192
+0 1
+.names I394 I395 I523
+1- 1
+-1 1
+.names I523 zI523_244
+0 1
+.names I388 I389 I520
+1- 1
+-1 1
+.names I520 zI520_146
+0 1
+.names I396 I397 I524
+1- 1
+-1 1
+.names I524 zI524_254
+0 1
+.names I392 I393 I522
+1- 1
+-1 1
+.names I522 zI522_232
+0 1
+.names I386 I387 I519
+1- 1
+-1 1
+.names I519 zI519_274
+0 1
+.names I382 I383 I517
+1- 1
+-1 1
+.names I517 zI517_252
+0 1
+.names I378 I379 I515
+1- 1
+-1 1
+.names I515 zI515_230
+0 1
+.names I374 I375 I513
+1- 1
+-1 1
+.names I513 zI513_144
+0 1
+.names I376 I377 I514
+1- 1
+-1 1
+.names I514 zI514_190
+0 1
+.names I380 I381 I516
+1- 1
+-1 1
+.names I516 zI516_242
+0 1
+.names I384 I385 I518
+1- 1
+-1 1
+.names I518 zI518_264
+0 1
+.names I278 I411 I577
+1- 1
+-1 1
+.names I577 zI577_186
+0 1
+.names I256 I404 I542
+00 1
+.names I542 zI542_160
+0 1
+.names I258 I404 I544
+00 1
+.names I544 zI544_164
+0 1
+.names I259 I404 I545
+00 1
+.names I545 zI545_166
+0 1
+.names I261 I404 I547
+00 1
+.names I547 zI547_170
+0 1
+.names I257 I404 I543
+00 1
+.names I543 zI543_162
+0 1
+.names I260 I404 I546
+00 1
+.names I546 zI546_168
+0 1
+.names I256 I402 I528
+00 1
+.names I528 zI528_148
+0 1
+.names I261 I402 I533
+00 1
+.names I533 zI533_158
+0 1
+.names I258 I402 I530
+00 1
+.names I530 zI530_152
+0 1
+.names I257 I402 I529
+00 1
+.names I529 zI529_150
+0 1
+.names I260 I402 I532
+00 1
+.names I532 zI532_156
+0 1
+.names I259 I402 I531
+00 1
+.names I531 zI531_154
+0 1
+.names I520 I68 I677
+11 1
+.names I677 zI677_192
+0 1
+.names I292 I413 I578
+1- 1
+-1 1
+.names I578 zI578_188
+0 1
+.names I258 I407 I565
+00 1
+.names I565 zI565_178
+0 1
+.names I260 I407 I567
+00 1
+.names I567 zI567_182
+0 1
+.names I256 I407 I563
+00 1
+.names I563 zI563_174
+0 1
+.names I261 I407 I568
+00 1
+.names I568 zI568_316
+0 1
+.names I259 I407 I566
+00 1
+.names I566 zI566_180
+0 1
+.names I255 I407 I562
+00 1
+.names I562 zI562_172
+0 1
+.names I257 I407 I564
+00 1
+.names I564 zI564_176
+0 1
+.names I587 I588 I725
+1- 1
+-1 1
+.names I725 zI725_208
+0 1
+.names I579 I580 I721
+1- 1
+-1 1
+.names I721 zI721_200
+0 1
+.names I585 I586 I724
+1- 1
+-1 1
+.names I724 zI724_206
+0 1
+.names I591 I592 I727
+1- 1
+-1 1
+.names I727 zI727_212
+0 1
+.names I593 I594 I728
+1- 1
+-1 1
+.names I728 zI728_214
+0 1
+.names I581 I582 I722
+1- 1
+-1 1
+.names I722 zI722_202
+0 1
+.names I583 I584 I723
+1- 1
+-1 1
+.names I723 zI723_204
+0 1
+.names I589 I590 I726
+1- 1
+-1 1
+.names I726 zI726_210
+0 1
+.names I605 I606 I734
+1- 1
+-1 1
+.names I734 zI734_226
+0 1
+.names I595 I596 I729
+1- 1
+-1 1
+.names I729 zI729_216
+0 1
+.names I601 I602 I732
+1- 1
+-1 1
+.names I732 zI732_222
+0 1
+.names I603 I604 I733
+1- 1
+-1 1
+.names I733 zI733_224
+0 1
+.names I607 I608 I735
+1- 1
+-1 1
+.names I735 zI735_228
+0 1
+.names I599 I600 I731
+1- 1
+-1 1
+.names I731 zI731_220
+0 1
+.names I597 I598 I730
+1- 1
+-1 1
+.names I730 zI730_218
+0 1
+.names zI180_133 zI419_133 I616
+1- 1
+-1 1
+.names I616 zI616_350
+0 1
+.names zI178_129 zI419_129 I612
+1- 1
+-1 1
+.names I612 zI612_346
+0 1
+.names zI177_127 zI419_127 I610
+1- 1
+-1 1
+.names I610 zI610_344
+0 1
+.names zI185_143 zI419_143 I625
+1- 1
+-1 1
+.names I625 zI625_360
+0 1
+.names zI181_135 zI419_135 I618
+1- 1
+-1 1
+.names I618 zI618_352
+0 1
+.names zI179_131 zI419_131 I614
+1- 1
+-1 1
+.names I614 zI614_348
+0 1
+.names zI183_139 zI419_139 I622
+1- 1
+-1 1
+.names I622 zI622_356
+0 1
+.names zI184_141 zI419_141 I624
+1- 1
+-1 1
+.names I624 zI624_358
+0 1
+.names zI182_137 zI419_137 I620
+1- 1
+-1 1
+.names I620 zI620_354
+0 1
+.names I257 I406 I557
+00 1
+.names I557 zI557_174
+0 1
+.names I260 I406 I560
+00 1
+.names I560 zI560_180
+0 1
+.names I258 I406 I558
+00 1
+.names I558 zI558_176
+0 1
+.names I256 I406 I556
+00 1
+.names I556 zI556_172
+0 1
+.names I259 I406 I559
+00 1
+.names I559 zI559_178
+0 1
+.names I261 I406 I561
+00 1
+.names I561 zI561_182
+0 1
+.names I264 I409 I576
+1- 1
+-1 1
+.names I576 zI576_184
+0 1
+.names I256 I405 I549
+00 1
+.names I549 zI549_162
+0 1
+.names I260 I405 I553
+00 1
+.names I553 zI553_170
+0 1
+.names I257 I405 I550
+00 1
+.names I550 zI550_164
+0 1
+.names I255 I405 I548
+00 1
+.names I548 zI548_160
+0 1
+.names I259 I405 I552
+00 1
+.names I552 zI552_168
+0 1
+.names I261 I405 I554
+00 1
+.names I554 zI554_314
+0 1
+.names I258 I405 I551
+00 1
+.names I551 zI551_166
+0 1
+.names I513 I60 I675
+11 1
+.names I675 zI675_190
+0 1
+.names I258 I403 I537
+00 1
+.names I537 zI537_154
+0 1
+.names I259 I403 I538
+00 1
+.names I538 zI538_156
+0 1
+.names I257 I403 I536
+00 1
+.names I536 zI536_152
+0 1
+.names I261 I403 I540
+00 1
+.names I540 zI540_312
+0 1
+.names I260 I403 I539
+00 1
+.names I539 zI539_158
+0 1
+.names I255 I403 I534
+00 1
+.names I534 zI534_148
+0 1
+.names I256 I403 I535
+00 1
+.names I535 zI535_150
+0 1
+.names I521 I677 I739
+11 1
+.names I739 zI739_232
+0 1
+.names I562 I556 I703
+11 1
+.names I703 zI703_198
+0 1
+.names I548 I542 I691
+11 1
+.names I691 zI691_196
+0 1
+.names I514 I675 I737
+11 1
+.names I737 zI737_230
+0 1
+.names I534 I528 I679
+11 1
+.names I679 zI679_194
+0 1
+.names I280 I717 I748
+1- 1
+-1 1
+.names I748 zI748_236
+0 1
+.names I522 I739 I813
+11 1
+.names I813 zI813_244
+0 1
+.names I294 I719 I749
+1- 1
+-1 1
+.names I749 zI749_238
+0 1
+.names I266 I715 I747
+1- 1
+-1 1
+.names I747 zI747_234
+0 1
+.names I515 I737 I811
+11 1
+.names I811 zI811_242
+0 1
+.names I523 I813 I829
+11 1
+.names I829 zI829_254
+0 1
+.names zI166_209 zI725_209 I759
+1- 1
+-1 1
+.names I759 zI759_310
+0 1
+.names zI162_201 zI721_201 I751
+1- 1
+-1 1
+.names I751 zI751_240
+0 1
+.names zI165_207 zI724_207 I757
+1- 1
+-1 1
+.names I757 zI757_298
+0 1
+.names zI168_213 zI727_213 I763
+1- 1
+-1 1
+.names I763 zI763_326
+0 1
+.names zI169_215 zI728_215 I765
+1- 1
+-1 1
+.names I765 zI765_328
+0 1
+.names zI163_203 zI722_203 I753
+1- 1
+-1 1
+.names I753 zI753_262
+0 1
+.names zI164_205 zI723_205 I755
+1- 1
+-1 1
+.names I755 zI755_284
+0 1
+.names zI167_211 zI726_211 I761
+1- 1
+-1 1
+.names I761 zI761_322
+0 1
+.names zI175_227 zI734_227 I777
+1- 1
+-1 1
+.names I777 zI777_340
+0 1
+.names zI170_217 zI729_217 I767
+1- 1
+-1 1
+.names I767 zI767_330
+0 1
+.names zI173_223 zI732_223 I773
+1- 1
+-1 1
+.names I773 zI773_336
+0 1
+.names zI174_225 zI733_225 I775
+1- 1
+-1 1
+.names I775 zI775_338
+0 1
+.names zI176_229 zI735_229 I779
+1- 1
+-1 1
+.names I779 zI779_342
+0 1
+.names zI172_221 zI731_221 I771
+1- 1
+-1 1
+.names I771 zI771_334
+0 1
+.names zI171_219 zI730_219 I769
+1- 1
+-1 1
+.names I769 zI769_332
+0 1
+.names zI563_175 zI557_175 I706
+1- 1
+-1 1
+.names I706 zI706_198
+0 1
+.names zI566_181 zI560_181 I712
+1- 1
+-1 1
+.names I712 zI712_290
+0 1
+.names zI564_177 zI558_177 I708
+1- 1
+-1 1
+.names I708 zI708_250
+0 1
+.names zI565_179 zI559_179 I710
+1- 1
+-1 1
+.names I710 zI710_272
+0 1
+.names zI567_183 zI561_183 I714
+1- 1
+-1 1
+.names I714 zI714_304
+0 1
+.names zI549_163 zI543_163 I694
+1- 1
+-1 1
+.names I694 zI694_196
+0 1
+.names zI553_171 zI547_171 I702
+1- 1
+-1 1
+.names I702 zI702_302
+0 1
+.names zI550_165 zI544_165 I696
+1- 1
+-1 1
+.names I696 zI696_248
+0 1
+.names zI552_169 zI546_169 I700
+1- 1
+-1 1
+.names I700 zI700_288
+0 1
+.names zI551_167 zI545_167 I698
+1- 1
+-1 1
+.names I698 zI698_270
+0 1
+.names I516 I811 I827
+11 1
+.names I827 zI827_252
+0 1
+.names zI537_155 zI531_155 I686
+1- 1
+-1 1
+.names I686 zI686_268
+0 1
+.names zI538_157 zI532_157 I688
+1- 1
+-1 1
+.names I688 zI688_286
+0 1
+.names zI536_153 zI530_153 I684
+1- 1
+-1 1
+.names I684 zI684_246
+0 1
+.names zI539_159 zI533_159 I690
+1- 1
+-1 1
+.names I690 zI690_300
+0 1
+.names zI535_151 zI529_151 I682
+1- 1
+-1 1
+.names I682 zI682_194
+0 1
+.names I282 I820 I838
+1- 1
+-1 1
+.names I838 zI838_258
+0 1
+.names I524 I829 I846
+11 1
+.names I846 zI846_266
+0 1
+.names I296 I822 I839
+1- 1
+-1 1
+.names I839 zI839_260
+0 1
+.names I268 I818 I837
+1- 1
+-1 1
+.names I837 zI837_256
+0 1
+.names I517 I827 I844
+11 1
+.names I844 zI844_264
+0 1
+.names I525 I846 I863
+11 1
+.names I863 zI863_276
+0 1
+.names I750 I824 I840
+1- 1
+-1 1
+.names I840 zI840_262
+0 1
+.names I705 I703 I817
+1- 1
+-1 1
+.names I817 zI817_250
+0 1
+.names I693 I691 I816
+1- 1
+-1 1
+.names I816 zI816_248
+0 1
+.names I518 I844 I861
+11 1
+.names I861 zI861_274
+0 1
+.names I681 I679 I815
+1- 1
+-1 1
+.names I815 zI815_246
+0 1
+.names I284 I853 I872
+1- 1
+-1 1
+.names I872 zI872_280
+0 1
+.names I298 I855 I873
+1- 1
+-1 1
+.names I873 zI873_282
+0 1
+.names I270 I851 I871
+1- 1
+-1 1
+.names I871 zI871_278
+0 1
+.names I752 I857 I874
+1- 1
+-1 1
+.names I874 zI874_284
+0 1
+.names I707 I835 I850
+1- 1
+-1 1
+.names I850 zI850_272
+0 1
+.names I695 I833 I849
+1- 1
+-1 1
+.names I849 zI849_270
+0 1
+.names I683 I831 I848
+1- 1
+-1 1
+.names I848 zI848_268
+0 1
+.names I286 I885 I900
+1- 1
+-1 1
+.names I900 zI900_294
+0 1
+.names I300 I887 I901
+1- 1
+-1 1
+.names I901 zI901_296
+0 1
+.names I272 I883 I899
+1- 1
+-1 1
+.names I899 zI899_292
+0 1
+.names I754 I889 I902
+1- 1
+-1 1
+.names I902 zI902_298
+0 1
+.names I709 I869 I882
+1- 1
+-1 1
+.names I882 zI882_290
+0 1
+.names I697 I867 I881
+1- 1
+-1 1
+.names I881 zI881_288
+0 1
+.names I685 I865 I880
+1- 1
+-1 1
+.names I880 zI880_286
+0 1
+.names I302 I913 I927
+1- 1
+-1 1
+.names I927 zI927_308
+0 1
+.names I274 I909 I925
+1- 1
+-1 1
+.names I925 zI925_306
+0 1
+.names I756 I915 I928
+1- 1
+-1 1
+.names I928 zI928_310
+0 1
+.names I711 I897 I908
+1- 1
+-1 1
+.names I908 zI908_304
+0 1
+.names I102 I925 I935
+11 1
+.names I935 zI935_318
+0 1
+.names I699 I895 I907
+1- 1
+-1 1
+.names I907 zI907_302
+0 1
+.names I687 I893 I906
+1- 1
+-1 1
+.names I906 zI906_300
+0 1
+.names I304 I937 I951
+1- 1
+-1 1
+.names I951 zI951_320
+0 1
+.names I142 I951 I956
+11 1
+.names I956 zI956_324
+0 1
+.names I758 I939 I952
+1- 1
+-1 1
+.names I952 zI952_322
+0 1
+.names I713 I923 I934
+1- 1
+-1 1
+.names I934 zI934_316
+0 1
+.names I701 I921 I933
+1- 1
+-1 1
+.names I933 zI933_314
+0 1
+.names I689 I919 I932
+1- 1
+-1 1
+.names I932 zI932_312
+0 1
+.names I760 I958 I964
+1- 1
+-1 1
+.names I964 zI964_326
+0 1
+.names I762 I968 I972
+1- 1
+-1 1
+.names I972 zI972_328
+0 1
+.names I764 I976 I980
+1- 1
+-1 1
+.names I980 zI980_330
+0 1
+.names I766 I984 I988
+1- 1
+-1 1
+.names I988 zI988_332
+0 1
+.names I768 I992 I996
+1- 1
+-1 1
+.names I996 zI996_334
+0 1
+.names I770 I1000 I1004
+1- 1
+-1 1
+.names I1004 zI1004_336
+0 1
+.names I772 I1008 I1012
+1- 1
+-1 1
+.names I1012 zI1012_338
+0 1
+.names I774 I1016 I1020
+1- 1
+-1 1
+.names I1020 zI1020_340
+0 1
+.names I776 I1024 I1028
+1- 1
+-1 1
+.names I1028 zI1028_342
+0 1
+.names I778 I1032 I1036
+1- 1
+-1 1
+.names I1036 zI1036_344
+0 1
+.names I609 I1040 I1044
+1- 1
+-1 1
+.names I1044 zI1044_346
+0 1
+.names I611 I1048 I1052
+1- 1
+-1 1
+.names I1052 zI1052_348
+0 1
+.names I613 I1056 I1060
+1- 1
+-1 1
+.names I1060 zI1060_350
+0 1
+.names I615 I1064 I1068
+1- 1
+-1 1
+.names I1068 zI1068_352
+0 1
+.names I617 I1072 I1076
+1- 1
+-1 1
+.names I1076 zI1076_354
+0 1
+.names I619 I1080 I1084
+1- 1
+-1 1
+.names I1084 zI1084_356
+0 1
+.names I621 I1089 I1092
+1- 1
+-1 1
+.names I1092 zI1092_358
+0 1
+.names I623 I1095 I1098
+1- 1
+-1 1
+.names I1098 zI1098_360
+0 1
+.names I140 I132 I302
+11 1
+.names I107 I114 I278
+11 1
+.names I100 I93 I272
+11 1
+.names I138 I130 I298
+11 1
+.names I109 I116 I282
+11 1
+.names I98 I91 I268
+11 1
+.names I135 I127 I292
+11 1
+.names I99 I92 I270
+11 1
+.names I141 I133 I304
+11 1
+.names I112 I119 I288
+11 1
+.names I139 I131 I300
+11 1
+.names I111 I118 I286
+11 1
+.names I110 I117 I284
+11 1
+.names I136 I128 I294
+11 1
+.names I101 I94 I274
+11 1
+.names I96 I89 I264
+11 1
+.names I108 I115 I280
+11 1
+.names I137 I129 I296
+11 1
+.names I214 I372 I488
+11 1
+.names I210 I372 I480
+11 1
+.names I207 I372 I474
+11 1
+.names I213 I372 I486
+11 1
+.names I221 I372 I502
+11 1
+.names I225 I372 I510
+11 1
+.names I222 I372 I504
+11 1
+.names I204 I372 I468
+11 1
+.names I203 I372 I466
+11 1
+.names I216 I372 I492
+11 1
+.names I217 I372 I494
+11 1
+.names I205 I372 I470
+11 1
+.names I208 I372 I476
+11 1
+.names I211 I372 I482
+11 1
+.names I224 I372 I508
+11 1
+.names I212 I372 I484
+11 1
+.names I220 I372 I500
+11 1
+.names I223 I372 I506
+11 1
+.names I202 I372 I464
+11 1
+.names I219 I372 I498
+11 1
+.names I215 I372 I490
+11 1
+.names I218 I372 I496
+11 1
+.names I209 I372 I478
+11 1
+.names I97 I90 I266
+11 1
+.names I206 I372 I472
+11 1
+.names I129 zI137_52 zI137_53
+11 1
+.names I99 zI92_26 zI92_27
+11 1
+.names I88 zI95_18 zI95_19
+11 1
+.names I127 zI135_48 zI135_49
+11 1
+.names I116 zI109_38 zI109_39
+11 1
+.names I90 zI97_22 zI97_23
+11 1
+.names I199 zI215_87 zI215_88
+11 1
+.names I332 I206 I444
+11 1
+.names I342 I211 I449
+11 1
+.names I140 zI132_58 zI132_59
+11 1
+.names I364 I222 I460
+11 1
+.names I362 I221 I459
+11 1
+.names I91 zI98_24 zI98_25
+11 1
+.names I132 zI140_58 zI140_59
+11 1
+.names I189 zI205_67 zI205_68
+11 1
+.names I352 I216 I454
+11 1
+.names I93 zI100_28 zI100_29
+11 1
+.names I336 I208 I446
+11 1
+.names I138 zI130_54 zI130_55
+11 1
+.names I200 I324 I437
+11 1
+.names I191 I324 I428
+11 1
+.names I196 I324 I433
+11 1
+.names I189 I324 I426
+11 1
+.names I193 I324 I430
+11 1
+.names I199 I324 I436
+11 1
+.names I192 I324 I429
+11 1
+.names I187 I324 I424
+11 1
+.names I201 I324 I439
+11 1
+.names I188 I324 I425
+11 1
+.names I195 I324 I432
+11 1
+.names I197 I324 I434
+11 1
+.names I194 I324 I431
+11 1
+.names I198 I324 I435
+11 1
+.names I190 I324 I427
+11 1
+.names I186 I324 I423
+11 1
+.names I96 zI89_20 zI89_21
+11 1
+.names I334 I207 I445
+11 1
+.names I366 I223 I461
+11 1
+.names I114 zI107_34 zI107_35
+11 1
+.names I107 zI114_34 zI114_35
+11 1
+.names I119 zI112_44 zI112_45
+11 1
+.names I100 zI93_28 zI93_29
+11 1
+.names I328 I204 I442
+11 1
+.names I108 zI115_36 zI115_37
+11 1
+.names I195 zI211_79 zI211_80
+11 1
+.names I130 zI138_54 zI138_55
+11 1
+.names I113 zI106_32 zI106_33
+11 1
+.names I52 zI225_107 zI225_108
+11 1
+.names I117 zI110_40 zI110_41
+11 1
+.names I139 zI131_56 zI131_57
+11 1
+.names I49 zI222_101 zI222_102
+11 1
+.names I187 zI203_63 zI203_64
+11 1
+.names I109 zI116_38 zI116_39
+11 1
+.names I201 zI217_91 zI217_92
+11 1
+.names I197 zI213_83 zI213_84
+11 1
+.names I48 zI221_99 zI221_100
+11 1
+.names I95 zI88_18 zI88_19
+11 1
+.names I60 zI68_2 zI68_3
+11 1
+.names I66 I245 I398
+11 1
+.names I62 I245 I390
+11 1
+.names I65 I245 I396
+11 1
+.names I61 I245 I388
+11 1
+.names I63 I245 I392
+11 1
+.names I67 I245 I400
+11 1
+.names I64 I245 I394
+11 1
+.names I326 I203 I441
+11 1
+.names I200 zI216_89 zI216_90
+11 1
+.names I141 zI133_60 zI133_61
+11 1
+.names I51 zI224_105 zI224_106
+11 1
+.names I98 zI91_24 zI91_25
+11 1
+.names I94 zI101_30 zI101_31
+11 1
+.names I135 zI127_48 zI127_49
+11 1
+.names I92 zI99_26 zI99_27
+11 1
+.names I188 zI204_65 zI204_66
+11 1
+.names I133 zI141_60 zI141_61
+11 1
+.names I330 I205 I443
+11 1
+.names I360 I220 I458
+11 1
+.names I118 zI111_42 zI111_43
+11 1
+.names I350 I215 I453
+11 1
+.names I126 zI134_46 zI134_47
+11 1
+.names I106 zI113_32 zI113_33
+11 1
+.names I358 I219 I457
+11 1
+.names I47 zI220_97 zI220_98
+11 1
+.names I356 I218 I456
+11 1
+.names I134 zI126_46 zI126_47
+11 1
+.names I112 zI119_44 zI119_45
+11 1
+.names I198 zI214_85 zI214_86
+11 1
+.names I322 I323 I438
+11 1
+.names I192 zI208_73 zI208_74
+11 1
+.names I131 zI139_56 zI139_57
+11 1
+.names I354 I217 I455
+11 1
+.names I325 I202 I440
+11 1
+.names I348 I214 I452
+11 1
+.names I111 zI118_42 zI118_43
+11 1
+.names I340 I210 I448
+11 1
+.names I191 zI207_71 zI207_72
+11 1
+.names I136 zI128_50 zI128_51
+11 1
+.names I346 I213 I451
+11 1
+.names I110 zI117_40 zI117_41
+11 1
+.names I45 zI218_93 zI218_94
+11 1
+.names I194 zI210_77 zI210_78
+11 1
+.names I128 zI136_50 zI136_51
+11 1
+.names I338 I209 I447
+11 1
+.names I101 zI94_30 zI94_31
+11 1
+.names I344 I212 I450
+11 1
+.names I196 zI212_81 zI212_82
+11 1
+.names I89 zI96_20 zI96_21
+11 1
+.names I115 zI108_36 zI108_37
+11 1
+.names I368 I224 I462
+11 1
+.names I46 zI219_95 zI219_96
+11 1
+.names I50 zI223_103 zI223_104
+11 1
+.names I137 zI129_52 zI129_53
+11 1
+.names I370 I225 I463
+11 1
+.names I27 I373 I479
+11 1
+.names I21 I373 I467
+11 1
+.names I23 I373 I471
+11 1
+.names I42 I373 I509
+11 1
+.names I25 I373 I475
+11 1
+.names I38 I373 I501
+11 1
+.names I40 I373 I505
+11 1
+.names I26 I373 I477
+11 1
+.names I37 I373 I499
+11 1
+.names I24 I373 I473
+11 1
+.names I33 I373 I491
+11 1
+.names I41 I373 I507
+11 1
+.names I35 I373 I495
+11 1
+.names I39 I373 I503
+11 1
+.names I32 I373 I489
+11 1
+.names I28 I373 I481
+11 1
+.names I30 I373 I485
+11 1
+.names I36 I373 I497
+11 1
+.names I22 I373 I469
+11 1
+.names I34 I373 I493
+11 1
+.names I43 I373 I511
+11 1
+.names I31 I373 I487
+11 1
+.names I20 I373 I465
+11 1
+.names I29 I373 I483
+11 1
+.names I193 zI209_75 zI209_76
+11 1
+.names I97 zI90_22 zI90_23
+11 1
+.names I190 zI206_69 zI206_70
+11 1
+.names I68 zI60_2 zI60_3
+11 1
+.names I56 I243 I380
+11 1
+.names I53 I243 I374
+11 1
+.names I59 I243 I386
+11 1
+.names I55 I243 I378
+11 1
+.names I54 I243 I376
+11 1
+.names I57 I243 I382
+11 1
+.names I58 I243 I384
+11 1
+.names I49 I421 I646
+11 1
+.names I199 I421 I639
+11 1
+.names I192 I421 I632
+11 1
+.names I194 I421 I634
+11 1
+.names I191 I421 I631
+11 1
+.names I195 I421 I635
+11 1
+.names I187 I421 I627
+11 1
+.names I197 I421 I637
+11 1
+.names I188 I421 I628
+11 1
+.names I193 I421 I633
+11 1
+.names I52 I421 I649
+11 1
+.names I186 I421 I626
+11 1
+.names I198 I421 I638
+11 1
+.names I45 I421 I642
+11 1
+.names I190 I421 I630
+11 1
+.names I47 I421 I644
+11 1
+.names I201 I421 I641
+11 1
+.names I196 I421 I636
+11 1
+.names I48 I421 I645
+11 1
+.names I50 I421 I647
+11 1
+.names I46 I421 I643
+11 1
+.names I189 I421 I629
+11 1
+.names I51 I421 I648
+11 1
+.names I200 I421 I640
+11 1
+.names I242 I246 I401
+11 1
+.names I241 I246 I399
+11 1
+.names I237 I246 I391
+11 1
+.names I239 I246 I395
+11 1
+.names I236 I246 I389
+11 1
+.names I240 I246 I397
+11 1
+.names I238 I246 I393
+11 1
+.names I316 I417 I599
+11 1
+.names I317 I417 I601
+11 1
+.names I319 I417 I605
+11 1
+.names I314 I417 I595
+11 1
+.names I320 I417 I607
+11 1
+.names I315 I417 I597
+11 1
+.names I318 I417 I603
+11 1
+.names I182 I419 I619
+11 1
+.names I178 I419 I611
+11 1
+.names I180 I419 I615
+11 1
+.names I184 I419 I623
+11 1
+.names I419 zI180_132 zI180_133
+11 1
+.names I181 I419 I617
+11 1
+.names I419 zI179_130 zI179_131
+11 1
+.names I179 I419 I613
+11 1
+.names I419 zI181_134 zI181_135
+11 1
+.names I419 zI183_138 zI183_139
+11 1
+.names I177 I419 I609
+11 1
+.names I419 zI184_140 zI184_141
+11 1
+.names I419 zI185_142 zI185_143
+11 1
+.names I419 zI178_128 zI178_129
+11 1
+.names I419 zI182_136 zI182_137
+11 1
+.names I419 zI177_126 zI177_127
+11 1
+.names I183 I419 I621
+11 1
+.names I310 I415 I587
+11 1
+.names I308 I415 I583
+11 1
+.names I306 I415 I579
+11 1
+.names I312 I415 I591
+11 1
+.names I311 I415 I589
+11 1
+.names I307 I415 I581
+11 1
+.names I309 I415 I585
+11 1
+.names I313 I415 I593
+11 1
+.names I235 I244 I387
+11 1
+.names I233 I244 I383
+11 1
+.names I231 I244 I379
+11 1
+.names I229 I244 I375
+11 1
+.names I230 I244 I377
+11 1
+.names I232 I244 I381
+11 1
+.names I234 I244 I385
+11 1
+.names I279 zI276_119 zI276_120
+11 1
+.names I279 I276 I411
+11 1
+.names I440 zI203_64 I650
+11 1
+.names I293 I290 I413
+11 1
+.names I293 zI290_121 zI290_122
+11 1
+.names I150 I416 I588
+11 1
+.names I146 I416 I580
+11 1
+.names I149 I416 I586
+11 1
+.names I152 I416 I592
+11 1
+.names I153 I416 I594
+11 1
+.names I147 I416 I582
+11 1
+.names I148 I416 I584
+11 1
+.names I151 I416 I590
+11 1
+.names I159 I418 I606
+11 1
+.names I154 I418 I596
+11 1
+.names I157 I418 I602
+11 1
+.names I158 I418 I604
+11 1
+.names I160 I418 I608
+11 1
+.names I156 I418 I600
+11 1
+.names I155 I418 I598
+11 1
+.names I180 zI419_132 zI419_133
+11 1
+.names I178 zI419_128 zI419_129
+11 1
+.names I177 zI419_126 zI419_127
+11 1
+.names I185 zI419_142 zI419_143
+11 1
+.names I181 zI419_134 zI419_135
+11 1
+.names I179 zI419_130 zI419_131
+11 1
+.names I183 zI419_138 zI419_139
+11 1
+.names I184 zI419_140 zI419_141
+11 1
+.names I182 zI419_136 zI419_137
+11 1
+.names I265 I262 I409
+11 1
+.names I265 zI262_117 zI262_118
+11 1
+.names I276 zI279_119 zI279_120
+11 1
+.names I520 zI68_146 zI68_147
+11 1
+.names I290 zI293_121 zI293_122
+11 1
+.names I262 zI265_117 zI265_118
+11 1
+.names I513 zI60_144 zI60_145
+11 1
+.names I577 zI281_186 zI281_187
+11 1
+.names I281 I577 I717
+11 1
+.names I68 zI520_146 zI520_147
+11 1
+.names I677 zI521_192 zI521_193
+11 1
+.names I650 I441 I736
+1- 1
+-1 1
+.names I736 zI204_66 I795
+11 1
+.names I295 I578 I719
+11 1
+.names I578 zI295_188 zI295_189
+11 1
+.names I166 I725 I758
+11 1
+.names I725 zI166_208 zI166_209
+11 1
+.names I725 I323 I784
+11 1
+.names I162 I721 I750
+11 1
+.names I721 zI162_200 zI162_201
+11 1
+.names I721 I323 I780
+11 1
+.names I165 I724 I756
+11 1
+.names I724 zI165_206 zI165_207
+11 1
+.names I724 I323 I783
+11 1
+.names I727 zI168_212 zI168_213
+11 1
+.names I168 I727 I762
+11 1
+.names I727 I323 I786
+11 1
+.names I169 I728 I764
+11 1
+.names I728 I323 I787
+11 1
+.names I728 zI169_214 zI169_215
+11 1
+.names I722 zI163_202 zI163_203
+11 1
+.names I722 I323 I781
+11 1
+.names I163 I722 I752
+11 1
+.names I723 I323 I782
+11 1
+.names I723 zI164_204 zI164_205
+11 1
+.names I164 I723 I754
+11 1
+.names I167 I726 I760
+11 1
+.names I726 I323 I785
+11 1
+.names I726 zI167_210 zI167_211
+11 1
+.names I734 zI175_226 zI175_227
+11 1
+.names I175 I734 I776
+11 1
+.names I734 I323 I793
+11 1
+.names I170 I729 I766
+11 1
+.names I729 I323 I788
+11 1
+.names I729 zI170_216 zI170_217
+11 1
+.names I732 I323 I791
+11 1
+.names I732 zI173_222 zI173_223
+11 1
+.names I173 I732 I772
+11 1
+.names I733 I323 I792
+11 1
+.names I733 zI174_224 zI174_225
+11 1
+.names I174 I733 I774
+11 1
+.names I735 I323 I794
+11 1
+.names I176 I735 I778
+11 1
+.names I735 zI176_228 zI176_229
+11 1
+.names I172 I731 I770
+11 1
+.names I731 zI172_220 zI172_221
+11 1
+.names I731 I323 I790
+11 1
+.names I171 I730 I768
+11 1
+.names I730 I323 I789
+11 1
+.names I730 zI171_218 zI171_219
+11 1
+.names I563 I557 I705
+11 1
+.names I566 I560 I711
+11 1
+.names I564 I558 I707
+11 1
+.names I565 I559 I709
+11 1
+.names I567 I561 I713
+11 1
+.names I267 I576 I715
+11 1
+.names I576 zI267_184 zI267_185
+11 1
+.names I549 I543 I693
+11 1
+.names I553 I547 I701
+11 1
+.names I550 I544 I695
+11 1
+.names I552 I546 I699
+11 1
+.names I551 I545 I697
+11 1
+.names I60 zI513_144 zI513_145
+11 1
+.names I675 zI514_190 zI514_191
+11 1
+.names I537 I531 I685
+11 1
+.names I538 I532 I687
+11 1
+.names I536 I530 I683
+11 1
+.names I539 I533 I689
+11 1
+.names I535 I529 I681
+11 1
+.names I281 zI577_186 zI577_187
+11 1
+.names I548 zI542_160 zI542_161
+11 1
+.names I550 zI544_164 zI544_165
+11 1
+.names I551 zI545_166 zI545_167
+11 1
+.names I553 zI547_170 zI547_171
+11 1
+.names I549 zI543_162 zI543_163
+11 1
+.names I552 zI546_168 zI546_169
+11 1
+.names I534 zI528_148 zI528_149
+11 1
+.names I539 zI533_158 zI533_159
+11 1
+.names I536 zI530_152 zI530_153
+11 1
+.names I535 zI529_150 zI529_151
+11 1
+.names I538 zI532_156 zI532_157
+11 1
+.names I537 zI531_154 zI531_155
+11 1
+.names I521 zI677_192 zI677_193
+11 1
+.names I739 zI522_232 zI522_233
+11 1
+.names I295 zI578_188 zI578_189
+11 1
+.names I559 zI565_178 zI565_179
+11 1
+.names I561 zI567_182 zI567_183
+11 1
+.names I557 zI563_174 zI563_175
+11 1
+.names I560 zI566_180 zI566_181
+11 1
+.names I556 zI562_172 zI562_173
+11 1
+.names I558 zI564_176 zI564_177
+11 1
+.names I166 zI725_208 zI725_209
+11 1
+.names I162 zI721_200 zI721_201
+11 1
+.names I165 zI724_206 zI724_207
+11 1
+.names I168 zI727_212 zI727_213
+11 1
+.names I169 zI728_214 zI728_215
+11 1
+.names I163 zI722_202 zI722_203
+11 1
+.names I164 zI723_204 zI723_205
+11 1
+.names I167 zI726_210 zI726_211
+11 1
+.names I175 zI734_226 zI734_227
+11 1
+.names I170 zI729_216 zI729_217
+11 1
+.names I173 zI732_222 zI732_223
+11 1
+.names I174 zI733_224 zI733_225
+11 1
+.names I176 zI735_228 zI735_229
+11 1
+.names I172 zI731_220 zI731_221
+11 1
+.names I171 zI730_218 zI730_219
+11 1
+.names I563 zI557_174 zI557_175
+11 1
+.names I566 zI560_180 zI560_181
+11 1
+.names I564 zI558_176 zI558_177
+11 1
+.names I562 zI556_172 zI556_173
+11 1
+.names I565 zI559_178 zI559_179
+11 1
+.names I567 zI561_182 zI561_183
+11 1
+.names I267 zI576_184 zI576_185
+11 1
+.names I543 zI549_162 zI549_163
+11 1
+.names I547 zI553_170 zI553_171
+11 1
+.names I544 zI550_164 zI550_165
+11 1
+.names I542 zI548_160 zI548_161
+11 1
+.names I546 zI552_168 zI552_169
+11 1
+.names I545 zI551_166 zI551_167
+11 1
+.names I737 zI515_230 zI515_231
+11 1
+.names I514 zI675_190 zI675_191
+11 1
+.names I531 zI537_154 zI537_155
+11 1
+.names I532 zI538_156 zI538_157
+11 1
+.names I530 zI536_152 zI536_153
+11 1
+.names I533 zI539_158 zI539_159
+11 1
+.names I528 zI534_148 zI534_149
+11 1
+.names I529 zI535_150 zI535_151
+11 1
+.names I283 I748 I820
+11 1
+.names I748 zI283_236 zI283_237
+11 1
+.names I522 zI739_232 zI739_233
+11 1
+.names I813 zI523_244 zI523_245
+11 1
+.names I795 I442 I826
+1- 1
+-1 1
+.names I826 zI205_68 I843
+11 1
+.names I297 I749 I822
+11 1
+.names I749 zI297_238 zI297_239
+11 1
+.names I269 I747 I818
+11 1
+.names I747 zI269_234 zI269_235
+11 1
+.names I811 zI516_242 zI516_243
+11 1
+.names I515 zI737_230 zI737_231
+11 1
+.names I283 zI748_236 zI748_237
+11 1
+.names I523 zI813_244 zI813_245
+11 1
+.names I829 zI524_254 zI524_255
+11 1
+.names I297 zI749_238 zI749_239
+11 1
+.names I751 I322 I824
+11 1
+.names I751 zI322_240 zI322_241
+11 1
+.names I706 zI703_198 zI703_199
+11 1
+.names I269 zI747_234 zI747_235
+11 1
+.names I694 zI691_196 zI691_197
+11 1
+.names I827 zI517_252 zI517_253
+11 1
+.names I516 zI811_242 zI811_243
+11 1
+.names I682 zI679_194 zI679_195
+11 1
+.names I285 I838 I853
+11 1
+.names I838 zI285_258 zI285_259
+11 1
+.names I846 zI525_266 zI525_267
+11 1
+.names I524 zI829_254 zI829_255
+11 1
+.names I843 I443 I860
+1- 1
+-1 1
+.names I860 zI206_70 I877
+11 1
+.names I299 I839 I855
+11 1
+.names I839 zI299_260 zI299_261
+11 1
+.names I322 zI751_240 zI751_241
+11 1
+.names I703 zI706_198 zI706_199
+11 1
+.names I837 zI271_256 zI271_257
+11 1
+.names I271 I837 I851
+11 1
+.names I691 zI694_196 zI694_197
+11 1
+.names I844 zI518_264 zI518_265
+11 1
+.names I517 zI827_252 zI827_253
+11 1
+.names I679 zI682_194 zI682_195
+11 1
+.names I285 zI838_258 zI838_259
+11 1
+.names I863 zI526_276 zI526_277
+11 1
+.names I525 zI846_266 zI846_267
+11 1
+.names I299 zI839_260 zI839_261
+11 1
+.names I753 I840 I857
+11 1
+.names I840 zI753_262 zI753_263
+11 1
+.names I708 I817 I835
+11 1
+.names I817 zI708_250 zI708_251
+11 1
+.names I271 zI837_256 zI837_257
+11 1
+.names I816 zI696_248 zI696_249
+11 1
+.names I696 I816 I833
+11 1
+.names I861 zI519_274 zI519_275
+11 1
+.names I518 zI844_264 zI844_265
+11 1
+.names I684 I815 I831
+11 1
+.names I815 zI684_246 zI684_247
+11 1
+.names I287 I872 I885
+11 1
+.names I872 zI287_280 zI287_281
+11 1
+.names I526 zI863_276 zI863_277
+11 1
+.names I877 I444 I892
+1- 1
+-1 1
+.names I892 zI207_72 I905
+11 1
+.names I873 zI301_282 zI301_283
+11 1
+.names I301 I873 I887
+11 1
+.names I753 zI840_262 zI840_263
+11 1
+.names zI751_241 zI322_241 I825
+1- 1
+-1 1
+.names I825 I422 I842
+11 1
+.names I708 zI817_250 zI817_251
+11 1
+.names I871 zI273_278 zI273_279
+11 1
+.names I273 I871 I883
+11 1
+.names I696 zI816_248 zI816_249
+11 1
+.names I519 zI861_274 zI861_275
+11 1
+.names I684 zI815_246 zI815_247
+11 1
+.names I287 zI872_280 zI872_281
+11 1
+.names I301 zI873_282 zI873_283
+11 1
+.names I755 I874 I889
+11 1
+.names I874 zI755_284 zI755_285
+11 1
+.names I710 I850 I869
+11 1
+.names I850 zI710_272 zI710_273
+11 1
+.names I273 zI871_278 zI871_279
+11 1
+.names I849 zI698_270 zI698_271
+11 1
+.names I698 I849 I867
+11 1
+.names I686 I848 I865
+11 1
+.names I848 zI686_268 zI686_269
+11 1
+.names I289 I900 I911
+11 1
+.names I900 zI289_294 zI289_295
+11 1
+.names I905 I445 I918
+1- 1
+-1 1
+.names I918 zI208_74 I931
+11 1
+.names I901 zI303_296 zI303_297
+11 1
+.names I303 I901 I913
+11 1
+.names zI753_263 zI840_263 I858
+1- 1
+-1 1
+.names I858 I422 I876
+11 1
+.names I755 zI874_284 zI874_285
+11 1
+.names I710 zI850_272 zI850_273
+11 1
+.names I899 zI275_292 zI275_293
+11 1
+.names I275 I899 I909
+11 1
+.names I698 zI849_270 zI849_271
+11 1
+.names I686 zI848_268 zI848_269
+11 1
+.names I289 zI900_294 zI900_295
+11 1
+.names I303 zI901_296 zI901_297
+11 1
+.names I757 I902 I915
+11 1
+.names I902 zI757_298 zI757_299
+11 1
+.names I712 I882 I897
+11 1
+.names I882 zI712_290 zI712_291
+11 1
+.names I275 zI899_292 zI899_293
+11 1
+.names I700 I881 I895
+11 1
+.names I881 zI700_288 zI700_289
+11 1
+.names I688 I880 I893
+11 1
+.names I880 zI688_286 zI688_287
+11 1
+.names I931 I446 I942
+1- 1
+-1 1
+.names I942 zI209_76 I955
+11 1
+.names I305 I927 I937
+11 1
+.names I927 zI305_308 zI305_309
+11 1
+.names I757 zI902_298 zI902_299
+11 1
+.names zI755_285 zI874_285 I890
+1- 1
+-1 1
+.names I890 I422 I904
+11 1
+.names I712 zI882_290 zI882_291
+11 1
+.names I925 zI102_306 zI102_307
+11 1
+.names I700 zI881_288 zI881_289
+11 1
+.names I688 zI880_286 zI880_287
+11 1
+.names I305 zI927_308 zI927_309
+11 1
+.names I928 zI759_310 zI759_311
+11 1
+.names I759 I928 I939
+11 1
+.names I714 I908 I923
+11 1
+.names I908 zI714_304 zI714_305
+11 1
+.names I935 zI103_318 zI103_319
+11 1
+.names I102 zI925_306 zI925_307
+11 1
+.names I907 zI702_302 zI702_303
+11 1
+.names I702 I907 I921
+11 1
+.names I906 zI690_300 zI690_301
+11 1
+.names I690 I906 I919
+11 1
+.names I955 I447 I961
+1- 1
+-1 1
+.names I961 zI210_78 I967
+11 1
+.names I951 zI142_320 zI142_321
+11 1
+.names I759 zI928_310 zI928_311
+11 1
+.names zI757_299 zI902_299 I916
+1- 1
+-1 1
+.names I916 I422 I930
+11 1
+.names I714 zI908_304 zI908_305
+11 1
+.names I103 zI935_318 zI935_319
+11 1
+.names I702 zI907_302 zI907_303
+11 1
+.names I690 zI906_300 zI906_301
+11 1
+.names I956 zI143_324 zI143_325
+11 1
+.names I142 zI951_320 zI951_321
+11 1
+.names I761 I952 I958
+11 1
+.names I952 zI761_322 zI761_323
+11 1
+.names I934 zI568_316 zI568_317
+11 1
+.names I933 zI554_314 zI554_315
+11 1
+.names I932 zI540_312 zI540_313
+11 1
+.names I967 I448 I971
+1- 1
+-1 1
+.names I971 zI211_80 I975
+11 1
+.names I143 zI956_324 zI956_325
+11 1
+.names zI759_311 zI928_311 I940
+1- 1
+-1 1
+.names I940 I422 I954
+11 1
+.names I761 zI952_322 zI952_323
+11 1
+.names I568 zI934_316 zI934_317
+11 1
+.names I554 zI933_314 zI933_315
+11 1
+.names I540 zI932_312 zI932_313
+11 1
+.names I964 zI763_326 zI763_327
+11 1
+.names I763 I964 I968
+11 1
+.names I975 I449 I979
+1- 1
+-1 1
+.names I979 zI212_82 I983
+11 1
+.names zI761_323 zI952_323 I959
+1- 1
+-1 1
+.names I959 I422 I966
+11 1
+.names I763 zI964_326 zI964_327
+11 1
+.names I972 zI765_328 zI765_329
+11 1
+.names I765 I972 I976
+11 1
+.names I983 I450 I987
+1- 1
+-1 1
+.names I987 zI213_84 I991
+11 1
+.names zI763_327 zI964_327 I969
+1- 1
+-1 1
+.names I969 I422 I974
+11 1
+.names I765 zI972_328 zI972_329
+11 1
+.names I980 zI767_330 zI767_331
+11 1
+.names I767 I980 I984
+11 1
+.names I991 I451 I995
+1- 1
+-1 1
+.names I995 zI214_86 I999
+11 1
+.names zI765_329 zI972_329 I977
+1- 1
+-1 1
+.names I977 I422 I982
+11 1
+.names I767 zI980_330 zI980_331
+11 1
+.names I988 zI769_332 zI769_333
+11 1
+.names I769 I988 I992
+11 1
+.names I999 I452 I1003
+1- 1
+-1 1
+.names I1003 zI215_88 I1007
+11 1
+.names zI767_331 zI980_331 I985
+1- 1
+-1 1
+.names I985 I422 I990
+11 1
+.names I769 zI988_332 zI988_333
+11 1
+.names I771 I996 I1000
+11 1
+.names I996 zI771_334 zI771_335
+11 1
+.names I1007 I453 I1011
+1- 1
+-1 1
+.names I1011 zI216_90 I1015
+11 1
+.names zI769_333 zI988_333 I993
+1- 1
+-1 1
+.names I993 I422 I998
+11 1
+.names I771 zI996_334 zI996_335
+11 1
+.names I1004 zI773_336 zI773_337
+11 1
+.names I773 I1004 I1008
+11 1
+.names I1015 I454 I1019
+1- 1
+-1 1
+.names I1019 zI217_92 I1023
+11 1
+.names I773 zI1004_336 zI1004_337
+11 1
+.names zI771_335 zI996_335 I1001
+1- 1
+-1 1
+.names I1001 I422 I1006
+11 1
+.names I1012 zI775_338 zI775_339
+11 1
+.names I775 I1012 I1016
+11 1
+.names I1023 I455 I1027
+1- 1
+-1 1
+.names I1027 zI218_94 I1031
+11 1
+.names zI773_337 zI1004_337 I1009
+1- 1
+-1 1
+.names I1009 I422 I1014
+11 1
+.names I775 zI1012_338 zI1012_339
+11 1
+.names I1020 zI777_340 zI777_341
+11 1
+.names I777 I1020 I1024
+11 1
+.names I1031 I456 I1035
+1- 1
+-1 1
+.names I1035 zI219_96 I1039
+11 1
+.names I777 zI1020_340 zI1020_341
+11 1
+.names zI775_339 zI1012_339 I1017
+1- 1
+-1 1
+.names I1017 I422 I1022
+11 1
+.names I779 I1028 I1032
+11 1
+.names I1028 zI779_342 zI779_343
+11 1
+.names I1039 I457 I1043
+1- 1
+-1 1
+.names I1043 zI220_98 I1047
+11 1
+.names zI777_341 zI1020_341 I1025
+1- 1
+-1 1
+.names I1025 I422 I1030
+11 1
+.names I779 zI1028_342 zI1028_343
+11 1
+.names I610 I1036 I1040
+11 1
+.names I1036 zI610_344 zI610_345
+11 1
+.names I1047 I458 I1051
+1- 1
+-1 1
+.names I1051 zI221_100 I1055
+11 1
+.names I610 zI1036_344 zI1036_345
+11 1
+.names zI779_343 zI1028_343 I1033
+1- 1
+-1 1
+.names I1033 I422 I1038
+11 1
+.names I612 I1044 I1048
+11 1
+.names I1044 zI612_346 zI612_347
+11 1
+.names I1055 I459 I1059
+1- 1
+-1 1
+.names I1059 zI222_102 I1063
+11 1
+.names zI610_345 zI1036_345 I1041
+1- 1
+-1 1
+.names I1041 I422 I1046
+11 1
+.names I612 zI1044_346 zI1044_347
+11 1
+.names I1052 zI614_348 zI614_349
+11 1
+.names I614 I1052 I1056
+11 1
+.names I1063 I460 I1067
+1- 1
+-1 1
+.names I1067 zI223_104 I1071
+11 1
+.names I614 zI1052_348 zI1052_349
+11 1
+.names zI612_347 zI1044_347 I1049
+1- 1
+-1 1
+.names I1049 I422 I1054
+11 1
+.names I616 I1060 I1064
+11 1
+.names I1060 zI616_350 zI616_351
+11 1
+.names I1071 I461 I1075
+1- 1
+-1 1
+.names I1075 zI224_106 I1079
+11 1
+.names I616 zI1060_350 zI1060_351
+11 1
+.names zI614_349 zI1052_349 I1057
+1- 1
+-1 1
+.names I1057 I422 I1062
+11 1
+.names I1068 zI618_352 zI618_353
+11 1
+.names I618 I1068 I1072
+11 1
+.names I1079 I462 I1083
+1- 1
+-1 1
+.names I1083 zI225_108 I1087
+11 1
+.names zI616_351 zI1060_351 I1065
+1- 1
+-1 1
+.names I1065 I422 I1070
+11 1
+.names I618 zI1068_352 zI1068_353
+11 1
+.names I620 I1076 I1080
+11 1
+.names I1076 zI620_354 zI620_355
+11 1
+.names I620 zI1076_354 zI1076_355
+11 1
+.names zI618_353 zI1068_353 I1073
+1- 1
+-1 1
+.names I1073 I422 I1078
+11 1
+.names I1084 zI622_356 zI622_357
+11 1
+.names I622 I1084 I1089
+11 1
+.names I622 zI1084_356 zI1084_357
+11 1
+.names zI620_355 zI1076_355 I1081
+1- 1
+-1 1
+.names I1081 I422 I1086
+11 1
+.names I1092 zI624_358 zI624_359
+11 1
+.names I624 I1092 I1095
+11 1
+.names zI622_357 zI1084_357 I1090
+1- 1
+-1 1
+.names I1090 I422 I1094
+11 1
+.names I624 zI1092_358 zI1092_359
+11 1
+.names I1098 zI625_360 zI625_361
+11 1
+.names zI624_359 zI1092_359 I1096
+1- 1
+-1 1
+.names I1096 I422 I1100
+11 1
+.names I625 zI1098_360 zI1098_361
+11 1
+.names zI625_361 zI1098_361 I1101
+1- 1
+-1 1
+.names I1101 I422 I1104
+11 1
+.end

@@ -1,0 +1,1954 @@
+.model s1512.blif
+.inputs rst_11 rst_10 rst_9 rst_8 rst_7 rst_6 rst_5 rst_4 rst_3 rst_2 rst_1 \
+rst_0 numinp_7 numinp_6 numinp_5 numinp_4 numinp_3 numinp_2 numinp_1 numinp_0 \
+scaninp startinp videoinp ld_11 ld_10 ld_9 ld_8 GND VDD
+.outputs dataout_0 dataout_1 dataout_2 dataout_3 dataout_4 dataout_5 dataout_6 \
+dataout_7 addrout_0 addrout_1 addrout_2 addrout_3 addrout_4 addrout_5 \
+addrout_6 addrout_7 carryout1 carryout3 carryout7 memw eoc
+.latch    I3 start   3
+.latch    I22 video   3
+.latch    I41 scan   3
+.latch    I72 eoc   3
+.latch    I91 memw   3
+.latch    I225 actnum_0   3
+.latch    I244 actnum_1   3
+.latch    I263 actnum_2   3
+.latch    I282 actnum_3   3
+.latch    I301 actnum_4   3
+.latch    I320 actnum_5   3
+.latch    I339 actnum_6   3
+.latch    I358 actnum_7   3
+.latch    I490 flag   3
+.latch    I547 black_0   3
+.latch    I566 black_1   3
+.latch    I585 black_2   3
+.latch    I604 black_3   3
+.latch    I623 black_4   3
+.latch    I642 black_5   3
+.latch    I661 black_6   3
+.latch    I680 black_7   3
+.latch    I812 white_0   3
+.latch    I831 white_1   3
+.latch    I850 white_2   3
+.latch    I869 white_3   3
+.latch    I888 white_4   3
+.latch    I907 white_5   3
+.latch    I926 white_6   3
+.latch    I945 white_7   3
+.latch    I1182 num_0   3
+.latch    I1201 num_1   3
+.latch    I1220 num_2   3
+.latch    I1239 num_3   3
+.latch    I1258 num_4   3
+.latch    I1277 num_5   3
+.latch    I1296 num_6   3
+.latch    I1315 num_7   3
+.latch    I1334 dataout_0   3
+.latch    I1353 dataout_1   3
+.latch    I1372 dataout_2   3
+.latch    I1391 dataout_3   3
+.latch    I1410 dataout_4   3
+.latch    I1429 dataout_5   3
+.latch    I1448 dataout_6   3
+.latch    I1467 dataout_7   3
+.latch    I1486 addrout_0   3
+.latch    I1505 addrout_1   3
+.latch    I1524 addrout_2   3
+.latch    I1543 addrout_3   3
+.latch    I1562 addrout_4   3
+.latch    I1581 addrout_5   3
+.latch    I1600 addrout_6   3
+.latch    I1619 addrout_7   3
+.latch    op1 I1731   3
+.latch    op2 I1732   3
+.latch    op3 I1733   3
+.names I797 I798 carryout1
+00 1
+.names I475 I476 carryout3
+00 1
+.names I1062 I1063 carryout7
+00 1
+.names I13_1 I13_2 I3
+0- 1
+-0 1
+.names I32_1 I32_2 I22
+0- 1
+-0 1
+.names I51_1 I51_2 I41
+0- 1
+-0 1
+.names I82_1 I82_2 I72
+0- 1
+-0 1
+.names I101_1 I101_2 I91
+0- 1
+-0 1
+.names I235_1 I235_2 I225
+0- 1
+-0 1
+.names I254_1 I254_2 I244
+0- 1
+-0 1
+.names I273_1 I273_2 I263
+0- 1
+-0 1
+.names I292_1 I292_2 I282
+0- 1
+-0 1
+.names I311_1 I311_2 I301
+0- 1
+-0 1
+.names I330_1 I330_2 I320
+0- 1
+-0 1
+.names I349_1 I349_2 I339
+0- 1
+-0 1
+.names I368_1 I368_2 I358
+0- 1
+-0 1
+.names I500_1 I500_2 I490
+0- 1
+-0 1
+.names I557_1 I557_2 I547
+0- 1
+-0 1
+.names I576_1 I576_2 I566
+0- 1
+-0 1
+.names I595_1 I595_2 I585
+0- 1
+-0 1
+.names I614_1 I614_2 I604
+0- 1
+-0 1
+.names I633_1 I633_2 I623
+0- 1
+-0 1
+.names I652_1 I652_2 I642
+0- 1
+-0 1
+.names I671_1 I671_2 I661
+0- 1
+-0 1
+.names I690_1 I690_2 I680
+0- 1
+-0 1
+.names I822_1 I822_2 I812
+0- 1
+-0 1
+.names I841_1 I841_2 I831
+0- 1
+-0 1
+.names I860_1 I860_2 I850
+0- 1
+-0 1
+.names I879_1 I879_2 I869
+0- 1
+-0 1
+.names I898_1 I898_2 I888
+0- 1
+-0 1
+.names I917_1 I917_2 I907
+0- 1
+-0 1
+.names I936_1 I936_2 I926
+0- 1
+-0 1
+.names I955_1 I955_2 I945
+0- 1
+-0 1
+.names I1192_1 I1192_2 I1182
+0- 1
+-0 1
+.names I1211_1 I1211_2 I1201
+0- 1
+-0 1
+.names I1230_1 I1230_2 I1220
+0- 1
+-0 1
+.names I1249_1 I1249_2 I1239
+0- 1
+-0 1
+.names I1268_1 I1268_2 I1258
+0- 1
+-0 1
+.names I1287_1 I1287_2 I1277
+0- 1
+-0 1
+.names I1306_1 I1306_2 I1296
+0- 1
+-0 1
+.names I1325_1 I1325_2 I1315
+0- 1
+-0 1
+.names I1344_1 I1344_2 I1334
+0- 1
+-0 1
+.names I1363_1 I1363_2 I1353
+0- 1
+-0 1
+.names I1382_1 I1382_2 I1372
+0- 1
+-0 1
+.names I1401_1 I1401_2 I1391
+0- 1
+-0 1
+.names I1420_1 I1420_2 I1410
+0- 1
+-0 1
+.names I1439_1 I1439_2 I1429
+0- 1
+-0 1
+.names I1458_1 I1458_2 I1448
+0- 1
+-0 1
+.names I1477_1 I1477_2 I1467
+0- 1
+-0 1
+.names I1496_1 I1496_2 I1486
+0- 1
+-0 1
+.names I1515_1 I1515_2 I1505
+0- 1
+-0 1
+.names I1534_1 I1534_2 I1524
+0- 1
+-0 1
+.names I1553_1 I1553_2 I1543
+0- 1
+-0 1
+.names I1572_1 I1572_2 I1562
+0- 1
+-0 1
+.names I1591_1 I1591_2 I1581
+0- 1
+-0 1
+.names I1610_1 I1610_2 I1600
+0- 1
+-0 1
+.names I1629_1 I1629_2 I1619
+0- 1
+-0 1
+.names I1686_1 I1662 op1
+0- 1
+-0 1
+.names I1660 op2
+0 1
+.names I1661 op3
+0 1
+.names ld_10 I27
+0 1
+.names addrout_5 I1588
+0 1
+.names numinp_7 I1319
+0 1
+.names actnum_3 I165
+0 1
+.names actnum_3 I289
+0 1
+.names actnum_3 I423_1
+0 1
+.names actnum_3 I419
+0 1
+.names num_0 I1189
+0 1
+.names num_0 I1831_2
+0 1
+.names ld_8 I1187
+0 1
+.names ld_8 I1206
+0 1
+.names ld_8 I1225
+0 1
+.names ld_8 I1244
+0 1
+.names ld_8 I1263
+0 1
+.names ld_8 I1282
+0 1
+.names ld_8 I1301
+0 1
+.names ld_8 I1320
+0 1
+.names dataout_5 I1436
+0 1
+.names black_0 I554
+0 1
+.names black_0 I703_1
+0 1
+.names black_0 I699
+0 1
+.names num_6 I1303
+0 1
+.names num_6 I1867_2
+0 1
+.names numinp_2 I1224
+0 1
+.names black_6 I668
+0 1
+.names black_6 I787_1
+0 1
+.names black_6 I783
+0 1
+.names addrout_3 I1550
+0 1
+.names start I10
+0 1
+.names start I1657
+0 1
+.names num_2 I1227
+0 1
+.names num_2 I1843_2
+0 1
+.names num_4 I1265
+0 1
+.names num_4 I1855_2
+0 1
+.names black_1 I573
+0 1
+.names black_1 I717_1
+0 1
+.names black_1 I713
+0 1
+.names GND I63_1
+0 1
+.names ld_9 I8
+0 1
+.names videoinp I26
+0 1
+.names dataout_6 I1455
+0 1
+.names white_6 I933
+0 1
+.names white_6 I1052_1
+0 1
+.names white_6 I1048
+0 1
+.names black_4 I630
+0 1
+.names black_4 I759_1
+0 1
+.names black_4 I755
+0 1
+.names I1732 sttop_1
+0 1
+.names dataout_3 I1398
+0 1
+.names ld_11 I46
+0 1
+.names I1733 sttop_0
+0 1
+.names eoc I79
+0 1
+.names actnum_6 I201
+0 1
+.names actnum_6 I346
+0 1
+.names actnum_6 I465_1
+0 1
+.names actnum_6 I461
+0 1
+.names num_5 I1284
+0 1
+.names num_5 I1861_2
+0 1
+.names scan I48
+0 1
+.names scan I1658
+0 1
+.names white_3 I876
+0 1
+.names white_3 I1010_1
+0 1
+.names white_3 I1006
+0 1
+.names black_5 I649
+0 1
+.names black_5 I773_1
+0 1
+.names black_5 I769
+0 1
+.names white_4 I895
+0 1
+.names white_4 I1024_1
+0 1
+.names white_4 I1020
+0 1
+.names numinp_6 I1300
+0 1
+.names dataout_2 I1379
+0 1
+.names actnum_7 I213
+0 1
+.names actnum_7 I365
+0 1
+.names actnum_7 I479_1
+0 1
+.names actnum_7 I475
+0 1
+.names actnum_0 I129
+0 1
+.names actnum_0 I232
+0 1
+.names actnum_0 I381_1
+0 1
+.names actnum_0 I377
+0 1
+.names numinp_4 I1262
+0 1
+.names black_7 I687
+0 1
+.names black_7 I801_1
+0 1
+.names black_7 I797
+0 1
+.names actnum_1 I141
+0 1
+.names actnum_1 I251
+0 1
+.names actnum_1 I395_1
+0 1
+.names actnum_1 I391
+0 1
+.names actnum_2 I153
+0 1
+.names actnum_2 I270
+0 1
+.names actnum_2 I409_1
+0 1
+.names actnum_2 I405
+0 1
+.names white_5 I914
+0 1
+.names white_5 I1038_1
+0 1
+.names white_5 I1034
+0 1
+.names dataout_4 I1417
+0 1
+.names dataout_0 I1341
+0 1
+.names actnum_4 I177
+0 1
+.names actnum_4 I308
+0 1
+.names actnum_4 I437_1
+0 1
+.names actnum_4 I433
+0 1
+.names video I29
+0 1
+.names video I494
+0 1
+.names video I522
+0 1
+.names video I1807_1
+0 1
+.names video s13
+0 1
+.names addrout_4 I1569
+0 1
+.names memw I98
+0 1
+.names addrout_1 I1512
+0 1
+.names I1731 sttop_2
+0 1
+.names VDD I77
+0 1
+.names VDD I96
+0 1
+.names VDD I230
+0 1
+.names VDD I249
+0 1
+.names VDD I268
+0 1
+.names VDD I287
+0 1
+.names VDD I306
+0 1
+.names VDD I325
+0 1
+.names VDD I344
+0 1
+.names VDD I363
+0 1
+.names VDD I381_2
+0 1
+.names VDD I378
+0 1
+.names VDD I495
+0 1
+.names VDD I552
+0 1
+.names VDD I571
+0 1
+.names VDD I590
+0 1
+.names VDD I609
+0 1
+.names VDD I628
+0 1
+.names VDD I647
+0 1
+.names VDD I666
+0 1
+.names VDD I685
+0 1
+.names VDD I703_2
+0 1
+.names VDD I700
+0 1
+.names VDD I817
+0 1
+.names VDD I836
+0 1
+.names VDD I855
+0 1
+.names VDD I874
+0 1
+.names VDD I893
+0 1
+.names VDD I912
+0 1
+.names VDD I931
+0 1
+.names VDD I950
+0 1
+.names VDD I968_2
+0 1
+.names VDD I965
+0 1
+.names white_7 I952
+0 1
+.names white_7 I1066_1
+0 1
+.names white_7 I1062
+0 1
+.names black_3 I611
+0 1
+.names black_3 I745_1
+0 1
+.names black_3 I741
+0 1
+.names startinp I7
+0 1
+.names numinp_5 I1281
+0 1
+.names num_3 I1246
+0 1
+.names num_3 I1849_2
+0 1
+.names num_1 I1208
+0 1
+.names num_1 I1837_2
+0 1
+.names dataout_1 I1360
+0 1
+.names numinp_1 I1205
+0 1
+.names white_1 I838
+0 1
+.names white_1 I982_1
+0 1
+.names white_1 I978
+0 1
+.names numinp_3 I1243
+0 1
+.names addrout_7 I1626
+0 1
+.names white_0 I819
+0 1
+.names white_0 I968_1
+0 1
+.names white_0 I964
+0 1
+.names black_2 I592
+0 1
+.names black_2 I731_1
+0 1
+.names black_2 I727
+0 1
+.names scaninp I45
+0 1
+.names numinp_0 I1186
+0 1
+.names addrout_2 I1531
+0 1
+.names actnum_5 I189
+0 1
+.names actnum_5 I327
+0 1
+.names actnum_5 I451_1
+0 1
+.names actnum_5 I447
+0 1
+.names white_2 I857
+0 1
+.names white_2 I996_1
+0 1
+.names white_2 I992
+0 1
+.names addrout_6 I1607
+0 1
+.names flag I497
+0 1
+.names flag I1807_2
+0 1
+.names addrout_0 I1493
+0 1
+.names dataout_7 I1474
+0 1
+.names num_7 I1322
+0 1
+.names num_7 I1873_2
+0 1
+.names sttop_1 I1655
+0 1
+.names s13 I534
+0 1
+.names sttop_2 I1654
+0 1
+.names sttop_2 I1762
+0 1
+.names s13 GND I1787
+0- 1
+-0 1
+.names I1787 I1788
+0 1
+.names I377 I378 I375_1
+00 1
+.names I375_1 I395_2
+0 1
+.names I375_1 I392
+0 1
+.names I699 I700 I697_1
+00 1
+.names I697_1 I717_2
+0 1
+.names I697_1 I714
+0 1
+.names I964 I965 I962_1
+00 1
+.names I962_1 I982_2
+0 1
+.names I962_1 I979
+0 1
+.names I1762 sttop_1 s5
+00 1
+.names s5 I1339
+0 1
+.names s5 I1358
+0 1
+.names s5 I1377
+0 1
+.names s5 I1396
+0 1
+.names s5 I1415
+0 1
+.names s5 I1434
+0 1
+.names s5 I1453
+0 1
+.names s5 I1472
+0 1
+.names s5 I1491
+0 1
+.names s5 I1510
+0 1
+.names s5 I1529
+0 1
+.names s5 I1548
+0 1
+.names s5 I1567
+0 1
+.names s5 I1586
+0 1
+.names s5 I1605
+0 1
+.names s5 I1624
+0 1
+.names s5 I1793
+0 1
+.names sttop_0 sttop_1 I1762 I1795
+0-- 1
+-0- 1
+--0 1
+.names I1795 s3
+0 1
+.names I381_3 I381_4 incr3_0
+1- 1
+-1 1
+.names incr3_0 I117
+0 1
+.names I703_3 I703_4 incr1_0
+1- 1
+-1 1
+.names incr1_0 I523
+0 1
+.names incr1_0 I1086
+0 1
+.names I968_3 I968_4 incr7_0
+1- 1
+-1 1
+.names incr7_0 I535
+0 1
+.names I1790 I1788 I1777
+00 1
+.names I1777 s18
+0 1
+.names s3 I63_2
+0 1
+.names I391 I392 I375_2
+00 1
+.names I375_2 I409_2
+0 1
+.names I375_2 I406
+0 1
+.names I713 I714 I697_2
+00 1
+.names I697_2 I731_2
+0 1
+.names I697_2 I728
+0 1
+.names I978 I979 I962_2
+00 1
+.names I962_2 I996_2
+0 1
+.names I962_2 I993
+0 1
+.names s18 I116
+0 1
+.names sttop_0 I1793 I1786
+00 1
+.names I1786 I1785
+0 1
+.names I717_3 I717_4 incr1_1
+1- 1
+-1 1
+.names incr1_1 I1098
+0 1
+.names I1785 s15
+0 1
+.names I63_1 I63_2 muxop__0
+0- 1
+-0 1
+.names muxop__0 I76
+0 1
+.names I405 I406 I375_3
+00 1
+.names I375_3 I423_2
+0 1
+.names I375_3 I420
+0 1
+.names I727 I728 I697_3
+00 1
+.names I697_3 I745_2
+0 1
+.names I697_3 I742
+0 1
+.names I992 I993 I962_3
+00 1
+.names I962_3 I1010_2
+0 1
+.names I962_3 I1007
+0 1
+.names s15 s15bar
+0 1
+.names I1785 I1795 s17
+0- 1
+-0 1
+.names s17 I118
+0 1
+.names I1795 I1785 I1779
+0- 1
+-0 1
+.names I1779 I1780
+0 1
+.names I731_3 I731_4 incr1_2
+1- 1
+-1 1
+.names incr1_2 I1110
+0 1
+.names incr7_1 s15 mux15inp_1
+11 1
+.names mux15inp_1 I1097
+0 1
+.names incr3_1 s17 mux11inp_1
+11 1
+.names mux11inp_1 I140
+0 1
+.names I1802_1 I1802_2 s19
+0- 1
+-0 1
+.names s19 I95
+0 1
+.names video I1779 I1792
+0- 1
+-0 1
+.names I1792 s10
+0 1
+.names incr3_2 s17 mux11inp_2
+11 1
+.names mux11inp_2 I152
+0 1
+.names I419 I420 I375_4
+00 1
+.names I375_4 I437_2
+0 1
+.names I375_4 I434
+0 1
+.names I741 I742 I697_4
+00 1
+.names I697_4 I759_2
+0 1
+.names I697_4 I756
+0 1
+.names incr7_2 s15 mux15inp_2
+11 1
+.names mux15inp_2 I1109
+0 1
+.names I1006 I1007 I962_4
+00 1
+.names I962_4 I1024_2
+0 1
+.names I962_4 I1021
+0 1
+.names incr7_0 s15bar mux15inp_0
+1- 1
+-1 1
+.names mux15inp_0 I1085
+0 1
+.names s10 I524
+0 1
+.names s10 I1087
+0 1
+.names s10 I1099
+0 1
+.names s10 I1111
+0 1
+.names s10 I1123
+0 1
+.names s10 I1135
+0 1
+.names s10 I1147
+0 1
+.names s10 I1159
+0 1
+.names s10 I1171
+0 1
+.names video I1780 s12
+00 1
+.names s12 I536
+0 1
+.names I1780 I1782 s16
+00 1
+.names s16 I130
+0 1
+.names s16 I142
+0 1
+.names s16 I154
+0 1
+.names s16 I166
+0 1
+.names s16 I178
+0 1
+.names s16 I190
+0 1
+.names s16 I202
+0 1
+.names s16 I214
+0 1
+.names I745_3 I745_4 incr1_3
+1- 1
+-1 1
+.names incr1_3 I1122
+0 1
+.names I120_1 I120_2 mux11inp_0
+0- 1
+-0 1
+.names mux11inp_0 I128
+0 1
+.names incr1_1 s10 muxop_0_1
+11 1
+.names muxop_0_1 I570
+0 1
+.names muxop_0_1 I1651
+0 1
+.names incr1_2 s10 muxop_0_2
+11 1
+.names muxop_0_2 I589
+0 1
+.names muxop_0_2 I1650
+0 1
+.names incr7_1 s12 muxop_12_1
+11 1
+.names muxop_12_1 I835
+0 1
+.names incr7_2 s12 muxop_12_2
+11 1
+.names muxop_12_2 I854
+0 1
+.names incr3_3 s17 mux11inp_3
+11 1
+.names mux11inp_3 I164
+0 1
+.names I433 I434 I375_5
+00 1
+.names I375_5 I451_2
+0 1
+.names I375_5 I448
+0 1
+.names incr1_3 s10 muxop_0_3
+11 1
+.names muxop_0_3 I608
+0 1
+.names muxop_0_3 I1649
+0 1
+.names I755 I756 I697_5
+00 1
+.names I697_5 I773_2
+0 1
+.names I697_5 I770
+0 1
+.names incr7_3 s12 muxop_12_3
+11 1
+.names muxop_12_3 I873
+0 1
+.names incr7_3 s15 mux15inp_3
+11 1
+.names mux15inp_3 I1121
+0 1
+.names I1020 I1021 I962_5
+00 1
+.names I962_5 I1038_2
+0 1
+.names I962_5 I1035
+0 1
+.names I759_3 I759_4 incr1_4
+1- 1
+-1 1
+.names incr1_4 I1134
+0 1
+.names muxop_12_2 muxop_12_3 I1670
+0- 1
+-0 1
+.names I1670 I1671
+0 1
+.names I526_1 I526_2 muxop_0_0
+0- 1
+-0 1
+.names muxop_0_0 I551
+0 1
+.names muxop_0_0 I1652
+0 1
+.names I1089_1 I1089_2 muxop_15_0
+0- 1
+-0 1
+.names muxop_15_0 I1338
+0 1
+.names I1101_1 I1101_2 muxop_15_1
+0- 1
+-0 1
+.names muxop_15_1 I1357
+0 1
+.names I1113_1 I1113_2 muxop_15_2
+0- 1
+-0 1
+.names muxop_15_2 I1376
+0 1
+.names I538_1 I538_2 muxop_12_0
+0- 1
+-0 1
+.names muxop_12_0 I816
+0 1
+.names I144_1 I144_2 muxop_11_1
+0- 1
+-0 1
+.names muxop_11_1 I248
+0 1
+.names muxop_11_1 I1509
+0 1
+.names muxop_11_1 I1837_1
+0 1
+.names I156_1 I156_2 muxop_11_2
+0- 1
+-0 1
+.names muxop_11_2 I267
+0 1
+.names muxop_11_2 I1528
+0 1
+.names muxop_11_2 I1843_1
+0 1
+.names incr3_4 s17 mux11inp_4
+11 1
+.names mux11inp_4 I176
+0 1
+.names I447 I448 I375_6
+00 1
+.names I375_6 I465_2
+0 1
+.names I375_6 I462
+0 1
+.names incr1_4 s10 muxop_0_4
+11 1
+.names muxop_0_4 I627
+0 1
+.names I769 I770 I697_6
+00 1
+.names I697_6 I787_2
+0 1
+.names I697_6 I784
+0 1
+.names incr7_4 s12 muxop_12_4
+11 1
+.names muxop_12_4 I892
+0 1
+.names muxop_12_4 I1640
+0 1
+.names incr7_4 s15 mux15inp_4
+11 1
+.names mux15inp_4 I1133
+0 1
+.names I1034 I1035 I962_6
+00 1
+.names I962_6 I1052_2
+0 1
+.names I962_6 I1049
+0 1
+.names I132_1 I132_2 muxop_11_0
+0- 1
+-0 1
+.names muxop_11_0 I229
+0 1
+.names muxop_11_0 I1490
+0 1
+.names muxop_11_0 I1831_1
+0 1
+.names I168_1 I168_2 muxop_11_3
+0- 1
+-0 1
+.names muxop_11_3 I286
+0 1
+.names muxop_11_3 I1547
+0 1
+.names muxop_11_3 I1849_1
+0 1
+.names I773_3 I773_4 incr1_5
+1- 1
+-1 1
+.names incr1_5 I1146
+0 1
+.names I1125_1 I1125_2 muxop_15_3
+0- 1
+-0 1
+.names muxop_15_3 I1395
+0 1
+.names incr3_5 s17 mux11inp_5
+11 1
+.names mux11inp_5 I188
+0 1
+.names I461 I462 I375_7
+00 1
+.names I375_7 I479_2
+0 1
+.names I375_7 I476
+0 1
+.names incr1_5 s10 muxop_0_5
+11 1
+.names muxop_0_5 I646
+0 1
+.names I783 I784 I697_7
+00 1
+.names I697_7 I801_2
+0 1
+.names I697_7 I798
+0 1
+.names incr7_5 s12 muxop_12_5
+11 1
+.names muxop_12_5 I911
+0 1
+.names muxop_12_5 I1639
+0 1
+.names incr7_5 s15 mux15inp_5
+11 1
+.names mux15inp_5 I1145
+0 1
+.names I1048 I1049 I962_7
+00 1
+.names I962_7 I1066_2
+0 1
+.names I962_7 I1063
+0 1
+.names I180_1 I180_2 muxop_11_4
+0- 1
+-0 1
+.names muxop_11_4 I305
+0 1
+.names muxop_11_4 I1566
+0 1
+.names muxop_11_4 I1855_1
+0 1
+.names I787_3 I787_4 incr1_6
+1- 1
+-1 1
+.names incr1_6 I1158
+0 1
+.names I1137_1 I1137_2 muxop_15_4
+0- 1
+-0 1
+.names muxop_15_4 I1414
+0 1
+.names incr3_6 s17 mux11inp_6
+11 1
+.names mux11inp_6 I200
+0 1
+.names incr1_6 s10 muxop_0_6
+11 1
+.names muxop_0_6 I665
+0 1
+.names incr7_6 s12 muxop_12_6
+11 1
+.names muxop_12_6 I930
+0 1
+.names muxop_12_6 I1638
+0 1
+.names incr7_6 s15 mux15inp_6
+11 1
+.names mux15inp_6 I1157
+0 1
+.names I192_1 I192_2 muxop_11_5
+0- 1
+-0 1
+.names muxop_11_5 I324
+0 1
+.names muxop_11_5 I1585
+0 1
+.names muxop_11_5 I1861_1
+0 1
+.names I801_3 I801_4 incr1_7
+1- 1
+-1 1
+.names incr1_7 I1170
+0 1
+.names I1149_1 I1149_2 muxop_15_5
+0- 1
+-0 1
+.names muxop_15_5 I1433
+0 1
+.names incr3_7 s17 mux11inp_7
+11 1
+.names mux11inp_7 I212
+0 1
+.names incr1_7 s10 muxop_0_7
+11 1
+.names muxop_0_7 I684
+0 1
+.names incr7_7 s12 muxop_12_7
+11 1
+.names muxop_12_7 I949
+0 1
+.names muxop_12_7 I1637
+0 1
+.names incr7_7 s15 mux15inp_7
+11 1
+.names mux15inp_7 I1169
+0 1
+.names I204_1 I204_2 muxop_11_6
+0- 1
+-0 1
+.names muxop_11_6 I343
+0 1
+.names muxop_11_6 I1604
+0 1
+.names muxop_11_6 I1867_1
+0 1
+.names muxop_0_4 muxop_0_6 muxop_0_5 muxop_0_7 I1678
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I1678 I1679
+0 1
+.names I1161_1 I1161_2 muxop_15_6
+0- 1
+-0 1
+.names muxop_15_6 I1452
+0 1
+.names I216_1 I216_2 muxop_11_7
+0- 1
+-0 1
+.names muxop_11_7 I362
+0 1
+.names muxop_11_7 I1623
+0 1
+.names muxop_11_7 I1873_1
+0 1
+.names I1173_1 I1173_2 muxop_15_7
+0- 1
+-0 1
+.names muxop_15_7 I1471
+0 1
+.names I1674 I1667 I1676
+0- 1
+-0 1
+.names I1676 I1677
+0 1
+.names I1665 I1689_1 I1660
+00 1
+.names I1830_0 I1830_1 I1830_2 I1830_3 c0
+0000 1
+.names c0 I1653
+0 1
+.names I1692_1 I1692_2 I1683 I1677 I1661
+0000 1
+.names I703_1 VDD I703_4
+11 1
+.names I381_1 VDD I381_4
+11 1
+.names I1807_1 flag I1807_4
+11 1
+.names actnum_0 I381_2 I381_3
+11 1
+.names black_0 I703_2 I703_3
+11 1
+.names white_0 I968_2 I968_3
+11 1
+.names I968_1 VDD I968_4
+11 1
+.names video I1807_2 I1807_3
+11 1
+.names I395_1 I375_1 I395_4
+11 1
+.names I717_1 I697_1 I717_4
+11 1
+.names I982_1 I962_1 I982_4
+11 1
+.names sttop_0 I1654 I1655 I1685
+000 1
+.names I1685 scan I1689_1
+11 1
+.names I1685 I1658 I1692_1
+11 1
+.names actnum_1 I395_2 I395_3
+11 1
+.names black_1 I717_2 I717_3
+11 1
+.names white_1 I982_2 I982_3
+11 1
+.names I409_1 I375_2 I409_4
+11 1
+.names I731_1 I697_2 I731_4
+11 1
+.names I996_1 I962_2 I996_4
+11 1
+.names actnum_2 I409_2 I409_3
+11 1
+.names black_2 I731_2 I731_3
+11 1
+.names white_2 I996_2 I996_3
+11 1
+.names I423_1 I375_3 I423_4
+11 1
+.names I745_1 I697_3 I745_4
+11 1
+.names I1010_1 I962_3 I1010_4
+11 1
+.names I982_3 I982_4 incr7_1
+1- 1
+-1 1
+.names I395_3 I395_4 incr3_1
+1- 1
+-1 1
+.names I409_3 I409_4 incr3_2
+1- 1
+-1 1
+.names actnum_3 I423_2 I423_3
+11 1
+.names black_3 I745_2 I745_3
+11 1
+.names I996_3 I996_4 incr7_2
+1- 1
+-1 1
+.names white_3 I1010_2 I1010_3
+11 1
+.names I437_1 I375_4 I437_4
+11 1
+.names I759_1 I697_4 I759_4
+11 1
+.names I1024_1 I962_4 I1024_4
+11 1
+.names I423_3 I423_4 incr3_3
+1- 1
+-1 1
+.names actnum_4 I437_2 I437_3
+11 1
+.names black_4 I759_2 I759_3
+11 1
+.names I1010_3 I1010_4 incr7_3
+1- 1
+-1 1
+.names white_4 I1024_2 I1024_3
+11 1
+.names I451_1 I375_5 I451_4
+11 1
+.names I773_1 I697_5 I773_4
+11 1
+.names I1038_1 I962_5 I1038_4
+11 1
+.names I437_3 I437_4 incr3_4
+1- 1
+-1 1
+.names actnum_5 I451_2 I451_3
+11 1
+.names black_5 I773_2 I773_3
+11 1
+.names I1024_3 I1024_4 incr7_4
+1- 1
+-1 1
+.names white_5 I1038_2 I1038_3
+11 1
+.names muxop_11_1 I1837_2 I1837_3
+11 1
+.names muxop_11_2 I1843_2 I1843_3
+11 1
+.names I465_1 I375_6 I465_4
+11 1
+.names I787_1 I697_6 I787_4
+11 1
+.names I1052_1 I962_6 I1052_4
+11 1
+.names muxop_11_0 I1831_2 I1831_3
+11 1
+.names I1837_1 num_1 I1837_4
+11 1
+.names I1843_1 num_2 I1843_4
+11 1
+.names muxop_11_3 I1849_2 I1849_3
+11 1
+.names I451_3 I451_4 incr3_5
+1- 1
+-1 1
+.names actnum_6 I465_2 I465_3
+11 1
+.names black_6 I787_2 I787_3
+11 1
+.names I1038_3 I1038_4 incr7_5
+1- 1
+-1 1
+.names white_6 I1052_2 I1052_3
+11 1
+.names I1831_1 num_0 I1831_4
+11 1
+.names I1849_1 num_3 I1849_4
+11 1
+.names I479_1 I375_7 I479_4
+11 1
+.names I801_1 I697_7 I801_4
+11 1
+.names I1066_1 I962_7 I1066_4
+11 1
+.names muxop_11_4 I1855_2 I1855_3
+11 1
+.names I465_3 I465_4 incr3_6
+1- 1
+-1 1
+.names actnum_7 I479_2 I479_3
+11 1
+.names black_7 I801_2 I801_3
+11 1
+.names I1052_3 I1052_4 incr7_6
+1- 1
+-1 1
+.names white_7 I1066_2 I1066_3
+11 1
+.names I1855_1 num_4 I1855_4
+11 1
+.names muxop_11_5 I1861_2 I1861_3
+11 1
+.names I479_3 I479_4 incr3_7
+1- 1
+-1 1
+.names I1066_3 I1066_4 incr7_7
+1- 1
+-1 1
+.names I1861_1 num_5 I1861_4
+11 1
+.names muxop_11_6 I1867_2 I1867_3
+11 1
+.names I1867_1 num_6 I1867_4
+11 1
+.names I1652 I1650 I1651 I1649 I1681
+0000 1
+.names I1681 I1679 I1699_1
+11 1
+.names muxop_11_7 I1873_2 I1873_3
+11 1
+.names I1873_1 num_7 I1873_4
+11 1
+.names sttop_1 I1654 I1667
+00 1
+.names I1667 I1653 I1692_2
+11 1
+.names I289 VDD rst_3 I292_1
+1-- 1
+-1- 1
+--1 1
+.names I1189 ld_8 rst_8 I1192_1
+1-- 1
+-1- 1
+--1 1
+.names I1320 I1319 I1325_2
+1- 1
+-1 1
+.names I554 VDD rst_2 I557_1
+1-- 1
+-1- 1
+--1 1
+.names I1303 ld_8 rst_8 I1306_1
+1-- 1
+-1- 1
+--1 1
+.names I1225 I1224 I1230_2
+1- 1
+-1 1
+.names I668 VDD rst_2 I671_1
+1-- 1
+-1- 1
+--1 1
+.names I10 ld_9 rst_9 I13_1
+1-- 1
+-1- 1
+--1 1
+.names I1227 ld_8 rst_8 I1230_1
+1-- 1
+-1- 1
+--1 1
+.names I1265 ld_8 rst_8 I1268_1
+1-- 1
+-1- 1
+--1 1
+.names I573 VDD rst_2 I576_1
+1-- 1
+-1- 1
+--1 1
+.names I27 I26 I32_2
+1- 1
+-1 1
+.names I933 VDD rst_5 I936_1
+1-- 1
+-1- 1
+--1 1
+.names I630 VDD rst_2 I633_1
+1-- 1
+-1- 1
+--1 1
+.names I79 VDD rst_0 I82_1
+1-- 1
+-1- 1
+--1 1
+.names I346 VDD rst_3 I349_1
+1-- 1
+-1- 1
+--1 1
+.names I1284 ld_8 rst_8 I1287_1
+1-- 1
+-1- 1
+--1 1
+.names I48 ld_11 rst_11 I51_1
+1-- 1
+-1- 1
+--1 1
+.names I876 VDD rst_5 I879_1
+1-- 1
+-1- 1
+--1 1
+.names I649 VDD rst_2 I652_1
+1-- 1
+-1- 1
+--1 1
+.names I895 VDD rst_5 I898_1
+1-- 1
+-1- 1
+--1 1
+.names I1301 I1300 I1306_2
+1- 1
+-1 1
+.names I365 VDD rst_3 I368_1
+1-- 1
+-1- 1
+--1 1
+.names I232 VDD rst_3 I235_1
+1-- 1
+-1- 1
+--1 1
+.names I1263 I1262 I1268_2
+1- 1
+-1 1
+.names I687 VDD rst_2 I690_1
+1-- 1
+-1- 1
+--1 1
+.names I251 VDD rst_3 I254_1
+1-- 1
+-1- 1
+--1 1
+.names I270 VDD rst_3 I273_1
+1-- 1
+-1- 1
+--1 1
+.names I914 VDD rst_5 I917_1
+1-- 1
+-1- 1
+--1 1
+.names I308 VDD rst_3 I311_1
+1-- 1
+-1- 1
+--1 1
+.names I29 ld_10 rst_10 I32_1
+1-- 1
+-1- 1
+--1 1
+.names I98 VDD rst_1 I101_1
+1-- 1
+-1- 1
+--1 1
+.names I495 I494 I500_2
+1- 1
+-1 1
+.names I952 VDD rst_5 I955_1
+1-- 1
+-1- 1
+--1 1
+.names I611 VDD rst_2 I614_1
+1-- 1
+-1- 1
+--1 1
+.names I8 I7 I13_2
+1- 1
+-1 1
+.names I1282 I1281 I1287_2
+1- 1
+-1 1
+.names I1246 ld_8 rst_8 I1249_1
+1-- 1
+-1- 1
+--1 1
+.names I1208 ld_8 rst_8 I1211_1
+1-- 1
+-1- 1
+--1 1
+.names I1206 I1205 I1211_2
+1- 1
+-1 1
+.names I838 VDD rst_5 I841_1
+1-- 1
+-1- 1
+--1 1
+.names I1244 I1243 I1249_2
+1- 1
+-1 1
+.names I819 VDD rst_5 I822_1
+1-- 1
+-1- 1
+--1 1
+.names I592 VDD rst_2 I595_1
+1-- 1
+-1- 1
+--1 1
+.names I46 I45 I51_2
+1- 1
+-1 1
+.names I1187 I1186 I1192_2
+1- 1
+-1 1
+.names I327 VDD rst_3 I330_1
+1-- 1
+-1- 1
+--1 1
+.names I857 VDD rst_5 I860_1
+1-- 1
+-1- 1
+--1 1
+.names I497 VDD rst_4 I500_1
+1-- 1
+-1- 1
+--1 1
+.names I1322 ld_8 rst_8 I1325_1
+1-- 1
+-1- 1
+--1 1
+.names sttop_0 sttop_1 I1668
+0- 1
+-0 1
+.names I1668 start I1696_1
+1- 1
+-1 1
+.names I1807_3 I1807_4 I1782
+1- 1
+-1 1
+.names I1341 s5 rst_6 I1344_1
+1-- 1
+-1- 1
+--1 1
+.names I1360 s5 rst_6 I1363_1
+1-- 1
+-1- 1
+--1 1
+.names I1379 s5 rst_6 I1382_1
+1-- 1
+-1- 1
+--1 1
+.names I1398 s5 rst_6 I1401_1
+1-- 1
+-1- 1
+--1 1
+.names I1417 s5 rst_6 I1420_1
+1-- 1
+-1- 1
+--1 1
+.names I1436 s5 rst_6 I1439_1
+1-- 1
+-1- 1
+--1 1
+.names I1455 s5 rst_6 I1458_1
+1-- 1
+-1- 1
+--1 1
+.names I1474 s5 rst_6 I1477_1
+1-- 1
+-1- 1
+--1 1
+.names I1493 s5 rst_7 I1496_1
+1-- 1
+-1- 1
+--1 1
+.names I1512 s5 rst_7 I1515_1
+1-- 1
+-1- 1
+--1 1
+.names I1531 s5 rst_7 I1534_1
+1-- 1
+-1- 1
+--1 1
+.names I1550 s5 rst_7 I1553_1
+1-- 1
+-1- 1
+--1 1
+.names I1569 s5 rst_7 I1572_1
+1-- 1
+-1- 1
+--1 1
+.names I1588 s5 rst_7 I1591_1
+1-- 1
+-1- 1
+--1 1
+.names I1607 s5 rst_7 I1610_1
+1-- 1
+-1- 1
+--1 1
+.names I1626 s5 rst_7 I1629_1
+1-- 1
+-1- 1
+--1 1
+.names s5 sttop_0 I1783
+0- 1
+-0 1
+.names s13 GND I1790
+00 1
+.names I1788 I1783 I1790 I1802_1
+1-- 1
+-1- 1
+--1 1
+.names I1782 I1785 I1802_2
+1- 1
+-1 1
+.names I116 s17 I120_1
+1- 1
+-1 1
+.names I77 I76 I82_2
+1- 1
+-1 1
+.names I117 I118 I120_2
+1- 1
+-1 1
+.names I96 I95 I101_2
+1- 1
+-1 1
+.names I522 s10 I526_1
+1- 1
+-1 1
+.names I1097 s10 I1101_1
+1- 1
+-1 1
+.names I534 s12 I538_1
+1- 1
+-1 1
+.names I140 s16 I144_1
+1- 1
+-1 1
+.names I152 s16 I156_1
+1- 1
+-1 1
+.names I1109 s10 I1113_1
+1- 1
+-1 1
+.names I1085 s10 I1089_1
+1- 1
+-1 1
+.names I523 I524 I526_2
+1- 1
+-1 1
+.names I1086 I1087 I1089_2
+1- 1
+-1 1
+.names I1098 I1099 I1101_2
+1- 1
+-1 1
+.names I1110 I1111 I1113_2
+1- 1
+-1 1
+.names I535 I536 I538_2
+1- 1
+-1 1
+.names I129 I130 I132_2
+1- 1
+-1 1
+.names I141 I142 I144_2
+1- 1
+-1 1
+.names I153 I154 I156_2
+1- 1
+-1 1
+.names I165 I166 I168_2
+1- 1
+-1 1
+.names I177 I178 I180_2
+1- 1
+-1 1
+.names I189 I190 I192_2
+1- 1
+-1 1
+.names I201 I202 I204_2
+1- 1
+-1 1
+.names I213 I214 I216_2
+1- 1
+-1 1
+.names I1122 I1123 I1125_2
+1- 1
+-1 1
+.names I128 s16 I132_1
+1- 1
+-1 1
+.names I571 I570 I576_2
+1- 1
+-1 1
+.names I590 I589 I595_2
+1- 1
+-1 1
+.names I836 I835 I841_2
+1- 1
+-1 1
+.names I855 I854 I860_2
+1- 1
+-1 1
+.names I164 s16 I168_1
+1- 1
+-1 1
+.names I609 I608 I614_2
+1- 1
+-1 1
+.names I874 I873 I879_2
+1- 1
+-1 1
+.names I1121 s10 I1125_1
+1- 1
+-1 1
+.names I1134 I1135 I1137_2
+1- 1
+-1 1
+.names I552 I551 I557_2
+1- 1
+-1 1
+.names I1339 I1338 I1344_2
+1- 1
+-1 1
+.names I1358 I1357 I1363_2
+1- 1
+-1 1
+.names I1377 I1376 I1382_2
+1- 1
+-1 1
+.names I817 I816 I822_2
+1- 1
+-1 1
+.names I249 I248 I254_2
+1- 1
+-1 1
+.names I1510 I1509 I1515_2
+1- 1
+-1 1
+.names I268 I267 I273_2
+1- 1
+-1 1
+.names I1529 I1528 I1534_2
+1- 1
+-1 1
+.names I176 s16 I180_1
+1- 1
+-1 1
+.names I628 I627 I633_2
+1- 1
+-1 1
+.names I893 I892 I898_2
+1- 1
+-1 1
+.names I1133 s10 I1137_1
+1- 1
+-1 1
+.names I230 I229 I235_2
+1- 1
+-1 1
+.names I1491 I1490 I1496_2
+1- 1
+-1 1
+.names I287 I286 I292_2
+1- 1
+-1 1
+.names I1548 I1547 I1553_2
+1- 1
+-1 1
+.names I1146 I1147 I1149_2
+1- 1
+-1 1
+.names I1396 I1395 I1401_2
+1- 1
+-1 1
+.names I188 s16 I192_1
+1- 1
+-1 1
+.names I647 I646 I652_2
+1- 1
+-1 1
+.names I912 I911 I917_2
+1- 1
+-1 1
+.names I1145 s10 I1149_1
+1- 1
+-1 1
+.names I306 I305 I311_2
+1- 1
+-1 1
+.names I1567 I1566 I1572_2
+1- 1
+-1 1
+.names I1158 I1159 I1161_2
+1- 1
+-1 1
+.names I1415 I1414 I1420_2
+1- 1
+-1 1
+.names I200 s16 I204_1
+1- 1
+-1 1
+.names I666 I665 I671_2
+1- 1
+-1 1
+.names I931 I930 I936_2
+1- 1
+-1 1
+.names I1157 s10 I1161_1
+1- 1
+-1 1
+.names I325 I324 I330_2
+1- 1
+-1 1
+.names I1586 I1585 I1591_2
+1- 1
+-1 1
+.names I1170 I1171 I1173_2
+1- 1
+-1 1
+.names I1434 I1433 I1439_2
+1- 1
+-1 1
+.names I212 s16 I216_1
+1- 1
+-1 1
+.names I685 I684 I690_2
+1- 1
+-1 1
+.names I950 I949 I955_2
+1- 1
+-1 1
+.names I1169 s10 I1173_1
+1- 1
+-1 1
+.names I344 I343 I349_2
+1- 1
+-1 1
+.names I1605 I1604 I1610_2
+1- 1
+-1 1
+.names I1453 I1452 I1458_2
+1- 1
+-1 1
+.names I363 I362 I368_2
+1- 1
+-1 1
+.names I1624 I1623 I1629_2
+1- 1
+-1 1
+.names I1472 I1471 I1477_2
+1- 1
+-1 1
+.names muxop_12_0 I1673 I1671 muxop_12_1 I1674
+0--- 1
+-0-- 1
+--0- 1
+---0 1
+.names I1674 I1653 sttop_1 I1686_1
+1-- 1
+-1- 1
+--1 1
+.names I1696_1 I1654 I1662
+0- 1
+-0 1
+.names I1831_3 I1831_4 I1829_0
+00 1
+.names I1837_3 I1837_4 I1829_1
+00 1
+.names I1829_0 I1829_1 I1830_0
+0- 1
+-0 1
+.names I1843_3 I1843_4 I1829_2
+00 1
+.names I1849_3 I1849_4 I1829_3
+00 1
+.names I1829_2 I1829_3 I1830_1
+0- 1
+-0 1
+.names I1855_3 I1855_4 I1829_4
+00 1
+.names I1861_3 I1861_4 I1829_5
+00 1
+.names I1829_4 I1829_5 I1830_2
+0- 1
+-0 1
+.names I1640 I1638 I1639 I1637 I1673
+0000 1
+.names I1867_3 I1867_4 I1829_6
+00 1
+.names I1873_3 I1873_4 I1829_7
+00 1
+.names I1829_6 I1829_7 I1830_3
+0- 1
+-0 1
+.names I1657 I1668 I1654 I1683
+000 1
+.names I1676 I1699_1 I1665
+00 1
+.end

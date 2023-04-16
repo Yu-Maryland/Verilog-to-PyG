@@ -1,0 +1,1462 @@
+.model c1355.blif
+.inputs G1gat G8gat G15gat G22gat G29gat G36gat G43gat G50gat G57gat G64gat \
+G71gat G78gat G85gat G92gat G99gat G106gat G113gat G120gat G127gat G134gat \
+G141gat G148gat G155gat G162gat G169gat G176gat G183gat G190gat G197gat \
+G204gat G211gat G218gat G225gat G226gat G227gat G228gat G229gat G230gat \
+G231gat G232gat G233gat
+.outputs G1324gat G1325gat G1326gat G1327gat G1328gat G1329gat G1330gat \
+G1331gat G1332gat G1333gat G1334gat G1335gat G1336gat G1337gat G1338gat \
+G1339gat G1340gat G1341gat G1342gat G1343gat G1344gat G1345gat G1346gat \
+G1347gat G1348gat G1349gat G1350gat G1351gat G1352gat G1353gat G1354gat \
+G1355gat
+.names G225gat G233gat G242gat
+11 1
+.names G226gat G233gat G245gat
+11 1
+.names G227gat G233gat G248gat
+11 1
+.names G228gat G233gat G251gat
+11 1
+.names G229gat G233gat G254gat
+11 1
+.names G230gat G233gat G257gat
+11 1
+.names G231gat G233gat G260gat
+11 1
+.names G232gat G233gat G263gat
+11 1
+.names G1gat G8gat G266gat
+0- 1
+-0 1
+.names G15gat G22gat G269gat
+0- 1
+-0 1
+.names G29gat G36gat G272gat
+0- 1
+-0 1
+.names G43gat G50gat G275gat
+0- 1
+-0 1
+.names G57gat G64gat G278gat
+0- 1
+-0 1
+.names G71gat G78gat G281gat
+0- 1
+-0 1
+.names G85gat G92gat G284gat
+0- 1
+-0 1
+.names G99gat G106gat G287gat
+0- 1
+-0 1
+.names G113gat G120gat G290gat
+0- 1
+-0 1
+.names G127gat G134gat G293gat
+0- 1
+-0 1
+.names G141gat G148gat G296gat
+0- 1
+-0 1
+.names G155gat G162gat G299gat
+0- 1
+-0 1
+.names G169gat G176gat G302gat
+0- 1
+-0 1
+.names G183gat G190gat G305gat
+0- 1
+-0 1
+.names G197gat G204gat G308gat
+0- 1
+-0 1
+.names G211gat G218gat G311gat
+0- 1
+-0 1
+.names G1gat G29gat G314gat
+0- 1
+-0 1
+.names G57gat G85gat G317gat
+0- 1
+-0 1
+.names G8gat G36gat G320gat
+0- 1
+-0 1
+.names G64gat G92gat G323gat
+0- 1
+-0 1
+.names G15gat G43gat G326gat
+0- 1
+-0 1
+.names G71gat G99gat G329gat
+0- 1
+-0 1
+.names G22gat G50gat G332gat
+0- 1
+-0 1
+.names G78gat G106gat G335gat
+0- 1
+-0 1
+.names G113gat G141gat G338gat
+0- 1
+-0 1
+.names G169gat G197gat G341gat
+0- 1
+-0 1
+.names G120gat G148gat G344gat
+0- 1
+-0 1
+.names G176gat G204gat G347gat
+0- 1
+-0 1
+.names G127gat G155gat G350gat
+0- 1
+-0 1
+.names G183gat G211gat G353gat
+0- 1
+-0 1
+.names G134gat G162gat G356gat
+0- 1
+-0 1
+.names G190gat G218gat G359gat
+0- 1
+-0 1
+.names G1gat G266gat G362gat
+0- 1
+-0 1
+.names G8gat G266gat G363gat
+0- 1
+-0 1
+.names G15gat G269gat G364gat
+0- 1
+-0 1
+.names G22gat G269gat G365gat
+0- 1
+-0 1
+.names G29gat G272gat G366gat
+0- 1
+-0 1
+.names G36gat G272gat G367gat
+0- 1
+-0 1
+.names G43gat G275gat G368gat
+0- 1
+-0 1
+.names G50gat G275gat G369gat
+0- 1
+-0 1
+.names G57gat G278gat G370gat
+0- 1
+-0 1
+.names G64gat G278gat G371gat
+0- 1
+-0 1
+.names G71gat G281gat G372gat
+0- 1
+-0 1
+.names G78gat G281gat G373gat
+0- 1
+-0 1
+.names G85gat G284gat G374gat
+0- 1
+-0 1
+.names G92gat G284gat G375gat
+0- 1
+-0 1
+.names G99gat G287gat G376gat
+0- 1
+-0 1
+.names G106gat G287gat G377gat
+0- 1
+-0 1
+.names G113gat G290gat G378gat
+0- 1
+-0 1
+.names G120gat G290gat G379gat
+0- 1
+-0 1
+.names G127gat G293gat G380gat
+0- 1
+-0 1
+.names G134gat G293gat G381gat
+0- 1
+-0 1
+.names G141gat G296gat G382gat
+0- 1
+-0 1
+.names G148gat G296gat G383gat
+0- 1
+-0 1
+.names G155gat G299gat G384gat
+0- 1
+-0 1
+.names G162gat G299gat G385gat
+0- 1
+-0 1
+.names G169gat G302gat G386gat
+0- 1
+-0 1
+.names G176gat G302gat G387gat
+0- 1
+-0 1
+.names G183gat G305gat G388gat
+0- 1
+-0 1
+.names G190gat G305gat G389gat
+0- 1
+-0 1
+.names G197gat G308gat G390gat
+0- 1
+-0 1
+.names G204gat G308gat G391gat
+0- 1
+-0 1
+.names G211gat G311gat G392gat
+0- 1
+-0 1
+.names G218gat G311gat G393gat
+0- 1
+-0 1
+.names G1gat G314gat G394gat
+0- 1
+-0 1
+.names G29gat G314gat G395gat
+0- 1
+-0 1
+.names G57gat G317gat G396gat
+0- 1
+-0 1
+.names G85gat G317gat G397gat
+0- 1
+-0 1
+.names G8gat G320gat G398gat
+0- 1
+-0 1
+.names G36gat G320gat G399gat
+0- 1
+-0 1
+.names G64gat G323gat G400gat
+0- 1
+-0 1
+.names G92gat G323gat G401gat
+0- 1
+-0 1
+.names G15gat G326gat G402gat
+0- 1
+-0 1
+.names G43gat G326gat G403gat
+0- 1
+-0 1
+.names G71gat G329gat G404gat
+0- 1
+-0 1
+.names G99gat G329gat G405gat
+0- 1
+-0 1
+.names G22gat G332gat G406gat
+0- 1
+-0 1
+.names G50gat G332gat G407gat
+0- 1
+-0 1
+.names G78gat G335gat G408gat
+0- 1
+-0 1
+.names G106gat G335gat G409gat
+0- 1
+-0 1
+.names G113gat G338gat G410gat
+0- 1
+-0 1
+.names G141gat G338gat G411gat
+0- 1
+-0 1
+.names G169gat G341gat G412gat
+0- 1
+-0 1
+.names G197gat G341gat G413gat
+0- 1
+-0 1
+.names G120gat G344gat G414gat
+0- 1
+-0 1
+.names G148gat G344gat G415gat
+0- 1
+-0 1
+.names G176gat G347gat G416gat
+0- 1
+-0 1
+.names G204gat G347gat G417gat
+0- 1
+-0 1
+.names G127gat G350gat G418gat
+0- 1
+-0 1
+.names G155gat G350gat G419gat
+0- 1
+-0 1
+.names G183gat G353gat G420gat
+0- 1
+-0 1
+.names G211gat G353gat G421gat
+0- 1
+-0 1
+.names G134gat G356gat G422gat
+0- 1
+-0 1
+.names G162gat G356gat G423gat
+0- 1
+-0 1
+.names G190gat G359gat G424gat
+0- 1
+-0 1
+.names G218gat G359gat G425gat
+0- 1
+-0 1
+.names G362gat G363gat G426gat
+0- 1
+-0 1
+.names G364gat G365gat G429gat
+0- 1
+-0 1
+.names G366gat G367gat G432gat
+0- 1
+-0 1
+.names G368gat G369gat G435gat
+0- 1
+-0 1
+.names G370gat G371gat G438gat
+0- 1
+-0 1
+.names G372gat G373gat G441gat
+0- 1
+-0 1
+.names G374gat G375gat G444gat
+0- 1
+-0 1
+.names G376gat G377gat G447gat
+0- 1
+-0 1
+.names G378gat G379gat G450gat
+0- 1
+-0 1
+.names G380gat G381gat G453gat
+0- 1
+-0 1
+.names G382gat G383gat G456gat
+0- 1
+-0 1
+.names G384gat G385gat G459gat
+0- 1
+-0 1
+.names G386gat G387gat G462gat
+0- 1
+-0 1
+.names G388gat G389gat G465gat
+0- 1
+-0 1
+.names G390gat G391gat G468gat
+0- 1
+-0 1
+.names G392gat G393gat G471gat
+0- 1
+-0 1
+.names G394gat G395gat G474gat
+0- 1
+-0 1
+.names G396gat G397gat G477gat
+0- 1
+-0 1
+.names G398gat G399gat G480gat
+0- 1
+-0 1
+.names G400gat G401gat G483gat
+0- 1
+-0 1
+.names G402gat G403gat G486gat
+0- 1
+-0 1
+.names G404gat G405gat G489gat
+0- 1
+-0 1
+.names G406gat G407gat G492gat
+0- 1
+-0 1
+.names G408gat G409gat G495gat
+0- 1
+-0 1
+.names G410gat G411gat G498gat
+0- 1
+-0 1
+.names G412gat G413gat G501gat
+0- 1
+-0 1
+.names G414gat G415gat G504gat
+0- 1
+-0 1
+.names G416gat G417gat G507gat
+0- 1
+-0 1
+.names G418gat G419gat G510gat
+0- 1
+-0 1
+.names G420gat G421gat G513gat
+0- 1
+-0 1
+.names G422gat G423gat G516gat
+0- 1
+-0 1
+.names G424gat G425gat G519gat
+0- 1
+-0 1
+.names G426gat G429gat G522gat
+0- 1
+-0 1
+.names G432gat G435gat G525gat
+0- 1
+-0 1
+.names G438gat G441gat G528gat
+0- 1
+-0 1
+.names G444gat G447gat G531gat
+0- 1
+-0 1
+.names G450gat G453gat G534gat
+0- 1
+-0 1
+.names G456gat G459gat G537gat
+0- 1
+-0 1
+.names G462gat G465gat G540gat
+0- 1
+-0 1
+.names G468gat G471gat G543gat
+0- 1
+-0 1
+.names G474gat G477gat G546gat
+0- 1
+-0 1
+.names G480gat G483gat G549gat
+0- 1
+-0 1
+.names G486gat G489gat G552gat
+0- 1
+-0 1
+.names G492gat G495gat G555gat
+0- 1
+-0 1
+.names G498gat G501gat G558gat
+0- 1
+-0 1
+.names G504gat G507gat G561gat
+0- 1
+-0 1
+.names G510gat G513gat G564gat
+0- 1
+-0 1
+.names G516gat G519gat G567gat
+0- 1
+-0 1
+.names G426gat G522gat G570gat
+0- 1
+-0 1
+.names G429gat G522gat G571gat
+0- 1
+-0 1
+.names G432gat G525gat G572gat
+0- 1
+-0 1
+.names G435gat G525gat G573gat
+0- 1
+-0 1
+.names G438gat G528gat G574gat
+0- 1
+-0 1
+.names G441gat G528gat G575gat
+0- 1
+-0 1
+.names G444gat G531gat G576gat
+0- 1
+-0 1
+.names G447gat G531gat G577gat
+0- 1
+-0 1
+.names G450gat G534gat G578gat
+0- 1
+-0 1
+.names G453gat G534gat G579gat
+0- 1
+-0 1
+.names G456gat G537gat G580gat
+0- 1
+-0 1
+.names G459gat G537gat G581gat
+0- 1
+-0 1
+.names G462gat G540gat G582gat
+0- 1
+-0 1
+.names G465gat G540gat G583gat
+0- 1
+-0 1
+.names G468gat G543gat G584gat
+0- 1
+-0 1
+.names G471gat G543gat G585gat
+0- 1
+-0 1
+.names G474gat G546gat G586gat
+0- 1
+-0 1
+.names G477gat G546gat G587gat
+0- 1
+-0 1
+.names G480gat G549gat G588gat
+0- 1
+-0 1
+.names G483gat G549gat G589gat
+0- 1
+-0 1
+.names G486gat G552gat G590gat
+0- 1
+-0 1
+.names G489gat G552gat G591gat
+0- 1
+-0 1
+.names G492gat G555gat G592gat
+0- 1
+-0 1
+.names G495gat G555gat G593gat
+0- 1
+-0 1
+.names G498gat G558gat G594gat
+0- 1
+-0 1
+.names G501gat G558gat G595gat
+0- 1
+-0 1
+.names G504gat G561gat G596gat
+0- 1
+-0 1
+.names G507gat G561gat G597gat
+0- 1
+-0 1
+.names G510gat G564gat G598gat
+0- 1
+-0 1
+.names G513gat G564gat G599gat
+0- 1
+-0 1
+.names G516gat G567gat G600gat
+0- 1
+-0 1
+.names G519gat G567gat G601gat
+0- 1
+-0 1
+.names G570gat G571gat G602gat
+0- 1
+-0 1
+.names G572gat G573gat G607gat
+0- 1
+-0 1
+.names G574gat G575gat G612gat
+0- 1
+-0 1
+.names G576gat G577gat G617gat
+0- 1
+-0 1
+.names G578gat G579gat G622gat
+0- 1
+-0 1
+.names G580gat G581gat G627gat
+0- 1
+-0 1
+.names G582gat G583gat G632gat
+0- 1
+-0 1
+.names G584gat G585gat G637gat
+0- 1
+-0 1
+.names G586gat G587gat G642gat
+0- 1
+-0 1
+.names G588gat G589gat G645gat
+0- 1
+-0 1
+.names G590gat G591gat G648gat
+0- 1
+-0 1
+.names G592gat G593gat G651gat
+0- 1
+-0 1
+.names G594gat G595gat G654gat
+0- 1
+-0 1
+.names G596gat G597gat G657gat
+0- 1
+-0 1
+.names G598gat G599gat G660gat
+0- 1
+-0 1
+.names G600gat G601gat G663gat
+0- 1
+-0 1
+.names G602gat G607gat G666gat
+0- 1
+-0 1
+.names G612gat G617gat G669gat
+0- 1
+-0 1
+.names G602gat G612gat G672gat
+0- 1
+-0 1
+.names G607gat G617gat G675gat
+0- 1
+-0 1
+.names G622gat G627gat G678gat
+0- 1
+-0 1
+.names G632gat G637gat G681gat
+0- 1
+-0 1
+.names G622gat G632gat G684gat
+0- 1
+-0 1
+.names G627gat G637gat G687gat
+0- 1
+-0 1
+.names G602gat G666gat G690gat
+0- 1
+-0 1
+.names G607gat G666gat G691gat
+0- 1
+-0 1
+.names G612gat G669gat G692gat
+0- 1
+-0 1
+.names G617gat G669gat G693gat
+0- 1
+-0 1
+.names G602gat G672gat G694gat
+0- 1
+-0 1
+.names G612gat G672gat G695gat
+0- 1
+-0 1
+.names G607gat G675gat G696gat
+0- 1
+-0 1
+.names G617gat G675gat G697gat
+0- 1
+-0 1
+.names G622gat G678gat G698gat
+0- 1
+-0 1
+.names G627gat G678gat G699gat
+0- 1
+-0 1
+.names G632gat G681gat G700gat
+0- 1
+-0 1
+.names G637gat G681gat G701gat
+0- 1
+-0 1
+.names G622gat G684gat G702gat
+0- 1
+-0 1
+.names G632gat G684gat G703gat
+0- 1
+-0 1
+.names G627gat G687gat G704gat
+0- 1
+-0 1
+.names G637gat G687gat G705gat
+0- 1
+-0 1
+.names G690gat G691gat G706gat
+0- 1
+-0 1
+.names G692gat G693gat G709gat
+0- 1
+-0 1
+.names G694gat G695gat G712gat
+0- 1
+-0 1
+.names G696gat G697gat G715gat
+0- 1
+-0 1
+.names G698gat G699gat G718gat
+0- 1
+-0 1
+.names G700gat G701gat G721gat
+0- 1
+-0 1
+.names G702gat G703gat G724gat
+0- 1
+-0 1
+.names G704gat G705gat G727gat
+0- 1
+-0 1
+.names G242gat G718gat G730gat
+0- 1
+-0 1
+.names G245gat G721gat G733gat
+0- 1
+-0 1
+.names G248gat G724gat G736gat
+0- 1
+-0 1
+.names G251gat G727gat G739gat
+0- 1
+-0 1
+.names G254gat G706gat G742gat
+0- 1
+-0 1
+.names G257gat G709gat G745gat
+0- 1
+-0 1
+.names G260gat G712gat G748gat
+0- 1
+-0 1
+.names G263gat G715gat G751gat
+0- 1
+-0 1
+.names G242gat G730gat G754gat
+0- 1
+-0 1
+.names G718gat G730gat G755gat
+0- 1
+-0 1
+.names G245gat G733gat G756gat
+0- 1
+-0 1
+.names G721gat G733gat G757gat
+0- 1
+-0 1
+.names G248gat G736gat G758gat
+0- 1
+-0 1
+.names G724gat G736gat G759gat
+0- 1
+-0 1
+.names G251gat G739gat G760gat
+0- 1
+-0 1
+.names G727gat G739gat G761gat
+0- 1
+-0 1
+.names G254gat G742gat G762gat
+0- 1
+-0 1
+.names G706gat G742gat G763gat
+0- 1
+-0 1
+.names G257gat G745gat G764gat
+0- 1
+-0 1
+.names G709gat G745gat G765gat
+0- 1
+-0 1
+.names G260gat G748gat G766gat
+0- 1
+-0 1
+.names G712gat G748gat G767gat
+0- 1
+-0 1
+.names G263gat G751gat G768gat
+0- 1
+-0 1
+.names G715gat G751gat G769gat
+0- 1
+-0 1
+.names G754gat G755gat G770gat
+0- 1
+-0 1
+.names G756gat G757gat G773gat
+0- 1
+-0 1
+.names G758gat G759gat G776gat
+0- 1
+-0 1
+.names G760gat G761gat G779gat
+0- 1
+-0 1
+.names G762gat G763gat G782gat
+0- 1
+-0 1
+.names G764gat G765gat G785gat
+0- 1
+-0 1
+.names G766gat G767gat G788gat
+0- 1
+-0 1
+.names G768gat G769gat G791gat
+0- 1
+-0 1
+.names G642gat G770gat G794gat
+0- 1
+-0 1
+.names G645gat G773gat G797gat
+0- 1
+-0 1
+.names G648gat G776gat G800gat
+0- 1
+-0 1
+.names G651gat G779gat G803gat
+0- 1
+-0 1
+.names G654gat G782gat G806gat
+0- 1
+-0 1
+.names G657gat G785gat G809gat
+0- 1
+-0 1
+.names G660gat G788gat G812gat
+0- 1
+-0 1
+.names G663gat G791gat G815gat
+0- 1
+-0 1
+.names G642gat G794gat G818gat
+0- 1
+-0 1
+.names G770gat G794gat G819gat
+0- 1
+-0 1
+.names G645gat G797gat G820gat
+0- 1
+-0 1
+.names G773gat G797gat G821gat
+0- 1
+-0 1
+.names G648gat G800gat G822gat
+0- 1
+-0 1
+.names G776gat G800gat G823gat
+0- 1
+-0 1
+.names G651gat G803gat G824gat
+0- 1
+-0 1
+.names G779gat G803gat G825gat
+0- 1
+-0 1
+.names G654gat G806gat G826gat
+0- 1
+-0 1
+.names G782gat G806gat G827gat
+0- 1
+-0 1
+.names G657gat G809gat G828gat
+0- 1
+-0 1
+.names G785gat G809gat G829gat
+0- 1
+-0 1
+.names G660gat G812gat G830gat
+0- 1
+-0 1
+.names G788gat G812gat G831gat
+0- 1
+-0 1
+.names G663gat G815gat G832gat
+0- 1
+-0 1
+.names G791gat G815gat G833gat
+0- 1
+-0 1
+.names G818gat G819gat G834gat
+0- 1
+-0 1
+.names G820gat G821gat G847gat
+0- 1
+-0 1
+.names G822gat G823gat G860gat
+0- 1
+-0 1
+.names G824gat G825gat G873gat
+0- 1
+-0 1
+.names G828gat G829gat G886gat
+0- 1
+-0 1
+.names G832gat G833gat G899gat
+0- 1
+-0 1
+.names G830gat G831gat G912gat
+0- 1
+-0 1
+.names G826gat G827gat G925gat
+0- 1
+-0 1
+.names G834gat G938gat
+0 1
+.names G847gat G939gat
+0 1
+.names G860gat G940gat
+0 1
+.names G834gat G941gat
+0 1
+.names G847gat G942gat
+0 1
+.names G873gat G943gat
+0 1
+.names G834gat G944gat
+0 1
+.names G860gat G945gat
+0 1
+.names G873gat G946gat
+0 1
+.names G847gat G947gat
+0 1
+.names G860gat G948gat
+0 1
+.names G873gat G949gat
+0 1
+.names G886gat G950gat
+0 1
+.names G899gat G951gat
+0 1
+.names G886gat G952gat
+0 1
+.names G912gat G953gat
+0 1
+.names G925gat G954gat
+0 1
+.names G899gat G955gat
+0 1
+.names G925gat G956gat
+0 1
+.names G912gat G957gat
+0 1
+.names G925gat G958gat
+0 1
+.names G886gat G959gat
+0 1
+.names G912gat G960gat
+0 1
+.names G925gat G961gat
+0 1
+.names G886gat G962gat
+0 1
+.names G899gat G963gat
+0 1
+.names G925gat G964gat
+0 1
+.names G912gat G965gat
+0 1
+.names G899gat G966gat
+0 1
+.names G886gat G967gat
+0 1
+.names G912gat G968gat
+0 1
+.names G899gat G969gat
+0 1
+.names G847gat G970gat
+0 1
+.names G873gat G971gat
+0 1
+.names G847gat G972gat
+0 1
+.names G860gat G973gat
+0 1
+.names G834gat G974gat
+0 1
+.names G873gat G975gat
+0 1
+.names G834gat G976gat
+0 1
+.names G860gat G977gat
+0 1
+.names G938gat G939gat G940gat G873gat G978gat
+1111 1
+.names G941gat G942gat G860gat G943gat G979gat
+1111 1
+.names G944gat G847gat G945gat G946gat G980gat
+1111 1
+.names G834gat G947gat G948gat G949gat G981gat
+1111 1
+.names G958gat G959gat G960gat G899gat G982gat
+1111 1
+.names G961gat G962gat G912gat G963gat G983gat
+1111 1
+.names G964gat G886gat G965gat G966gat G984gat
+1111 1
+.names G925gat G967gat G968gat G969gat G985gat
+1111 1
+.names G978gat G979gat G980gat G981gat G986gat
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names G982gat G983gat G984gat G985gat G991gat
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names G925gat G950gat G912gat G951gat G986gat G996gat
+11111 1
+.names G925gat G952gat G953gat G899gat G986gat G1001gat
+11111 1
+.names G954gat G886gat G912gat G955gat G986gat G1006gat
+11111 1
+.names G956gat G886gat G957gat G899gat G986gat G1011gat
+11111 1
+.names G834gat G970gat G860gat G971gat G991gat G1016gat
+11111 1
+.names G834gat G972gat G973gat G873gat G991gat G1021gat
+11111 1
+.names G974gat G847gat G860gat G975gat G991gat G1026gat
+11111 1
+.names G976gat G847gat G977gat G873gat G991gat G1031gat
+11111 1
+.names G834gat G996gat G1036gat
+11 1
+.names G847gat G996gat G1039gat
+11 1
+.names G860gat G996gat G1042gat
+11 1
+.names G873gat G996gat G1045gat
+11 1
+.names G834gat G1001gat G1048gat
+11 1
+.names G847gat G1001gat G1051gat
+11 1
+.names G860gat G1001gat G1054gat
+11 1
+.names G873gat G1001gat G1057gat
+11 1
+.names G834gat G1006gat G1060gat
+11 1
+.names G847gat G1006gat G1063gat
+11 1
+.names G860gat G1006gat G1066gat
+11 1
+.names G873gat G1006gat G1069gat
+11 1
+.names G834gat G1011gat G1072gat
+11 1
+.names G847gat G1011gat G1075gat
+11 1
+.names G860gat G1011gat G1078gat
+11 1
+.names G873gat G1011gat G1081gat
+11 1
+.names G925gat G1016gat G1084gat
+11 1
+.names G886gat G1016gat G1087gat
+11 1
+.names G912gat G1016gat G1090gat
+11 1
+.names G899gat G1016gat G1093gat
+11 1
+.names G925gat G1021gat G1096gat
+11 1
+.names G886gat G1021gat G1099gat
+11 1
+.names G912gat G1021gat G1102gat
+11 1
+.names G899gat G1021gat G1105gat
+11 1
+.names G925gat G1026gat G1108gat
+11 1
+.names G886gat G1026gat G1111gat
+11 1
+.names G912gat G1026gat G1114gat
+11 1
+.names G899gat G1026gat G1117gat
+11 1
+.names G925gat G1031gat G1120gat
+11 1
+.names G886gat G1031gat G1123gat
+11 1
+.names G912gat G1031gat G1126gat
+11 1
+.names G899gat G1031gat G1129gat
+11 1
+.names G1gat G1036gat G1132gat
+0- 1
+-0 1
+.names G8gat G1039gat G1135gat
+0- 1
+-0 1
+.names G15gat G1042gat G1138gat
+0- 1
+-0 1
+.names G22gat G1045gat G1141gat
+0- 1
+-0 1
+.names G29gat G1048gat G1144gat
+0- 1
+-0 1
+.names G36gat G1051gat G1147gat
+0- 1
+-0 1
+.names G43gat G1054gat G1150gat
+0- 1
+-0 1
+.names G50gat G1057gat G1153gat
+0- 1
+-0 1
+.names G57gat G1060gat G1156gat
+0- 1
+-0 1
+.names G64gat G1063gat G1159gat
+0- 1
+-0 1
+.names G71gat G1066gat G1162gat
+0- 1
+-0 1
+.names G78gat G1069gat G1165gat
+0- 1
+-0 1
+.names G85gat G1072gat G1168gat
+0- 1
+-0 1
+.names G92gat G1075gat G1171gat
+0- 1
+-0 1
+.names G99gat G1078gat G1174gat
+0- 1
+-0 1
+.names G106gat G1081gat G1177gat
+0- 1
+-0 1
+.names G113gat G1084gat G1180gat
+0- 1
+-0 1
+.names G120gat G1087gat G1183gat
+0- 1
+-0 1
+.names G127gat G1090gat G1186gat
+0- 1
+-0 1
+.names G134gat G1093gat G1189gat
+0- 1
+-0 1
+.names G141gat G1096gat G1192gat
+0- 1
+-0 1
+.names G148gat G1099gat G1195gat
+0- 1
+-0 1
+.names G155gat G1102gat G1198gat
+0- 1
+-0 1
+.names G162gat G1105gat G1201gat
+0- 1
+-0 1
+.names G169gat G1108gat G1204gat
+0- 1
+-0 1
+.names G176gat G1111gat G1207gat
+0- 1
+-0 1
+.names G183gat G1114gat G1210gat
+0- 1
+-0 1
+.names G190gat G1117gat G1213gat
+0- 1
+-0 1
+.names G197gat G1120gat G1216gat
+0- 1
+-0 1
+.names G204gat G1123gat G1219gat
+0- 1
+-0 1
+.names G211gat G1126gat G1222gat
+0- 1
+-0 1
+.names G218gat G1129gat G1225gat
+0- 1
+-0 1
+.names G1gat G1132gat G1228gat
+0- 1
+-0 1
+.names G1036gat G1132gat G1229gat
+0- 1
+-0 1
+.names G8gat G1135gat G1230gat
+0- 1
+-0 1
+.names G1039gat G1135gat G1231gat
+0- 1
+-0 1
+.names G15gat G1138gat G1232gat
+0- 1
+-0 1
+.names G1042gat G1138gat G1233gat
+0- 1
+-0 1
+.names G22gat G1141gat G1234gat
+0- 1
+-0 1
+.names G1045gat G1141gat G1235gat
+0- 1
+-0 1
+.names G29gat G1144gat G1236gat
+0- 1
+-0 1
+.names G1048gat G1144gat G1237gat
+0- 1
+-0 1
+.names G36gat G1147gat G1238gat
+0- 1
+-0 1
+.names G1051gat G1147gat G1239gat
+0- 1
+-0 1
+.names G43gat G1150gat G1240gat
+0- 1
+-0 1
+.names G1054gat G1150gat G1241gat
+0- 1
+-0 1
+.names G50gat G1153gat G1242gat
+0- 1
+-0 1
+.names G1057gat G1153gat G1243gat
+0- 1
+-0 1
+.names G57gat G1156gat G1244gat
+0- 1
+-0 1
+.names G1060gat G1156gat G1245gat
+0- 1
+-0 1
+.names G64gat G1159gat G1246gat
+0- 1
+-0 1
+.names G1063gat G1159gat G1247gat
+0- 1
+-0 1
+.names G71gat G1162gat G1248gat
+0- 1
+-0 1
+.names G1066gat G1162gat G1249gat
+0- 1
+-0 1
+.names G78gat G1165gat G1250gat
+0- 1
+-0 1
+.names G1069gat G1165gat G1251gat
+0- 1
+-0 1
+.names G85gat G1168gat G1252gat
+0- 1
+-0 1
+.names G1072gat G1168gat G1253gat
+0- 1
+-0 1
+.names G92gat G1171gat G1254gat
+0- 1
+-0 1
+.names G1075gat G1171gat G1255gat
+0- 1
+-0 1
+.names G99gat G1174gat G1256gat
+0- 1
+-0 1
+.names G1078gat G1174gat G1257gat
+0- 1
+-0 1
+.names G106gat G1177gat G1258gat
+0- 1
+-0 1
+.names G1081gat G1177gat G1259gat
+0- 1
+-0 1
+.names G113gat G1180gat G1260gat
+0- 1
+-0 1
+.names G1084gat G1180gat G1261gat
+0- 1
+-0 1
+.names G120gat G1183gat G1262gat
+0- 1
+-0 1
+.names G1087gat G1183gat G1263gat
+0- 1
+-0 1
+.names G127gat G1186gat G1264gat
+0- 1
+-0 1
+.names G1090gat G1186gat G1265gat
+0- 1
+-0 1
+.names G134gat G1189gat G1266gat
+0- 1
+-0 1
+.names G1093gat G1189gat G1267gat
+0- 1
+-0 1
+.names G141gat G1192gat G1268gat
+0- 1
+-0 1
+.names G1096gat G1192gat G1269gat
+0- 1
+-0 1
+.names G148gat G1195gat G1270gat
+0- 1
+-0 1
+.names G1099gat G1195gat G1271gat
+0- 1
+-0 1
+.names G155gat G1198gat G1272gat
+0- 1
+-0 1
+.names G1102gat G1198gat G1273gat
+0- 1
+-0 1
+.names G162gat G1201gat G1274gat
+0- 1
+-0 1
+.names G1105gat G1201gat G1275gat
+0- 1
+-0 1
+.names G169gat G1204gat G1276gat
+0- 1
+-0 1
+.names G1108gat G1204gat G1277gat
+0- 1
+-0 1
+.names G176gat G1207gat G1278gat
+0- 1
+-0 1
+.names G1111gat G1207gat G1279gat
+0- 1
+-0 1
+.names G183gat G1210gat G1280gat
+0- 1
+-0 1
+.names G1114gat G1210gat G1281gat
+0- 1
+-0 1
+.names G190gat G1213gat G1282gat
+0- 1
+-0 1
+.names G1117gat G1213gat G1283gat
+0- 1
+-0 1
+.names G197gat G1216gat G1284gat
+0- 1
+-0 1
+.names G1120gat G1216gat G1285gat
+0- 1
+-0 1
+.names G204gat G1219gat G1286gat
+0- 1
+-0 1
+.names G1123gat G1219gat G1287gat
+0- 1
+-0 1
+.names G211gat G1222gat G1288gat
+0- 1
+-0 1
+.names G1126gat G1222gat G1289gat
+0- 1
+-0 1
+.names G218gat G1225gat G1290gat
+0- 1
+-0 1
+.names G1129gat G1225gat G1291gat
+0- 1
+-0 1
+.names G1228gat G1229gat G1324gat
+0- 1
+-0 1
+.names G1230gat G1231gat G1325gat
+0- 1
+-0 1
+.names G1232gat G1233gat G1326gat
+0- 1
+-0 1
+.names G1234gat G1235gat G1327gat
+0- 1
+-0 1
+.names G1236gat G1237gat G1328gat
+0- 1
+-0 1
+.names G1238gat G1239gat G1329gat
+0- 1
+-0 1
+.names G1240gat G1241gat G1330gat
+0- 1
+-0 1
+.names G1242gat G1243gat G1331gat
+0- 1
+-0 1
+.names G1244gat G1245gat G1332gat
+0- 1
+-0 1
+.names G1246gat G1247gat G1333gat
+0- 1
+-0 1
+.names G1248gat G1249gat G1334gat
+0- 1
+-0 1
+.names G1250gat G1251gat G1335gat
+0- 1
+-0 1
+.names G1252gat G1253gat G1336gat
+0- 1
+-0 1
+.names G1254gat G1255gat G1337gat
+0- 1
+-0 1
+.names G1256gat G1257gat G1338gat
+0- 1
+-0 1
+.names G1258gat G1259gat G1339gat
+0- 1
+-0 1
+.names G1260gat G1261gat G1340gat
+0- 1
+-0 1
+.names G1262gat G1263gat G1341gat
+0- 1
+-0 1
+.names G1264gat G1265gat G1342gat
+0- 1
+-0 1
+.names G1266gat G1267gat G1343gat
+0- 1
+-0 1
+.names G1268gat G1269gat G1344gat
+0- 1
+-0 1
+.names G1270gat G1271gat G1345gat
+0- 1
+-0 1
+.names G1272gat G1273gat G1346gat
+0- 1
+-0 1
+.names G1274gat G1275gat G1347gat
+0- 1
+-0 1
+.names G1276gat G1277gat G1348gat
+0- 1
+-0 1
+.names G1278gat G1279gat G1349gat
+0- 1
+-0 1
+.names G1280gat G1281gat G1350gat
+0- 1
+-0 1
+.names G1282gat G1283gat G1351gat
+0- 1
+-0 1
+.names G1284gat G1285gat G1352gat
+0- 1
+-0 1
+.names G1286gat G1287gat G1353gat
+0- 1
+-0 1
+.names G1288gat G1289gat G1354gat
+0- 1
+-0 1
+.names G1290gat G1291gat G1355gat
+0- 1
+-0 1
+.end

@@ -1,0 +1,364 @@
+.model s386.blif
+.inputs v6 v5 v4 v3 v2 v1 v0
+.outputs v13_D_12 v13_D_11 v13_D_10 v13_D_9 v13_D_8 v13_D_7 v13_D_6
+.latch    v13_D_5 v12   3
+.latch    v13_D_4 v11   3
+.latch    v13_D_3 v10   3
+.latch    v13_D_2 v9   3
+.latch    v13_D_1 v8   3
+.latch    v13_D_0 v7   3
+.names I198 v13_D_12
+0 1
+.names I201 v13_D_11
+0 1
+.names I204 v13_D_10
+0 1
+.names I207 v13_D_9
+0 1
+.names I210 v13_D_8
+0 1
+.names I213 v13_D_7
+0 1
+.names I216 v13_D_6
+0 1
+.names I219 v13_D_5
+0 1
+.names I222 v13_D_4
+0 1
+.names I225 v13_D_3
+0 1
+.names I228 v13_D_2
+0 1
+.names I231 v13_D_1
+0 1
+.names I234 v13_D_0
+0 1
+.names v3 v3bar
+0 1
+.names v6 v6bar
+0 1
+.names v5 v5bar
+0 1
+.names v2 v7 B35B
+1- 1
+-1 1
+.names B35B B35Bbar
+0 1
+.names v7bar v8bar B14B
+1- 1
+-1 1
+.names B14B B14Bbar
+0 1
+.names v8bar v3 B34B
+1- 1
+-1 1
+.names B34B B34Bbar
+0 1
+.names v4 v4bar
+0 1
+.names v11 v11bar
+0 1
+.names v8 v8bar
+0 1
+.names v7 v7bar
+0 1
+.names v12 v12bar
+0 1
+.names v0 v0bar
+0 1
+.names v10 v10bar
+0 1
+.names v9 v9bar
+0 1
+.names v1 v1bar
+0 1
+.names I64 I65 Lv13_D_12
+11 1
+.names Lv13_D_12 I198
+0 1
+.names I17 I18 Lv13_D_11
+1- 1
+-1 1
+.names Lv13_D_11 I201
+0 1
+.names v9 v11bar v12bar I124 Lv13_D_10
+1111 1
+.names Lv13_D_10 I204
+0 1
+.names v11bar v12bar I158 Lv13_D_9
+111 1
+.names Lv13_D_9 I207
+0 1
+.names I97 I98 Lv13_D_8
+11 1
+.names Lv13_D_8 I210
+0 1
+.names v9bar v10bar v12bar I148 Lv13_D_7
+1111 1
+.names Lv13_D_7 I213
+0 1
+.names v9bar v10bar I192 Lv13_D_6
+111 1
+.names Lv13_D_6 I216
+0 1
+.names v9bar v10bar I167 Lv13_D_5
+111 1
+.names Lv13_D_5 I219
+0 1
+.names v9bar v10bar I186 Lv13_D_4
+111 1
+.names Lv13_D_4 I222
+0 1
+.names I35 I36 Lv13_D_3
+1- 1
+-1 1
+.names Lv13_D_3 I225
+0 1
+.names I24 I25 Lv13_D_2
+1- 1
+-1 1
+.names Lv13_D_2 I228
+0 1
+.names v9bar v10bar I195 Lv13_D_1
+111 1
+.names Lv13_D_1 I231
+0 1
+.names v9bar v10bar v12bar I164 Lv13_D_0
+1111 1
+.names Lv13_D_0 I234
+0 1
+.names v0bar v5 v7bar v8bar I64
+1111 1
+.names v9 v10 v11bar v12bar I65
+1111 1
+.names v9bar v12bar I114
+11 1
+.names v7bar v8bar I113
+11 1
+.names v7bar v8bar I111
+11 1
+.names v3bar v4bar v11bar I109
+111 1
+.names v7 v11 I108
+11 1
+.names v5bar v7bar v11 v12 I106
+1111 1
+.names v2 v11bar v12bar I105
+111 1
+.names v8 v11 v12bar I103
+111 1
+.names v8bar v11bar v12 I102
+111 1
+.names v2 v8bar I100
+11 1
+.names v0 v5 II98
+11 1
+.names v1 v9bar I96
+11 1
+.names v5bar v7bar v8bar I89
+111 1
+.names v10 v11bar I89 I94
+111 1
+.names v9bar v10bar I93
+11 1
+.names v0 v11bar v12bar I91
+111 1
+.names v9bar v10bar I90
+11 1
+.names v0 v6bar v7bar v8bar I97
+1111 1
+.names v9bar v10 v11bar v12bar I98
+1111 1
+.names v5bar v9 v11bar v12bar I87
+1111 1
+.names v2 v3 v8 I104
+111 1
+.names v11bar v12bar I104 I85
+111 1
+.names v8bar v11 v12 I84
+111 1
+.names v11bar v12bar I79
+11 1
+.names v0 v8bar v10 I77
+111 1
+.names v1bar v4 v10bar B34Bbar I76
+1111 1
+.names v7 v8bar v11 I74
+111 1
+.names v4bar v11bar B34Bbar I73
+111 1
+.names v4bar v11bar B34Bbar I71
+111 1
+.names v7 v11bar I69
+11 1
+.names II98 v10bar B40B
+1- 1
+-1 1
+.names B40B v1 v7bar v8bar I124
+1111 1
+.names v4 v7 I66
+11 1
+.names B35B B34B II65
+11 1
+.names v9bar v10bar v12bar I63
+111 1
+.names I90 I91 B23B
+1- 1
+-1 1
+.names B23B v7bar v8bar I62
+111 1
+.names I111 v12bar B42B
+1- 1
+-1 1
+.names v1 B42B I60
+11 1
+.names I108 I109 B43B
+1- 1
+-1 1
+.names B43B v8 v12bar I59
+111 1
+.names I84 I85 B32B
+1- 1
+-1 1
+.names B32B v7bar I57
+11 1
+.names v11 v12bar B14Bbar I56
+111 1
+.names v0bar v9bar v10bar I54
+111 1
+.names I93 I94 B27B
+1- 1
+-1 1
+.names B27B v1 I53
+11 1
+.names v9bar v10bar v12bar I51
+111 1
+.names v10bar I87 B21B
+1- 1
+-1 1
+.names B21B v7bar v8bar I50
+111 1
+.names B14B v11 I48
+11 1
+.names v4bar v11bar B34Bbar I47
+111 1
+.names I73 I74 B38B
+1- 1
+-1 1
+.names B38B v0 v1bar I148
+111 1
+.names I105 I106 B29B
+1- 1
+-1 1
+.names v8bar B29B I44
+11 1
+.names I71 v7 B30B
+1- 1
+-1 1
+.names B30B v12bar I43
+11 1
+.names v7 I100 B17B
+1- 1
+-1 1
+.names v4 v11bar B17B I41
+111 1
+.names B35Bbar I69 B16B
+1- 1
+-1 1
+.names v3 v8 B16B I40
+111 1
+.names v5 v7 v8bar v11 I39
+1111 1
+.names I76 I77 B39B
+1- 1
+-1 1
+.names B39B v7bar v9bar I158
+111 1
+.names v10bar I79 B25B
+1- 1
+-1 1
+.names v0bar I96 B26B
+1- 1
+-1 1
+.names v7bar v8bar B25B B26B I36
+1111 1
+.names I53 I54 B28B
+1- 1
+-1 1
+.names B28B v12bar I35
+11 1
+.names I47 I48 B15B
+1- 1
+-1 1
+.names B15B v0 v1bar I164
+111 1
+.names I56 I57 B33B
+1- 1
+-1 1
+.names B33B v0 v1bar I167
+111 1
+.names II65 I66 B36B
+1- 1
+-1 1
+.names B36B v11bar v12bar I31
+111 1
+.names v5 v7bar v8bar I171
+111 1
+.names v11 v12 I171 I30
+111 1
+.names v0 v7bar v8bar I175
+111 1
+.names v10 v11bar v12bar I175 I28
+1111 1
+.names I59 I60 B44B
+1- 1
+-1 1
+.names B44B v10bar I27
+11 1
+.names I50 I51 B22B
+1- 1
+-1 1
+.names v0bar B22B I25
+11 1
+.names I62 I63 B24B
+1- 1
+-1 1
+.names B24B v1 I24
+11 1
+.names I102 I103 B18B
+1- 1
+-1 1
+.names v7bar B18B I22
+11 1
+.names I39 I40 I41 B19B
+1-- 1
+-1- 1
+--1 1
+.names B19B v12bar I21
+11 1
+.names I43 I44 B31B
+1- 1
+-1 1
+.names B31B v0 v1bar I186
+111 1
+.names I113 I114 B41B
+1- 1
+-1 1
+.names v0bar v10bar B41B I18
+111 1
+.names I27 I28 B45B
+1- 1
+-1 1
+.names B45B v9bar I17
+11 1
+.names I30 I31 B37B
+1- 1
+-1 1
+.names B37B v0 v1bar I192
+111 1
+.names I21 I22 B20B
+1- 1
+-1 1
+.names B20B v0 v1bar I195
+111 1
+.end
