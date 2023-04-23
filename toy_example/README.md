@@ -26,7 +26,7 @@ usage: write_edgelist [-N] <file>
 	-h     : print the help massage
 	file   : the name of the file to write (extension .el)
 ```
-![](mult-2b-aig-plot.jpeg)
+![mult-2b AIG](mult-2b-aig-plot.jpg)
 
 #### Step 2: Check edgelist file written (mult-2b.el)
 
