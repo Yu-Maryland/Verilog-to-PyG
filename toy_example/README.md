@@ -1,85 +1,70 @@
-## Verilog-to-PyG - Toy Example
+## Verilog-to-PyG - A framework for Graph Learning on RTL Designs
 
-Author: Cunxi Yu
+### Toy example tutorials
 
-### 2-bit Multiplier And-Inv-Graph (AIG) representation
+Welcome to Verilog-to-PyG project! Here's an outline of what you can expect to find in this tutorial page.
 
-```markdown
-This is an example of processing 2-bit Multiplier in AIG 
-representation for intefacing PyG.
+- [Example 1: Representing behavior RTL in AIG-to-PyG](./example/mult-2b-aig.md)
+
+```verilog
+// full verilog used in this example can be found at "mult-2b.v"
+module Multi2 ( 
+    a0, a1, b0, b1,
+    m0, m1, m2, m3  );
+  input  a0, a1, b0, b1;
+  output m0, m1, m2, m3;
+  wire \new_Multi2|x0_0_ , \new_Multi2|x0_1_ , \new_Multi2|x0_2_ ,
+    \new_Multi2|x0_3_ , \new_Multi2|y0_0_ , \new_Multi2|y0_1_ ,
+    \new_Multi2|y0_2_ , \new_Multi2|y0_3_ , \new_Multi2|y1_0_ ,
+    \new_Multi2|y1_1_ , \new_Multi2|y1_2_ , \new_Multi2|y1_3_ ,
+    \new_Multi2|ADD4(1)|c_ , new_n60_, new_n62_, new_n64_,  ...;
+  assign \new_Multi2|x0_0_  = 1'b0;
+  assign \new_Multi2|x0_1_  = 1'b0;
+  assign \new_Multi2|x0_2_  = 1'b0;
+  assign \new_Multi2|x0_3_  = 1'b0;
+  assign \new_Multi2|y0_0_  = b0 & a0;
+  ...
+  assign m0 = \new_Multi2|x2_0_ ;
+  assign m1 = \new_Multi2|x2_1_ ;
+  assign m2 = \new_Multi2|x2_2_ ;
+  assign m3 = \new_Multi2|x2_3_ ;
+  assign \new_Multi2|ADD4(1)|c_  = 1'b0;
+  assign new_n60_ = \new_Multi2|x0_0_  & \new_Multi2|y0_0_ ;
+  assign new_n62_ = ~\new_Multi2|x0_0_  & ~\new_Multi2|y0_0_ ;
+  assign new_n64_ = ~new_n60_ & ~new_n62_;
+  ...
+  ...
+endmodule
+
+```
+- [Example 2: Representing technology mapped design Circuit-to-PyG](./example/mult-2b-mapped.md)
+ 
+```verilog
+// design is mapped using "7nm_lvt_ff.lib"
+module Multi2 ( 
+    a0, a1, b0, b1,
+    m0, m1, m2, m3  );
+  input  a0, a1, b0, b1;
+  output m0, m1, m2, m3;
+  wire new_n9_, new_n10_, new_n12_, new_n13_, new_n15_, new_n16_;
+  INVx1_ASAP7_75t_L         g0(.A(a0), .Y(new_n9_));
+  INVx1_ASAP7_75t_L         g1(.A(b0), .Y(new_n10_));
+  NOR2xp33_ASAP7_75t_L      g2(.A(new_n9_), .B(new_n10_), .Y(m0));
+  AND4x1_ASAP7_75t_L        g3(.A(b0), .B(a0), .C(a1), .D(b1), .Y(new_n12_));
+  AOI22xp33_ASAP7_75t_L     g4(.A1(a0), .A2(b1), .B1(a1), .B2(b0), .Y(new_n13_));
+  NOR2xp33_ASAP7_75t_L      g5(.A(new_n13_), .B(new_n12_), .Y(m1));
+  INVx1_ASAP7_75t_L         g6(.A(a1), .Y(new_n15_));
+  INVx1_ASAP7_75t_L         g7(.A(b1), .Y(new_n16_));
+  AOI211xp5_ASAP7_75t_L     g8(.A1(b0), .A2(a0), .B(new_n15_), .C(new_n16_), .Y(m2));
+  NOR4xp25_ASAP7_75t_L      g9(.A(new_n15_), .B(new_n9_), .C(new_n16_), .D(new_n10_), .Y(m3));
+endmodule
+
+
+
 ```
 
-#### Step 1: Process in ABC
+### Setups
 
-```bash
-./abc 
-abc 01> read mult-2b.blif
-Hierarchy reader flattened 10 instances of logic boxes and left 0 black boxes.
-abc 02> strash
-abc 03> write_edgelist mult-2b.el 
-WriteEdgelist (Verilog-to-PyG @ https://github.com/ycunxi/Verilog-to-PyG) starts writing to mult-2b.el
-abc 04> write_edgelist -h
-usage: write_edgelist [-N] <file>
-	         writes the network into edgelist file
-	         part of Verilog-2-PyG (PyTorch Geometric). more details https://github.com/ycunxi/Verilog-to-PyG 
-	-N     : toggle keeping original naming of the netlist in edgelist (default=False)
-	-h     : print the help massage
-	file   : the name of the file to write (extension .el)
-```
-<img src="mult-2b-aig-plot.jpg" alt="AIG of 2-b Multiplier" width="300" />
-
-#### Step 2: Check edgelist file written (mult-2b.el)
-
-Specifically, here Pi/Po are hashed from ID 1 to 8
-
-- **a0 = 1/9, b0 = 2/10, b1 = 3/11, a1 =4/12**
-- **m0 = 23/5, m1 = 24/6, m2 = 25/7, m3 = 26/8**
-- **note that Pi/Po nodes in AIGs have Pin node (2nd hash value)**
-- others are AIG nodes
-
-
-```markdown
-# Benchmark Edgelist Dumping (beta) "Multi2" written by ABC on Sun Apr 23 17:03:50 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)
-1 9 Pi 00
-2 10 Pi 00
-3 11 Pi 00
-4 12 Pi 00
-9 23 AIG 11
-11 23 AIG 11
-10 27 AIG 11
-11 27 AIG 11
-9 28 AIG 11
-12 28 AIG 11
-27 29 AIG 11
-28 29 AIG 11
-27 30 AIG 00
-28 30 AIG 00
-29 24 AIG 00
-30 24 AIG 00
-10 31 AIG 11
-12 31 AIG 11
-29 26 AIG 11
-31 26 AIG 11
-29 32 AIG 00
-31 32 AIG 00
-26 25 AIG 00
-32 25 AIG 00
-23 5 Po 00
-24 6 Po 00
-25 7 Po 00
-26 8 Po 00
-```
-
-#### Step 3: Check the topology of the netlist
-
-For example, one path of the AIG is
-
-```bash
-1 9 Pi 00 # a0
-3 11 Pi 00 # b0
-9 23 AIG 11 # a0 * b0 = 23 (solid AIG edge)
-11 23 AIG 11 # a0 * b0 = 23 (solid AIG edge)
-23 5 Po 00 # 23 = 5 = m0
-```
-
+- Make sure you compile ABC
+- Link ABC binary to the working folder (use ```ln -s```)
 
