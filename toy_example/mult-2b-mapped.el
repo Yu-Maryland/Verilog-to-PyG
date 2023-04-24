@@ -1,4 +1,8 @@
-# Benchmark Edgelist Dumping (beta) "Multi2" written by ABC on Sun Apr 23 19:06:42 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)
+# Benchmark Edgelist Dumping (beta) "Multi2" written by ABC on Mon Apr 24 10:08:34 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)
+1 9 Pi 00
+2 10 Pi 00
+3 11 Pi 00
+4 12 Pi 00
 9 27 INVx1_ASAP7_75t_L
 11 28 INVx1_ASAP7_75t_L
 27 28 23 NOR2xp33_ASAP7_75t_L
@@ -9,3 +13,7 @@
 12 32 INVx1_ASAP7_75t_L
 11 9 31 32 25 AOI211xp5_ASAP7_75t_L
 31 27 32 28 26 NOR4xp25_ASAP7_75t_L
+23 5 Po 00
+24 6 Po 00
+25 7 Po 00
+26 8 Po 00
