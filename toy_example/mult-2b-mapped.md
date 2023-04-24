@@ -27,16 +27,13 @@ usage: write_edgelist [-N] <file>
 	-h     : print the help massage
 	file   : the name of the file to write (extension .el)
 ```
-<img src="mult-2b-mapped-plot.jpg" alt="AIG of 2-b Multiplier" width="600" />
+<img src="mult-2b-mapped-plot.jpg" alt="AIG of 2-b Multiplier" width="800" />
 
 #### Step 2: Check edgelist file written (mult-2b.el)
-
-Specifically, here Pi/Po are hashed from ID 1 to 8
 
 
 
 ```markdown
-# Benchmark Edgelist Dumping (beta) "Multi2" written by ABC on Sun Apr 23 17:03:50 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)
 # Benchmark Edgelist Dumping (beta) "Multi2" written by ABC on Sun Apr 23 19:06:42 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)
 9 27 INVx1_ASAP7_75t_L
 11 28 INVx1_ASAP7_75t_L
