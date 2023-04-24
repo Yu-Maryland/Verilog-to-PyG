@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verilog-to-PyG - Toy Example &mdash; verilog-to-pyg v0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Verilog-to-PyG - Toy Example" href="mult-2b-mapped.html" />
+    <link rel="prev" title="Verilog-to-PyG - A framework for Graph Learning on RTL Designs" href="tutorial_toy.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            verilog-to-pyg
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_toy.html">Verilog-to-PyG - A framework for Graph Learning on RTL Designs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Verilog-to-PyG - Toy Example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bit-multiplier-and-inv-graph-aig-representation">2-bit Multiplier And-Inv-Graph (AIG) representation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-process-in-abc">Step 1: Process in ABC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-check-edgelist-file-written-mult-2b-el">Step 2: Check edgelist file written (mult-2b.el)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-check-the-topology-of-the-netlist">Step 3: Check the topology of the netlist</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-mapped.html">Verilog-to-PyG - Toy Example</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">verilog-to-pyg</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Verilog-to-PyG - Toy Example</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mult-2b-aig.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="verilog-to-pyg-toy-example">
+<h1>Verilog-to-PyG - Toy Example<a class="headerlink" href="#verilog-to-pyg-toy-example" title="Permalink to this heading"></a></h1>
+<p>Author: Cunxi Yu</p>
+<section id="bit-multiplier-and-inv-graph-aig-representation">
+<h2>2-bit Multiplier And-Inv-Graph (AIG) representation<a class="headerlink" href="#bit-multiplier-and-inv-graph-aig-representation" title="Permalink to this heading"></a></h2>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is an example of processing 2-bit Multiplier in AIG
+representation for intefacing PyG.
+</pre></div>
+</div>
+<section id="step-1-process-in-abc">
+<h3>Step 1: Process in ABC<a class="headerlink" href="#step-1-process-in-abc" title="Permalink to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./abc
+abc<span class="w"> </span><span class="m">01</span>&gt;<span class="w"> </span><span class="nb">read</span><span class="w"> </span>mult-2b.blif
+Hierarchy<span class="w"> </span>reader<span class="w"> </span>flattened<span class="w"> </span><span class="m">10</span><span class="w"> </span>instances<span class="w"> </span>of<span class="w"> </span>logic<span class="w"> </span>boxes<span class="w"> </span>and<span class="w"> </span>left<span class="w"> </span><span class="m">0</span><span class="w"> </span>black<span class="w"> </span>boxes.
+abc<span class="w"> </span><span class="m">02</span>&gt;<span class="w"> </span>strash
+abc<span class="w"> </span><span class="m">03</span>&gt;<span class="w"> </span>write_edgelist<span class="w"> </span>mult-2b.el
+WriteEdgelist<span class="w"> </span><span class="o">(</span>Verilog-to-PyG<span class="w"> </span>@<span class="w"> </span>https://github.com/ycunxi/Verilog-to-PyG<span class="o">)</span><span class="w"> </span>starts<span class="w"> </span>writing<span class="w"> </span>to<span class="w"> </span>mult-2b.el
+abc<span class="w"> </span><span class="m">04</span>&gt;<span class="w"> </span>write_edgelist<span class="w"> </span>-h
+usage:<span class="w"> </span>write_edgelist<span class="w"> </span><span class="o">[</span>-N<span class="o">]</span><span class="w"> </span>&lt;file&gt;
+<span class="w">             </span>writes<span class="w"> </span>the<span class="w"> </span>network<span class="w"> </span>into<span class="w"> </span>edgelist<span class="w"> </span>file
+<span class="w">             </span>part<span class="w"> </span>of<span class="w"> </span>Verilog-2-PyG<span class="w"> </span><span class="o">(</span>PyTorch<span class="w"> </span>Geometric<span class="o">)</span>.<span class="w"> </span>more<span class="w"> </span>details<span class="w"> </span>https://github.com/ycunxi/Verilog-to-PyG
+<span class="w">    </span>-N<span class="w">     </span>:<span class="w"> </span>toggle<span class="w"> </span>keeping<span class="w"> </span>original<span class="w"> </span>naming<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>netlist<span class="w"> </span><span class="k">in</span><span class="w"> </span>edgelist<span class="w"> </span><span class="o">(</span><span class="nv">default</span><span class="o">=</span>False<span class="o">)</span>
+<span class="w">    </span>-h<span class="w">     </span>:<span class="w"> </span>print<span class="w"> </span>the<span class="w"> </span><span class="nb">help</span><span class="w"> </span>massage
+<span class="w">    </span>file<span class="w">   </span>:<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>file<span class="w"> </span>to<span class="w"> </span>write<span class="w"> </span><span class="o">(</span>extension<span class="w"> </span>.el<span class="o">)</span>
+</pre></div>
+</div>
+</section>
+<section id="step-2-check-edgelist-file-written-mult-2b-el">
+<h3>Step 2: Check edgelist file written (mult-2b.el)<a class="headerlink" href="#step-2-check-edgelist-file-written-mult-2b-el" title="Permalink to this heading"></a></h3>
+<p>Specifically, here Pi/Po are hashed from ID 1 to 8</p>
+<ul class="simple">
+<li><p><strong>a0 = 1/9, b0 = 2/10, b1 = 3/11, a1 =4/12</strong></p></li>
+<li><p><strong>m0 = 23/5, m1 = 24/6, m2 = 25/7, m3 = 26/8</strong></p></li>
+<li><p><strong>note that Pi/Po nodes in AIGs have Pin node (2nd hash value)</strong></p></li>
+<li><p>others are AIG nodes</p></li>
+</ul>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Benchmark Edgelist Dumping (beta) &quot;Multi2&quot; written by ABC on Sun Apr 23 17:03:50 2023 (more at https://github.com/ycunxi/Verilog-to-PyG)</span>
+1 9 Pi 00
+2 10 Pi 00
+3 11 Pi 00
+4 12 Pi 00
+9 23 AIG 11
+11 23 AIG 11
+10 27 AIG 11
+11 27 AIG 11
+9 28 AIG 11
+12 28 AIG 11
+27 29 AIG 11
+28 29 AIG 11
+27 30 AIG 00
+28 30 AIG 00
+29 24 AIG 00
+30 24 AIG 00
+10 31 AIG 11
+12 31 AIG 11
+29 26 AIG 11
+31 26 AIG 11
+29 32 AIG 00
+31 32 AIG 00
+26 25 AIG 00
+32 25 AIG 00
+23 5 Po 00
+24 6 Po 00
+25 7 Po 00
+26 8 Po 00
+</pre></div>
+</div>
+</section>
+<section id="step-3-check-the-topology-of-the-netlist">
+<h3>Step 3: Check the topology of the netlist<a class="headerlink" href="#step-3-check-the-topology-of-the-netlist" title="Permalink to this heading"></a></h3>
+<p>For example, one path of the AIG is</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">1</span><span class="w"> </span><span class="m">9</span><span class="w"> </span>Pi<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="c1"># a0</span>
+<span class="m">3</span><span class="w"> </span><span class="m">11</span><span class="w"> </span>Pi<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="c1"># b0</span>
+<span class="m">9</span><span class="w"> </span><span class="m">23</span><span class="w"> </span>AIG<span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="c1"># a0 * b0 = 23 (solid AIG edge)</span>
+<span class="m">11</span><span class="w"> </span><span class="m">23</span><span class="w"> </span>AIG<span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="c1"># a0 * b0 = 23 (solid AIG edge)</span>
+<span class="m">23</span><span class="w"> </span><span class="m">5</span><span class="w"> </span>Po<span class="w"> </span><span class="m">00</span><span class="w"> </span><span class="c1"># 23 = 5 = m0</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorial_toy.html" class="btn btn-neutral float-left" title="Verilog-to-PyG - A framework for Graph Learning on RTL Designs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mult-2b-mapped.html" class="btn btn-neutral float-right" title="Verilog-to-PyG - Toy Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Cunxi Yu.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

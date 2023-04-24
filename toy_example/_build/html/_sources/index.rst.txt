@@ -10,7 +10,9 @@ Welcome to verilog-to-pyg's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   tutorial_toy 
+   tutorial_toy
+   mult-2b-aig
+   mult-2b-mapped 
 
 
 Indices and tables

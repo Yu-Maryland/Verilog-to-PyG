@@ -14,7 +14,12 @@ release = 'v0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_rtd_theme']
+
+imgmath_image_format = 'jpg'
+
+
+extensions = ['sphinx_rtd_theme', 'sphinx.ext.imgmath']
+#, 'sphinx.ext.pngmath', 'sphinx.ext.mathjax', 'sphinx.ext.ifconfig', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', 'sphinx.ext.napoleon', 'sphinx.ext.autosummary', 'sphinx.ext.coverage', 'sphinx.ext.todo', 'sphinx.ext.doctest', 'sphinx.ext.inheritance_diagram', 'sphinx.ext.graphviz', 'sphinx.ext.intersphinx', 'sphinx.ext.extlinks', 'sphinx.ext.todo', 'sphinx.ext.ifconfig', 'sphinx.ext.autosectionlabel', 'sphinx.ext.githubpages', 'sphinx.ext.imgconverter']
 
 
 templates_path = ['_templates']
