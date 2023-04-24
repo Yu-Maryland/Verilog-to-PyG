@@ -82,5 +82,5 @@ For example, one path of the AIG is
 23 5 Po 00 # 23 = 5 = m0
 ```
 
-<img src="mult-2b-aig-plot.jpg" alt="AIG of 2-b Multiplier" width="300" />
+<img src="mult-2b-aig-plot-trace.jpg" alt="AIG of 2-b Multiplier trace" width="300" />
 
