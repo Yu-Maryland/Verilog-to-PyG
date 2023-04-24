@@ -2,11 +2,11 @@
 
 Author: Cunxi Yu
 
-### 2-bit Multiplier And-Inv-Graph (AIG) representation
+### 2-bit Multiplier technology mapped netlist representation
 
 ```markdown
-This is an example of processing 2-bit Multiplier in AIG 
-representation for intefacing PyG.
+This is an example of processing 2-bit Multiplier in 
+technology mapped netlist representation for intefacing PyG.
 ```
 
 #### Step 1: Process in ABC
