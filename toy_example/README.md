@@ -4,7 +4,7 @@
 
 Welcome to Verilog-to-PyG project! Here's an outline of what you can expect to find in this tutorial page.
 
-- [Example 1: Representing behavior RTL in AIG-to-PyG](./example/mult-2b-aig.md)
+- [Example 1: Representing behavior RTL in AIG-to-PyG](./mult-2b-aig.md)
 
 ```verilog
 // full verilog used in this example can be found at "mult-2b.v"
@@ -37,7 +37,7 @@ module Multi2 (
 endmodule
 
 ```
-- [Example 2: Representing technology mapped design Circuit-to-PyG](./example/mult-2b-mapped.md)
+- [Example 2: Representing technology mapped design Circuit-to-PyG](./mult-2b-mapped.md)
  
 ```verilog
 // design is mapped using "7nm_lvt_ff.lib"
