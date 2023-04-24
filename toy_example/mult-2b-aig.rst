@@ -1,5 +1,5 @@
-Verilog-to-PyG - Toy Example
-----------------------------
+Verilog-to-PyG - Toy Example 1
+------------------------------
 
 Author: Cunxi Yu
 
@@ -32,6 +32,11 @@ Step 1: Process in ABC
 
 Step 2: Check edgelist file written (mult-2b.el)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. image:: ./mult-2b-aig-plot.jpg 
+   :alt: multiplier 2bit aig
+   :align: center
 
 Specifically, here Pi/Po are hashed from ID 1 to 8
 
@@ -84,5 +89,9 @@ For example, one path of the AIG is
     9 23 AIG 11 # a0 * b0 = 23 (solid AIG edge)
     11 23 AIG 11 # a0 * b0 = 23 (solid AIG edge)
     23 5 Po 00 # 23 = 5 = m0
+
+.. image:: ./mult-2b-aig-plot-trace.jpg 
+   :alt: multiplier 2bit aig
+   :align: center
 
 

@@ -1,5 +1,5 @@
-Verilog-to-PyG - Toy Example
-----------------------------
+Verilog-to-PyG - Toy Example 2
+------------------------------
 
 Author: Cunxi Yu
 
@@ -33,6 +33,11 @@ Step 1: Process in ABC
 
 Step 2: Check edgelist file written (mult-2b.el)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ./mult-2b-mapped-plot.jpg 
+   :alt: multiplier 2bit mapped
+   :align: center
+
 
 .. code:: markdown
 
