@@ -1,5 +1,11 @@
 ## Verilog-to-PyG - A framework for Graph Learning on RTL Designs
 
+### Setups
+
+- Make sure you compile ABC
+- Link ABC binary to the working folder (use ```ln -s```)
+
+
 ### Toy example tutorials
 
 Welcome to Verilog-to-PyG project! Here's an outline of what you can expect to find in this tutorial page.
@@ -63,8 +69,4 @@ endmodule
 
 ```
 
-### Setups
-
-- Make sure you compile ABC
-- Link ABC binary to the working folder (use ```ln -s```)
 
