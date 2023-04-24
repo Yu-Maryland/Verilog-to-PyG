@@ -1,11 +1,12 @@
-Verilog-to-PyG - A framework for Graph Learning on RTL Designs
+Tutorials
 --------------------------------------------------------------
 
-Setups
-~~~~~~
+Installations
+~~~~~~~~~~~~~
 
--  Make sure you compile ABC
--  Link ABC binary to the working folder (use ``ln -s``)
+-  `Installations <doc/install>`__
+
+
 
 Toy example tutorials
 ~~~~~~~~~~~~~~~~~~~~~

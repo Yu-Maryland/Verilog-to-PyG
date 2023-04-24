@@ -1,4 +1,4 @@
-Verilog-to-PyG - Toy Example 1
+Tutorial Toy Example 1
 ------------------------------
 
 Author: Cunxi Yu
@@ -35,6 +35,7 @@ Step 2: Check edgelist file written (mult-2b.el)
 
 
 .. image:: ./mult-2b-aig-plot.jpg 
+   :width: 70%
    :alt: multiplier 2bit aig
    :align: center
 
@@ -90,7 +91,8 @@ For example, one path of the AIG is
     11 23 AIG 11 # a0 * b0 = 23 (solid AIG edge)
     23 5 Po 00 # 23 = 5 = m0
 
-.. image:: ./mult-2b-aig-plot-trace.jpg 
+.. image:: ./mult-2b-aig-plot-trace.jpg
+   :width: 70%
    :alt: multiplier 2bit aig
    :align: center
 

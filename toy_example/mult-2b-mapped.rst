@@ -1,4 +1,4 @@
-Verilog-to-PyG - Toy Example 2
+Tutorial Toy Example 2
 ------------------------------
 
 Author: Cunxi Yu
