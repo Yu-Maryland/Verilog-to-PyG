@@ -1,1 +1,170 @@
-_build/html/output_file.html
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Verilog-to-PyG - A framework for Graph Learning on RTL Designs &#8212; verilog-to-pyg v0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="verilog-to-pyg-a-framework-for-graph-learning-on-rtl-designs">
+<h1>Verilog-to-PyG - A framework for Graph Learning on RTL Designs<a class="headerlink" href="#verilog-to-pyg-a-framework-for-graph-learning-on-rtl-designs" title="Permalink to this heading">¶</a></h1>
+<section id="setups">
+<h2>Setups<a class="headerlink" href="#setups" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Make sure you compile ABC</p></li>
+<li><p>Link ABC binary to the working folder (use <code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>)</p></li>
+</ul>
+</section>
+<section id="toy-example-tutorials">
+<h2>Toy example tutorials<a class="headerlink" href="#toy-example-tutorials" title="Permalink to this heading">¶</a></h2>
+<p>Welcome to Verilog-to-PyG project! Here’s an outline of what you can
+expect to find in this tutorial page.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="./mult-2b-aig.md">Example 1: Representing behavior RTL in
+AIG-to-PyG</a></p></li>
+</ul>
+<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="c1">// full verilog used in this example can be found at &quot;mult-2b.v&quot;</span>
+<span class="k">module</span><span class="w"> </span><span class="n">Multi2</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">a0</span><span class="p">,</span><span class="w"> </span><span class="n">a1</span><span class="p">,</span><span class="w"> </span><span class="n">b0</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">m0</span><span class="p">,</span><span class="w"> </span><span class="n">m1</span><span class="p">,</span><span class="w"> </span><span class="n">m2</span><span class="p">,</span><span class="w"> </span><span class="n">m3</span><span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="n">a0</span><span class="p">,</span><span class="w"> </span><span class="n">a1</span><span class="p">,</span><span class="w"> </span><span class="n">b0</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="p">;</span>
+<span class="w">  </span><span class="k">output</span><span class="w"> </span><span class="n">m0</span><span class="p">,</span><span class="w"> </span><span class="n">m1</span><span class="p">,</span><span class="w"> </span><span class="n">m2</span><span class="p">,</span><span class="w"> </span><span class="n">m3</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">wire</span><span class="w"> </span><span class="n">\new_Multi2|x0_0_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|x0_1_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|x0_2_</span><span class="w"> </span><span class="p">,</span>
+<span class="w">    </span><span class="n">\new_Multi2|x0_3_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y0_0_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y0_1_</span><span class="w"> </span><span class="p">,</span>
+<span class="w">    </span><span class="n">\new_Multi2|y0_2_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y0_3_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y1_0_</span><span class="w"> </span><span class="p">,</span>
+<span class="w">    </span><span class="n">\new_Multi2|y1_1_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y1_2_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">\new_Multi2|y1_3_</span><span class="w"> </span><span class="p">,</span>
+<span class="w">    </span><span class="n">\new_Multi2|ADD4(1)|c_</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">new_n60_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n62_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n64_</span><span class="p">,</span><span class="w">  </span><span class="p">...;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|x0_0_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|x0_1_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|x0_2_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|x0_3_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|y0_0_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="n">b0</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">a0</span><span class="p">;</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">\new_Multi2|x2_0_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">m1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">\new_Multi2|x2_1_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">m2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">\new_Multi2|x2_2_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">m3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">\new_Multi2|x2_3_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">\new_Multi2|ADD4(1)|c_</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">new_n60_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">\new_Multi2|x0_0_</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="n">\new_Multi2|y0_0_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">new_n62_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">~</span><span class="n">\new_Multi2|x0_0_</span><span class="w">  </span><span class="o">&amp;</span><span class="w"> </span><span class="o">~</span><span class="n">\new_Multi2|y0_0_</span><span class="w"> </span><span class="p">;</span>
+<span class="w">  </span><span class="k">assign</span><span class="w"> </span><span class="n">new_n64_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">~</span><span class="n">new_n60_</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="o">~</span><span class="n">new_n62_</span><span class="p">;</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="k">endmodule</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="./mult-2b-mapped.md">Example 2: Representing technology mapped design
+Circuit-to-PyG</a></p></li>
+</ul>
+<div class="highlight-verilog notranslate"><div class="highlight"><pre><span></span><span class="c1">// design is mapped using &quot;7nm_lvt_ff.lib&quot;</span>
+<span class="k">module</span><span class="w"> </span><span class="n">Multi2</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">a0</span><span class="p">,</span><span class="w"> </span><span class="n">a1</span><span class="p">,</span><span class="w"> </span><span class="n">b0</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">m0</span><span class="p">,</span><span class="w"> </span><span class="n">m1</span><span class="p">,</span><span class="w"> </span><span class="n">m2</span><span class="p">,</span><span class="w"> </span><span class="n">m3</span><span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="k">input</span><span class="w">  </span><span class="n">a0</span><span class="p">,</span><span class="w"> </span><span class="n">a1</span><span class="p">,</span><span class="w"> </span><span class="n">b0</span><span class="p">,</span><span class="w"> </span><span class="n">b1</span><span class="p">;</span>
+<span class="w">  </span><span class="k">output</span><span class="w"> </span><span class="n">m0</span><span class="p">,</span><span class="w"> </span><span class="n">m1</span><span class="p">,</span><span class="w"> </span><span class="n">m2</span><span class="p">,</span><span class="w"> </span><span class="n">m3</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">wire</span><span class="w"> </span><span class="n">new_n9_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n10_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n12_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n13_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n15_</span><span class="p">,</span><span class="w"> </span><span class="n">new_n16_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">INVx1_ASAP7_75t_L</span><span class="w">         </span><span class="n">g0</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">a0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n9_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">INVx1_ASAP7_75t_L</span><span class="w">         </span><span class="n">g1</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">b0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n10_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">NOR2xp33_ASAP7_75t_L</span><span class="w">      </span><span class="n">g2</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">new_n9_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B</span><span class="p">(</span><span class="n">new_n10_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">m0</span><span class="p">));</span>
+<span class="w">  </span><span class="n">AND4x1_ASAP7_75t_L</span><span class="w">        </span><span class="n">g3</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">b0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B</span><span class="p">(</span><span class="n">a0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">C</span><span class="p">(</span><span class="n">a1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">D</span><span class="p">(</span><span class="n">b1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n12_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">AOI22xp33_ASAP7_75t_L</span><span class="w">     </span><span class="n">g4</span><span class="p">(.</span><span class="n">A1</span><span class="p">(</span><span class="n">a0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">A2</span><span class="p">(</span><span class="n">b1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B1</span><span class="p">(</span><span class="n">a1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B2</span><span class="p">(</span><span class="n">b0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n13_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">NOR2xp33_ASAP7_75t_L</span><span class="w">      </span><span class="n">g5</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">new_n13_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B</span><span class="p">(</span><span class="n">new_n12_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">m1</span><span class="p">));</span>
+<span class="w">  </span><span class="n">INVx1_ASAP7_75t_L</span><span class="w">         </span><span class="n">g6</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">a1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n15_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">INVx1_ASAP7_75t_L</span><span class="w">         </span><span class="n">g7</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">b1</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">new_n16_</span><span class="p">));</span>
+<span class="w">  </span><span class="n">AOI211xp5_ASAP7_75t_L</span><span class="w">     </span><span class="n">g8</span><span class="p">(.</span><span class="n">A1</span><span class="p">(</span><span class="n">b0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">A2</span><span class="p">(</span><span class="n">a0</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B</span><span class="p">(</span><span class="n">new_n15_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">C</span><span class="p">(</span><span class="n">new_n16_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">m2</span><span class="p">));</span>
+<span class="w">  </span><span class="n">NOR4xp25_ASAP7_75t_L</span><span class="w">      </span><span class="n">g9</span><span class="p">(.</span><span class="n">A</span><span class="p">(</span><span class="n">new_n15_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">B</span><span class="p">(</span><span class="n">new_n9_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">C</span><span class="p">(</span><span class="n">new_n16_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">D</span><span class="p">(</span><span class="n">new_n10_</span><span class="p">),</span><span class="w"> </span><span class="p">.</span><span class="n">Y</span><span class="p">(</span><span class="n">m3</span><span class="p">));</span>
+<span class="k">endmodule</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">verilog-to-pyg</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Cunxi Yu.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/output_file.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

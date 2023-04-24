@@ -1,1 +1,0 @@
-../toy_example/verilog2pyg.py
