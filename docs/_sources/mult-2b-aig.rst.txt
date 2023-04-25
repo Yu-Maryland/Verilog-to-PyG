@@ -1,4 +1,4 @@
-Tutorial Toy Example 1
+Tutorial - Toy Example 1
 ------------------------------
 
 Author: Cunxi Yu

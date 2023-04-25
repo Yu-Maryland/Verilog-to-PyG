@@ -1,4 +1,4 @@
-Verilog-to-PyG - Toy Example 3 (Sequential)
+Tutorial Toy Example 3 (Sequential)
 -------------------------------------------
 
 Author: Cunxi Yu

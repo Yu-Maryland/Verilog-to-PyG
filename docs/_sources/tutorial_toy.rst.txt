@@ -4,7 +4,7 @@ Tutorials
 Installations
 ~~~~~~~~~~~~~
 
--  `Installations <doc/install>`__
+-  `Installations <install.html>`__
 
 
 
@@ -15,7 +15,7 @@ Welcome to Verilog-to-PyG project! Here’s an outline of what you can
 expect to find in this tutorial page.
 
 -  `Example 1: Representing behavior RTL in
-   AIG-to-PyG <doc/mult-2b-aig>`__
+   AIG-to-PyG <mult-2b-aig.html>`__
 
 .. code:: verilog
 
@@ -49,7 +49,7 @@ expect to find in this tutorial page.
     endmodule
 
 -  `Example 2: Representing technology mapped design
-   Circuit-to-PyG <doc/mult-2b-mapped>`__
+   Circuit-to-PyG <mult-2b-mapped.html>`__
 
 .. code:: verilog
 
