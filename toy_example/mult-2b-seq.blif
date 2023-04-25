@@ -1,0 +1,85 @@
+# Benchmark "Multi2" written by ABC on Tue Apr 25 11:12:27 2023
+.model Multi2
+.inputs a0 a1 b0 b1
+.outputs m0 m1 m2 m3
+
+.latch     n20_li     n20_lo  0
+.latch     n23_li     n23_lo  0
+.latch     n26_li     n26_lo  0
+.latch     n32_li     n32_lo  0
+.latch     n35_li     n35_lo  0
+.latch     n38_li     n38_lo  0
+.latch     n41_li     n41_lo  0
+.latch     n50_li     n50_lo  0
+.latch     n53_li     n53_lo  0
+.latch     n56_li     n56_lo  0
+.latch     n62_li     n62_lo  0
+.latch     n65_li     n65_lo  0
+.latch     n68_li     n68_lo  0
+.latch     n71_li     n71_lo  0
+.latch     n11_i2     n11_o2  0
+.latch     n10_i2     n10_o2  0
+.latch     n15_i2     n15_o2  0
+.latch     n12_i2     n12_o2  0
+.latch n29_lo_buf_i2 n29_lo_buf_o2  0
+.latch n44_lo_buf_i2 n44_lo_buf_o2  0
+.latch n59_lo_buf_i2 n59_lo_buf_o2  0
+.latch n74_lo_buf_i2 n74_lo_buf_o2  0
+
+.names n32_lo n62_lo m0
+11 1
+.names n11_o2 n10_o2 new_n76_
+00 1
+.names n12_o2 new_n76_ m1
+00 1
+.names n15_o2 n12_o2 m3
+11 1
+.names n15_o2 n12_o2 new_n79_
+00 1
+.names m3 new_n79_ m2
+00 1
+.names n29_lo_buf_o2 n74_lo_buf_o2 n11_i2
+11 1
+.names n44_lo_buf_o2 n59_lo_buf_o2 n10_i2
+11 1
+.names n44_lo_buf_o2 n74_lo_buf_o2 n15_i2
+11 1
+.names n11_i2 n10_i2 n12_i2
+11 1
+.names a0 n20_li
+1 1
+.names n20_lo n23_li
+1 1
+.names n23_lo n26_li
+1 1
+.names n29_lo_buf_o2 n32_li
+1 1
+.names a1 n35_li
+1 1
+.names n35_lo n38_li
+1 1
+.names n38_lo n41_li
+1 1
+.names b0 n50_li
+1 1
+.names n50_lo n53_li
+1 1
+.names n53_lo n56_li
+1 1
+.names n59_lo_buf_o2 n62_li
+1 1
+.names b1 n65_li
+1 1
+.names n65_lo n68_li
+1 1
+.names n68_lo n71_li
+1 1
+.names n26_lo n29_lo_buf_i2
+1 1
+.names n41_lo n44_lo_buf_i2
+1 1
+.names n56_lo n59_lo_buf_i2
+1 1
+.names n71_lo n74_lo_buf_i2
+1 1
+.end

@@ -16,6 +16,7 @@ Contact: Cunxi Yu (cunxi.yu at utah.edu) (https://github.com/ycunxi)
   
    tutorial_toy
    mult-2b-aig
-   mult-2b-mapped 
+   mult-2b-mapped
+   mult-2b-aig-seq
 
 
