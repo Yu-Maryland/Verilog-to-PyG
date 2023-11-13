@@ -1,5 +1,5 @@
 Tutorial - Example 4 - RTL augmentaion 
-------------------------------
+----------------------------------------
 
 Author: Cunxi Yu
 
@@ -14,8 +14,8 @@ And-Inv-Graph (AIG) based RTL augmentaion
 Step 1: aigaug - AIG RTL augmentaion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. theme-install::
-  
+.. code:: bash
+
     usage: aigaug [-s <num>] [-d <file>][-zZdsh]
                 performs technology-independent AIG random synthesis (node level) for RTL augmentation
       -z       : toggle using zero-cost replacements for rwr for aigaug [default = no]

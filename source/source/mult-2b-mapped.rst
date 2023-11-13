@@ -1,5 +1,5 @@
 Tutorial - Example 2 - Mapped netlist
-------------------------------
+---------------------------------------
 
 Author: Cunxi Yu
 

@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Tutorial Toy Example 3 (Sequential)" href="mult-2b-aig-seq.html" /> 
+    <link rel="prev" title="Tutorial - Example 3 - Sequential" href="mult-2b-aig-seq.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,10 +49,10 @@
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installations</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="tutorial_toy.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig.html">Tutorial - Toy Example 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mult-2b-mapped.html">Tutorial Toy Example 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig-seq.html">Tutorial Toy Example 3 (Sequential)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_toy.html">Pre-Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig.html">Tutorial - Example 1 - Boolean Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-mapped.html">Tutorial - Example 2 - Mapped netlist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig-seq.html">Tutorial - Example 3 - Sequential</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial - Example 4 - RTL augmentaion</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#and-inv-graph-aig-based-rtl-augmentaion">And-Inv-Graph (AIG) based RTL augmentaion</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#step-1-aigaug-aig-rtl-augmentaion">Step 1: aigaug - AIG RTL augmentaion</a></li>
@@ -98,6 +98,17 @@ structuring (design:i10.aig)
 </div>
 <section id="step-1-aigaug-aig-rtl-augmentaion">
 <h3>Step 1: aigaug - AIG RTL augmentaion<a class="headerlink" href="#step-1-aigaug-aig-rtl-augmentaion" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>usage:<span class="w"> </span>aigaug<span class="w"> </span><span class="o">[</span>-s<span class="w"> </span>&lt;num&gt;<span class="o">]</span><span class="w"> </span><span class="o">[</span>-d<span class="w"> </span>&lt;file&gt;<span class="o">][</span>-zZdsh<span class="o">]</span>
+<span class="w">            </span>performs<span class="w"> </span>technology-independent<span class="w"> </span>AIG<span class="w"> </span>random<span class="w"> </span>synthesis<span class="w"> </span><span class="o">(</span>node<span class="w"> </span>level<span class="o">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>RTL<span class="w"> </span>augmentation
+<span class="w">  </span>-z<span class="w">       </span>:<span class="w"> </span>toggle<span class="w"> </span>using<span class="w"> </span>zero-cost<span class="w"> </span>replacements<span class="w"> </span><span class="k">for</span><span class="w"> </span>rwr<span class="w"> </span><span class="k">for</span><span class="w"> </span>aigaug<span class="w"> </span><span class="o">[</span><span class="nv">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>no<span class="o">]</span>
+<span class="w">  </span>-Z<span class="w">       </span>:<span class="w"> </span>toggle<span class="w"> </span>using<span class="w"> </span>zero-cost<span class="w"> </span>replacements<span class="w"> </span><span class="k">for</span><span class="w"> </span>ref<span class="w"> </span><span class="k">for</span><span class="w"> </span>aigaug<span class="w"> </span><span class="o">[</span><span class="nv">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>no<span class="o">]</span>
+<span class="w">  </span>-d<span class="w">       </span>:<span class="w"> </span>record<span class="w"> </span>random<span class="w"> </span>synthesis<span class="w"> </span>decision<span class="w"> </span>made<span class="w"> </span>during<span class="w"> </span>augmentation<span class="w"> </span><span class="o">[</span>required<span class="w"> </span>filename<span class="p">;</span><span class="w"> </span>e.g.,<span class="w"> </span>test.csv<span class="o">]</span>
+<span class="w">  </span>-s<span class="w">       </span>:<span class="w"> </span><span class="nb">set</span><span class="w"> </span>the<span class="w"> </span>random<span class="w"> </span>seed<span class="w"> </span><span class="k">for</span><span class="w"> </span>random<span class="w"> </span>augmentation
+<span class="w">  </span>-v<span class="w">       </span>:<span class="w"> </span>toggle<span class="w"> </span>verbose<span class="w"> </span>printout<span class="w"> </span><span class="o">[</span><span class="nv">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>no<span class="o">]</span>
+<span class="w">  </span>-h<span class="w">       </span>:<span class="w"> </span>print<span class="w"> </span>the<span class="w"> </span><span class="nb">command</span><span class="w"> </span>usage
+<span class="w">  </span>Example<span class="w">       </span>:<span class="w"> </span><span class="nb">read</span><span class="w"> </span>i10.aig<span class="p">;</span>st<span class="p">;</span>aigaug<span class="w"> </span>-s<span class="w"> </span><span class="m">1</span><span class="w"> </span>-d<span class="w"> </span>test.csv<span class="p">;</span>write<span class="w"> </span>i10_arg_1.aig<span class="p">;</span>cec<span class="w"> </span>i10.aig<span class="w"> </span>i10_arg_1.aig
+</pre></div>
+</div>
 </section>
 <section id="step-2-check-functional-equivalence-using-sat-based-equivalence-checker">
 <h3>Step 2: Check functional equivalence using SAT-based equivalence checker<a class="headerlink" href="#step-2-check-functional-equivalence-using-sat-based-equivalence-checker" title="Link to this heading"></a></h3>
@@ -128,7 +139,7 @@ structuring (design:i10.aig)
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="mult-2b-aig-seq.html" class="btn btn-neutral float-left" title="Tutorial Toy Example 3 (Sequential)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mult-2b-aig-seq.html" class="btn btn-neutral float-left" title="Tutorial - Example 3 - Sequential" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
