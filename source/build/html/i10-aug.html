@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial - Example 4 - RTL augmentaion &mdash; Verilog-to-PyG 0.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/sphinx_rtd_size.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=01f34227"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tutorial Toy Example 3 (Sequential)" href="mult-2b-aig-seq.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Verilog-to-PyG
+          </a>
+              <div class="version">
+                0.1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installations</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial_toy.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig.html">Tutorial - Toy Example 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-mapped.html">Tutorial Toy Example 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mult-2b-aig-seq.html">Tutorial Toy Example 3 (Sequential)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial - Example 4 - RTL augmentaion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#and-inv-graph-aig-based-rtl-augmentaion">And-Inv-Graph (AIG) based RTL augmentaion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-aigaug-aig-rtl-augmentaion">Step 1: aigaug - AIG RTL augmentaion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-check-functional-equivalence-using-sat-based-equivalence-checker">Step 2: Check functional equivalence using SAT-based equivalence checker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Verilog-to-PyG</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Tutorial - Example 4 - RTL augmentaion</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/i10-aug.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tutorial-example-4-rtl-augmentaion">
+<h1>Tutorial - Example 4 - RTL augmentaion<a class="headerlink" href="#tutorial-example-4-rtl-augmentaion" title="Link to this heading"></a></h1>
+<p>Author: Cunxi Yu</p>
+<section id="and-inv-graph-aig-based-rtl-augmentaion">
+<h2>And-Inv-Graph (AIG) based RTL augmentaion<a class="headerlink" href="#and-inv-graph-aig-based-rtl-augmentaion" title="Link to this heading"></a></h2>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is an example of data augmentation of RTL designs via logic
+structuring (design:i10.aig)
+</pre></div>
+</div>
+<section id="step-1-aigaug-aig-rtl-augmentaion">
+<h3>Step 1: aigaug - AIG RTL augmentaion<a class="headerlink" href="#step-1-aigaug-aig-rtl-augmentaion" title="Link to this heading"></a></h3>
+</section>
+<section id="step-2-check-functional-equivalence-using-sat-based-equivalence-checker">
+<h3>Step 2: Check functional equivalence using SAT-based equivalence checker<a class="headerlink" href="#step-2-check-functional-equivalence-using-sat-based-equivalence-checker" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>//load<span class="w"> </span>i10.aig<span class="w"> </span>design
+<span class="w"> </span>abc<span class="w"> </span><span class="m">01</span>&gt;<span class="w"> </span><span class="nb">read</span><span class="w"> </span>i10.aig<span class="p">;</span>strash<span class="p">;</span>print_stats<span class="p">;</span>
+<span class="w"> </span>i10:<span class="w"> </span>i/o<span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">257</span>/<span class="w">  </span><span class="m">224</span><span class="w">  </span><span class="nv">lat</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="m">0</span><span class="w">  </span><span class="nv">and</span><span class="w"> </span><span class="o">=</span><span class="w">   </span><span class="m">2675</span><span class="w">  </span><span class="nv">lev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span>
+<span class="w"> </span>//perform<span class="w"> </span>augmentation<span class="w"> </span>using<span class="w"> </span>random<span class="w"> </span>seed<span class="w"> </span><span class="s2">&quot;0&quot;</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">03</span>&gt;<span class="w"> </span>aigaug<span class="w"> </span>-s<span class="w"> </span><span class="m">0</span><span class="w"> </span>-d<span class="w"> </span>i10_aug_0.csv<span class="p">;</span>print_stats
+<span class="w"> </span>i10:<span class="w"> </span>i/o<span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">257</span>/<span class="w">  </span><span class="m">224</span><span class="w">  </span><span class="nv">lat</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="m">0</span><span class="w">  </span><span class="nv">and</span><span class="w"> </span><span class="o">=</span><span class="w">   </span><span class="m">2514</span><span class="w">  </span><span class="nv">lev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">50</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">03</span>&gt;<span class="w"> </span>write<span class="w"> </span>i10_aug_0.aig<span class="p">;</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">03</span>&gt;<span class="w"> </span><span class="nb">read</span><span class="w"> </span>i10.aig<span class="p">;</span>strash<span class="p">;</span>
+<span class="w"> </span>//perform<span class="w"> </span>augmentation<span class="w"> </span>using<span class="w"> </span>random<span class="w"> </span>seed<span class="w"> </span><span class="s2">&quot;1&quot;</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">05</span>&gt;<span class="w"> </span>aigaug<span class="w"> </span>-s<span class="w"> </span><span class="m">1</span><span class="w"> </span>-d<span class="w"> </span>i10_aug_1.csv<span class="p">;</span>print_stats
+<span class="w"> </span>i10:<span class="w"> </span>i/o<span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="m">257</span>/<span class="w">  </span><span class="m">224</span><span class="w">  </span><span class="nv">lat</span><span class="w"> </span><span class="o">=</span><span class="w">    </span><span class="m">0</span><span class="w">  </span><span class="nv">and</span><span class="w"> </span><span class="o">=</span><span class="w">   </span><span class="m">1980</span><span class="w">  </span><span class="nv">lev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">47</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">05</span>&gt;<span class="w"> </span>write<span class="w"> </span>i10_aug_1.aig<span class="p">;</span>
+<span class="w"> </span>abc<span class="w"> </span><span class="m">05</span>&gt;<span class="w"> </span>cec<span class="w"> </span>i10.aig<span class="w"> </span>i10_aug_0.aig<span class="p">;</span>
+<span class="w"> </span>Networks<span class="w"> </span>are<span class="w"> </span>equivalent.<span class="w">  </span><span class="nv">Time</span><span class="w"> </span><span class="o">=</span><span class="w">     </span><span class="m">0</span>.19<span class="w"> </span>sec
+<span class="w"> </span>abc<span class="w"> </span><span class="m">05</span>&gt;<span class="w"> </span>cec<span class="w"> </span>i10.aig<span class="w"> </span>i10_aug_1.aig<span class="p">;</span>
+<span class="w"> </span>Networks<span class="w"> </span>are<span class="w"> </span>equivalent.<span class="w">  </span><span class="nv">Time</span><span class="w"> </span><span class="o">=</span><span class="w">     </span><span class="m">0</span>.24<span class="w"> </span>sec
+<span class="w"> </span>//combinational<span class="w"> </span>equivalence<span class="w"> </span>checking<span class="w"> </span>returns<span class="w"> </span>that<span class="w"> </span>all<span class="w"> </span>three<span class="w"> </span>designs<span class="w"> </span>are<span class="w"> </span>equivalent
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mult-2b-aig-seq.html" class="btn btn-neutral float-left" title="Tutorial Toy Example 3 (Sequential)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
