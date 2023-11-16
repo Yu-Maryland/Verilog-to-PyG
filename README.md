@@ -16,4 +16,14 @@ Please visit https://yu-maryland.github.io/Verilog-to-PyG/
 ## Reference
 
 Yingjie Li, Mingju Liu, Alan Mishchenko, Cunxi Yu. "Verilog-to-PyG – A Framework for Graph Learning and Augmentation on RTL Designs." ICCAD'23.
- 
+
+##  Tutorials
+
+*   [Installations](https://yu-maryland.github.io/Verilog-to-PyG/install.html)
+*   [Pre-Tutorials](https://yu-maryland.github.io/Verilog-to-PyG/tutorial_toy.html)
+*   [Tutorial - Example 1 - Boolean Networks](https://yu-maryland.github.io/Verilog-to-PyG/mult-2b-aig.html)
+*   [Tutorial - Example 2 - Mapped netlist](https://yu-maryland.github.io/Verilog-to-PyG/mult-2b-mapped.html)
+*   [Tutorial - Example 3 - Sequential](https://yu-maryland.github.io/Verilog-to-PyG/mult-2b-aig-seq.html)
+*   [Tutorial - Example 4 - RTL augmentaion](https://yu-maryland.github.io/Verilog-to-PyG/i10-aug.html)
+
+  
