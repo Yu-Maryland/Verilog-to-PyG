@@ -69,8 +69,8 @@ void Io_WriteEdgelist( Abc_Ntk_t * pNtk, char * FileName, int fWriteLatches, int
             fprintf( stdout, "Writing Edgelist has failed.\n" );
             return;
         }
+        pNtk = pNtkTemp;
     }
-    pNtk = pNtkTemp; 
     // start writing the file
     pFile = fopen( FileName, "w" );
     if ( pFile == NULL )
@@ -120,9 +120,8 @@ void Io_NtkEdgelistWrite( FILE * pFile, Abc_Ntk_t * pNtk, int fWriteLatches, int
             fprintf( stdout, "Writing Edgelist has failed.\n" );
             return;
         }
+        pNtk = pNtkTemp; 
     }
-    pNtk = pNtkTemp; 
- 
     // write the model name
     // fprintf( pFile, ".model %s\n", Abc_NtkName(pNtk) );
     // write the network
